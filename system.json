@@ -44,7 +44,7 @@
     }
   ],
   "url": "https://outlawpanda.github.io/",
-  "manifest": "https://github.com/OutlawPanda/OutlawPanda.github.io/system.json",
+  "manifest": "https://raw.githubusercontent.com/OutlawPanda/OutlawPanda.github.io/main/system.json",
   "download": "https://github.com/OutlawPanda/OutlawPanda.github.io/archive/refs/heads/main.zip",
   "packs": [
     {
@@ -130,6 +130,27 @@
       "system": "blades-in-the-dark",
       "path": "./packs/npcs.db",
       "entity": "Actor"
+	        },
+	{
+      "name": "entanglements",
+      "label": "Entanglements",
+      "system": "blades-in-the-dark",
+      "path": "./packs/entanglements.db",
+      "entity": "RollTable"
+    },
+	{
+      "name": "entanglements-journals",
+      "label": "Entanglements Journals",
+      "system": "blades-in-the-dark",
+      "path": "./packs/entanglements-journals.db",
+      "entity": "JournalEntry"
+    },
+	{
+      "name": "entanglements-macro",
+      "label": "Entanglements Macro",
+      "system": "blades-in-the-dark",
+      "path": "./packs/entanglements-macro.db",
+      "entity": "Macro"
     }
   ]
 }
