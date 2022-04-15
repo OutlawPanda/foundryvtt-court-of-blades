@@ -1,12 +1,12 @@
 {
-  "name": "blades-in-the-dark",
-  "title": "Blades in the Dark",
+  "name": "court-of-blades",
+  "title": "Court of Blades",
   "description": "Blades in the dark game system.",
   "version": "4.0.1-b9",
   "minimumCoreVersion": "0.8.5",
   "compatibleCoreVersion": "0.8.9",
   "templateVersion": 1,
-  "author": "justinross",
+  "author": "OutlawPanda",
   "esmodules": [
     "module/blades.js"
   ],
