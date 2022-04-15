@@ -6,7 +6,7 @@
   "minimumCoreVersion": "0.8.5",
   "compatibleCoreVersion": "0.8.9",
   "templateVersion": 1,
-  "author": "justinross",
+  "author": "justinross"
   "esmodules": [
     "module/blades.js"
   ],
