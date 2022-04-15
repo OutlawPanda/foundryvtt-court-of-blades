@@ -1,7 +1,7 @@
 {
-  "name": "court-of-blades",
-  "title": "Court of Blades",
-  "description": "Court of Blades game system.",
+  "name": "blades-in-the-dark",
+  "title": "Blades in the Dark",
+  "description": "Blades in the dark game system.",
   "version": "4.0.1-b9",
   "minimumCoreVersion": "0.8.5",
   "compatibleCoreVersion": "0.8.9",
@@ -43,9 +43,9 @@
       "path": "lang/de.json"
     }
   ],
-  "url": "https://github.com/justinross/foundryvtt-blades-in-the-dark/",
-  "manifest": "https://raw.githubusercontent.com/justinross/foundryvtt-blades-in-the-dark/tidy-sheet-redesign/system.json",
-  "download": "https://github.com/justinross/foundryvtt-blades-in-the-dark/archive/refs/tags/4.0.0-b9.zip",
+  "url": "https://outlawpanda.github.io/",
+  "manifest": "https://github.com/OutlawPanda/OutlawPanda.github.io/system.json",
+  "download": "https://github.com/OutlawPanda/OutlawPanda.github.io/archive/refs/heads/main.zip",
   "packs": [
     {
       "name": "class",
