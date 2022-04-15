@@ -35,17 +35,17 @@
             {{/multiboxes}}
             </div>
           </header>
-            <div class="trauma-box">
-                <div class="trauma-list count-{{ownedTraumas.length}}">
-                {{#if (gt data.trauma.list.length 0)}}
-                {{#each data.trauma.list as |trauma index|}}
-                  <div class="trauma-item" data-trauma="{{trauma}}">{{localize (concat "BITD.Trauma" (upper-first trauma))}}</div>
+            <div class="scandal-box">
+                <div class="scandal-list count-{{ownedScandals.length}}">
+                {{#if (gt data.scandal.list.length 0)}}
+                {{#each data.scandal.list as |scandal index|}}
+                  <div class="scandal-item" data-scandal="{{scandal}}">{{localize (concat "BITD.Scandal" (upper-first scandal))}}</div>
                 {{/each}}
                 {{else}}
-                  <em>{{localize data.trauma.name}}</em>
+                  <em>{{localize data.scandal.name}}</em>
                 {{/if}}
 
-                <i class="fas fa-plus add_trauma"></i>
+                <i class="fas fa-plus add_scandal"></i>
               </div>
             </div>
         </div>
