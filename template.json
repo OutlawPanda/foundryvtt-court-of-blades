@@ -25,7 +25,7 @@
       "value": [0],
       "name": "BITD.Scandal",
       "name_default": "BITD.Scandal",
-      "options": ["Sentimental", "Wicked", "Grasping", "False", "Gauche", "Jealous", "Faithless", "Fragile"],
+      "options": ["sentimental", "wicked", "grasping", "false", "gauche", "jealous", "faithless", "fragile"],
       "list": []
     },
     "healing-clock": [0],
@@ -61,58 +61,58 @@
       "special": 0
     },
     "attributes": {
-        "Body": {
+        "body": {
           "exp": 0,
           "exp_max": 8,
           "label": "BITD.SkillsBody",
           "skills": {
-            "hunt": {
+            "skulk": {
               "label": "BITD.SkillsSkulk",
               "value": 0
             },
-            "study": {
+            "maneuver": {
               "label": "BITD.SkillsManeuver",
               "value": 0
             },
-            "survey": {
+            "skirmish": {
               "label": "BITD.SkillsSkirmish",
               "value": 0
             },
-            "tinker": {
+            "wreck": {
               "label": "BITD.SkillsWreck",
               "value": 0
             }
           }
         },
-        "Mind": {
+        "mind": {
           "exp": 0,
           "exp_max": 8,
           "label": "BITD.SkillsMind",
           "skills": {
-            "finesse": {
+            "tinker": {
               "label": "BITD.SkillsTinker",
               "value": 0
             },
-            "prowl": {
+            "study": {
               "label": "BITD.SkillsStudy",
               "value": 0
             },
-            "skirmish": {
+            "survey": {
               "label": "BITD.SkillsSurvey",
               "value": 0
             },
-            "wreck": {
+            "hunt": {
               "label": "BITD.SkillsHunt",
               "value": 0
             }
           }
         },
-        "Spirit": {
+        "spirit": {
           "exp": 0,
           "exp_max": 8,
           "label": "BITD.SkillsSpirit",
           "skills": {
-            "attune": {
+            "channel": {
               "label": "BITD.SkillsChannel",
               "value": 0
             },
