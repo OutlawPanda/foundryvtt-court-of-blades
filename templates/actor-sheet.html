@@ -1,5 +1,5 @@
 <form class="{{cssClass}} actor-sheet" autocomplete="off">
-  <div id="tidy-redesign" class="{{#if actor.flags.blades-in-the-dark.allow-edit}}allow-edit{{/if}}">
+  <div id="tidy-redesign" class="{{#if actor.flags.court-of-blades.allow-edit}}allow-edit{{/if}}">
     <div class="sheet-toggles"><span class="toggle-expand"><i class="fas fa-expand"></i><i class="fas fa-compress"></i></span><span class="toggle-allow-edit"><i class="fas fa-lock"></i><i class="fas fa-lock-open"></i></span><!--<span class="migrate-test">mig</span>--></div>
     <section class="minimized-view">
       <section class="character-portrait">
@@ -7,18 +7,18 @@
           <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" >
         </div>
         <div class="status-buttons">
-          <div class="coins-box {{#if actor.flags.blades-in-the-dark.coins_open}}open{{/if}}">
+          <div class="coins-box {{#if actor.flags.court-of-blades.coins_open}}open{{/if}}">
             <div class="mini-view"><div class="placeholder"></div><span class="coin-values label-text">{{data.coins}}/{{data.coins_stashed}}</span></div>
-            <div class="full-view">{{> "systems/blades-in-the-dark/templates/parts/coins.html" actor=actor}}</div>
+            <div class="full-view">{{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/coins.html" actor=actor}}</div>
           </div>
-          <div class="load-box {{#if actor.flags.blades-in-the-dark.load_open}}open{{/if}}">
+          <div class="load-box {{#if actor.flags.court-of-blades.load_open}}open{{/if}}">
             <div class="mini-view"><div class="placeholder"></div><span class="load-amounts label-text {{#if (lt data.loadout max_load)}}below-max{{else if (eq data.loadout max_load)}}at-max{{else if (gt data.loadout max_load)}}over-max{{/if}}">{{data.loadout}}/{{max_load}}</span></div>
-            <div class="full-view">{{> "systems/blades-in-the-dark/templates/parts/load.html"}}</div>
+            <div class="full-view">{{> "systems/https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/load.html"}}</div>
           </div>
-          <div class="harm-box {{#if actor.flags.blades-in-the-dark.harm_open}}open{{/if}}">
+          <div class="harm-box {{#if actor.flags.court-of-blades.harm_open}}open{{/if}}">
             <div class="mini-view harm{{#if (or data.harm.light.one data.harm.light.two)}}-1{{/if}}{{#if
               (or data.harm.medium.one data.harm.medium.two)}}-2{{/if}}{{#if data.harm.heavy.one}}-3{{/if}}"><div class="placeholder"></div></div>
-            <div class="full-view">{{> "systems/blades-in-the-dark/templates/parts/harm.html" actor=actor}}</div>
+            <div class="full-view">{{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/harm.html" actor=actor}}</div>
           </div>
 
         </div>        <div class="stress-trauma-box">
@@ -62,13 +62,13 @@
       <div class="look bio">{{{inline-editable-text "data.look" "Look" data.look actor._id this}}}</div>
       <div class="abilities-list">{{#each my_abilities}}<span title="{{this.data.description}}" class="hover-term">{{this.name}}</span>&nbsp;{{#unless @last}}-&nbsp;{{/unless}}{{/each}}</div>
       <section class="attributes-actions">
-        {{> "systems/blades-in-the-dark/templates/parts/attributes.html" actor=actor}}
+        {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/attributes.html" actor=actor}}
       </section>
     </section>
     <section class="tab-space">
       <nav class="tabs" data-group="primary-tabs">
         <div class="tab-item playbook" data-tab="playbook">
-          {{#if actor.flags.blades-in-the-dark.allow-edit}}
+          {{#if actor.flags.court-of-blades.allow-edit}}
             <select class="dropdown playbook-select" name="data.playbook">
               {{selectOptions playbook_select selected=data.playbook localize=false}}
             </select>
@@ -90,7 +90,7 @@
           <div class="playbook">
             <section class="abilities">
               <header class="full-bar">
-                <span class="context-abilities">{{localize "BITD.SpecialAbilities"}}</span>{{#if actor.flags.blades-in-the-dark.allow-edit}}<a class="ability-add-popup add-button" data-item-type="ability" data-group-by="data.class"><i class="fas fa-plus"></i></a>{{/if}}
+                <span class="context-abilities">{{localize "BITD.SpecialAbilities"}}</span>{{#if actor.flags.court-of-blades.allow-edit}}<a class="ability-add-popup add-button" data-item-type="ability" data-group-by="data.class"><i class="fas fa-plus"></i></a>{{/if}}
                 <div class="stripe-tooth-body right">
                 {{#multiboxes data.experience}}
                   <input type="radio" id="{{actor._id}}-experience-0"
@@ -105,20 +105,20 @@
               <section class="ability-list check-list">
                 {{#each available_abilities as |ability index|}}
                 {{#with ../actor as |actor|}}
-                  {{> "systems/blades-in-the-dark/templates/parts/ability.html" actor=actor ability=ability}}
+                  {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/ability.html" actor=actor ability=ability}}
                 {{/with}}
                 {{/each}}
               </section>
             </section>
             <section class="playbook-items item-list">
-              <header class="full-bar flex-header context-items"><span>{{localize "BITD.Items"}}</span>{{#if actor.flags.blades-in-the-dark.allow-edit}}<a class="item-list-add add-button" data-item-type="item" data-group-by="data.class"><i class="fas fa-plus"></i></a>{{/if}}</header>
+              <header class="full-bar flex-header context-items"><span>{{localize "BITD.Items"}}</span>{{#if actor.flags.court-of-blades.allow-edit}}<a class="item-list-add add-button" data-item-type="item" data-group-by="data.class"><i class="fas fa-plus"></i></a>{{/if}}</header>
               {{#each my_items as |item index|}}
                 {{#with ../actor as |actor|}}
                 <div class="item-block" data-item-id="{{item._id}}">
                   <input type="checkbox" class="item-checkbox main-checkbox" id="character-{{actor._id}}-item-{{item._id}}-1" {{checked item.data.equipped}}><!--
                   -->{{#if (gte item.data.load 2)}}<span class="join-line"></span><input type="checkbox" class="item-checkbox child-checkbox" id="character-{{actor._id}}-item-{{item._id}}-2" {{checked item.data.equipped}}>{{/if}}<!--
                   -->{{#if (eq item.data.load 3)}}<span class="join-line"></span><input type="checkbox" class="item-checkbox child-checkbox" id="character-{{actor._id}}-item-{{item._id}}-3"{{checked item.data.equipped}}>{{/if}}
-                  <label class="item-name {{#if (eq item.data.load "0")}}free-item{{/if}} {{#if actor.flags.blades-in-the-dark.allow-edit}}clickable-edit{{/if}}" for="character-{{actor._id}}-item-{{item._id}}-1" title="{{item.data.description}}">{{item.name}}</label>{{#if actor.flags.blades-in-the-dark.allow-edit}}<a class="item-delete delete-button" data-type="item" data-id="{{item._id}}"><i class="fas fa-trash"></i></a>{{/if}}
+                  <label class="item-name {{#if (eq item.data.load "0")}}free-item{{/if}} {{#if actor.flags.blades-in-the-dark.allow-edit}}clickable-edit{{/if}}" for="character-{{actor._id}}-item-{{item._id}}-1" title="{{item.data.description}}">{{item.name}}</label>{{#if actor.flags.court-of-blades.allow-edit}}<a class="item-delete delete-button" data-type="item" data-id="{{item._id}}"><i class="fas fa-trash"></i></a>{{/if}}
                 </div>
                 {{/with}}
               {{/each}}
@@ -145,7 +145,7 @@
                   <input type="checkbox" class="item-checkbox main-checkbox {{#if (eq item.data.load "0")}}free-item{{/if}}" id="character-{{actor._id}}-item-{{item._id}}-1" {{checked item.data.equipped}}><!--
                   -->{{#if (gte item.data.load 2)}}<span class="join-line"></span><input type="checkbox" class="item-checkbox child-checkbox"  id="character-{{actor._id}}-item-{{item._id}}-2" {{checked item.data.equipped}} >{{/if}}<!--
                   -->{{#if (gte item.data.load 3)}}<span class="join-line"></span><input type="checkbox" class="item-checkbox child-checkbox" id="character-{{actor._id}}-item-{{item._id}}-3" {{checked item.data.equipped}} >{{/if}}
-                  <label class="item-name  {{#if (eq item.data.load "0")}}free-item{{/if}} {{#if actor.flags.blades-in-the-dark.allow-edit}}clickable-edit{{/if}}" for="character-{{actor._id}}-item-{{item._id}}-1" title="{{item.data.description}}">{{item.name}}</label>{{#if actor.flags.blades-in-the-dark.allow-edit}}<a class="item-delete delete-button" data-type="item" data-id="{{item._id}}"><i class="fas fa-trash"></i></a>{{/if}}
+                  <label class="item-name  {{#if (eq item.data.load "0")}}free-item{{/if}} {{#if actor.flags.blades-in-the-dark.allow-edit}}clickable-edit{{/if}}" for="character-{{actor._id}}-item-{{item._id}}-1" title="{{item.data.description}}">{{item.name}}</label>{{#if actor.flags.court-of-blades.allow-edit}}<a class="item-delete delete-button" data-type="item" data-id="{{item._id}}"><i class="fas fa-trash"></i></a>{{/if}}
                 </div>
                 {{/with}}
               {{/each}}
@@ -164,7 +164,7 @@
         </div>
         <div class="tab" data-tab="notes" data-group="primary-tabs">
           <div class="character-notes-area">
-            {{{editable-textarea "flags.blades-in-the-dark.notes" "Add character notes here" true false actor.flags.blades-in-the-dark.notes actor._id this}}}
+            {{{editable-textarea "flags.court-of-blades.notes" "Add character notes here" true false actor.flags.court-of-blades.notes actor._id this}}}
           </div>
         </div>
         <!-- todo: put the downtime tab back once it's actually useful and maybe translated -->
@@ -310,9 +310,9 @@
     </section>
   </div>
   {{#if isGM}}
-    <i class="fas fa-bug debug-toggle {{#if actor.flags.blades-in-the-dark.show-debug}}on{{/if}} "></i>
-    {{#if actor.flags.blades-in-the-dark.show-debug}}
-        {{> "systems/blades-in-the-dark/templates/parts/active-effects.html"}}</div>
+    <i class="fas fa-bug debug-toggle {{#if actor.flags.court-of-blades.show-debug}}on{{/if}} "></i>
+    {{#if actor.flags.court-of-blades.show-debug}}
+        {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/active-effects.html"}}</div>
         {{#each actor.items as |item id|}}
             <div class="item flex-horizontal" data-item-id="{{item._id}}">
                 <div class="item-body item-sheet-open flex-horizontal">
