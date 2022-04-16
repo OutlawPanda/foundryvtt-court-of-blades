@@ -50,34 +50,34 @@ async function showChatRollMessage(r, zeromode, attribute_name = "", position = 
     let position_localize = '';
     switch (position) {
       case 'controlled':
-        position_localize = 'BITD.PositionControlled'
+        position_localize = 'COB.PositionControlled'
         break;
       case 'desperate':
-        position_localize = 'BITD.PositionDesperate'
+        position_localize = 'COB.PositionDesperate'
         break;
       case 'risky':
       default:
-        position_localize = 'BITD.PositionRisky'
+        position_localize = 'COB.PositionRisky'
     }
 
     let effect_localize = '';
     switch (effect) {
       case 'limited':
-        effect_localize = 'BITD.EffectLimited'
+        effect_localize = 'COB.EffectLimited'
         break;
       case 'great':
-        effect_localize = 'BITD.EffectGreat'
+        effect_localize = 'COB.EffectGreat'
         break;
       case 'standard':
       default:
-        effect_localize = 'BITD.EffectStandard'
+        effect_localize = 'COB.EffectStandard'
     }
 
-    result = await renderTemplate("systems/blades-in-the-dark/templates/chat/action-roll.html", {rolls: rolls, roll_status: roll_status, attribute_label: attribute_label, position: position, position_localize: position_localize, effect: effect, effect_localize: effect_localize});
+    result = await renderTemplate("systems/court-of-blades/templates/chat/action-roll.html", {rolls: rolls, roll_status: roll_status, attribute_label: attribute_label, position: position, position_localize: position_localize, effect: effect, effect_localize: effect_localize});
   } else {
     let stress = getBladesRollStress(rolls, zeromode);
     
-    result = await renderTemplate("systems/blades-in-the-dark/templates/chat/resistance-roll.html", {rolls: rolls, roll_status: roll_status, attribute_label: attribute_label, stress: stress});
+    result = await renderTemplate("systems/court-of-blades/templates/chat/resistance-roll.html", {rolls: rolls, roll_status: roll_status, attribute_label: attribute_label, stress: stress});
   }
 
   let messageData = {
@@ -202,11 +202,11 @@ export async function simpleRollPopup() {
   new Dialog({
     title: `Simple Roll`,
     content: `
-      <h2>${game.i18n.localize("BITD.RollSomeDice")}</h2>
-      <p>${game.i18n.localize("BITD.RollTokenDescription")}</p>
+      <h2>${game.i18n.localize("COB.RollSomeDice")}</h2>
+      <p>${game.i18n.localize("COB.RollTokenDescription")}</p>
       <form>
         <div class="form-group">
-          <label>${game.i18n.localize("BITD.RollNumberOfDice")}:</label>
+          <label>${game.i18n.localize("COB.RollNumberOfDice")}:</label>
           <select id="qty" name="qty">
             ${Array(11).fill().map((item, i) => `<option value="${i}">${i}d</option>`).join('')}
           </select>

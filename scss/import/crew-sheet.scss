@@ -53,8 +53,8 @@ nav{
 }
 
 
-// Crew Coins
-.crew-coins {
+// House Coins
+.house-coins {
   @include custom_radio_square($coin_size);
   flex-wrap: wrap;
   max-width: 4 * ($coin_size + $coin_margin);
@@ -67,7 +67,7 @@ nav{
 
 
 // Reputation
-#crew-reputation {
+#house-reputation {
   border-top: 3px solid $almost_black;
   @include toothradio(17px, 50px, "assets/teeth/stresstooth-halfgrey.png", "assets/teeth/stresstooth-red.png");
 
@@ -115,13 +115,13 @@ nav{
   }
 }
 
-#crew-hold {
+#house-hold {
   border-top: 3px solid $almost_black;
   @include toothradio_single(17px, 50px, "assets/teeth/stresstooth-halfgrey.png", "assets/teeth/stresstooth-red.png");
   width: 221px;
 }
 
-#crew-tier {
+#house-tier {
 
   background-color: $gray;
   height: 33px;
@@ -271,7 +271,7 @@ nav{
     @include toothradio(17px, 50px, "assets/teeth/stresstooth-halfgrey.png", "assets/teeth/stresstooth-red.png");
   }
 
-  /* Trauma */
+  /* Scandal */
   .small-teeth-container {
 
     .small-teeth-wrap {
@@ -285,7 +285,7 @@ nav{
     }
   }
 
-  #trauma-list {
+  #scandal-list {
     @include check_underscore();
     justify-content: space-between;
     align-items: flex-start;

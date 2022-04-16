@@ -15,7 +15,7 @@ import { BladesActiveEffect } from "./blades-active-effect.js";
 import { BladesItem } from "./blades-item.js";
 import { BladesItemSheet } from "./blades-item-sheet.js";
 import { BladesActorSheet } from "./blades-actor-sheet.js";
-import { BladesCrewSheet } from "./blades-crew-sheet.js";
+import { BladesHouseSheet } from "./blades-house-sheet.js";
 import { BladesClockSheet } from "./blades-clock-sheet.js";
 import { BladesNPCSheet } from "./blades-npc-sheet.js";
 import { BladesFactionSheet } from "./blades-faction-sheet.js";
@@ -49,7 +49,7 @@ Hooks.once("init", async function() {
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("blades", BladesActorSheet, { types: ["character"], makeDefault: true });
-  Actors.registerSheet("blades", BladesCrewSheet, { types: ["crew"], makeDefault: true });
+  Actors.registerSheet("blades", BladesHouseSheet, { types: ["house"], makeDefault: true });
   Actors.registerSheet("blades", BladesFactionSheet, { types: ["factions"], makeDefault: true });
   Actors.registerSheet("blades", BladesClockSheet, { types: ["\uD83D\uDD5B clock"], makeDefault: true });
   Actors.registerSheet("blades", BladesNPCSheet, { types: ["npc"], makeDefault: true });
@@ -91,14 +91,14 @@ Hooks.once("init", async function() {
     return html;
   });
 
-  // Trauma Counter
-  Handlebars.registerHelper('traumacounter', function(selected, options) {
+  // Scandal Counter
+  Handlebars.registerHelper('scandalcounter', function(selected, options) {
 
     let html = options.fn(this);
 
     var count = 0;
-    for (const trauma in selected) {
-      if (selected[trauma] === true) {
+    for (const scandal in selected) {
+      if (selected[scandal] === true) {
         count++;
       }
     }
@@ -132,23 +132,23 @@ Hooks.once("init", async function() {
     return html;
   });
 
-  Handlebars.registerHelper('crew_vault_coins', (max_coins, options) => {
+  Handlebars.registerHelper('house_vault_coins', (max_coins, options) => {
 
     let html = options.fn(this);
     for (let i = 1; i <= max_coins; i++) {
 
-      html += "<input type=\"radio\" id=\"crew-coins-vault-" + i + "\" name=\"data.vault.value\" value=\"" + i + "\"><label for=\"crew-coins-vault-" + i + "\"></label>";
+      html += "<input type=\"radio\" id=\"house-coins-vault-" + i + "\" name=\"data.vault.value\" value=\"" + i + "\"><label for=\"house-coins-vault-" + i + "\"></label>";
     }
 
     return html;
   });
 
-  Handlebars.registerHelper('crew_experience', (options) => {
+  Handlebars.registerHelper('house_experience', (options) => {
 
     let html = options.fn(this);
     for (let i = 1; i <= 10; i++) {
 
-      html += '<input type="radio" id="crew-experience-' + i + '" name="data.experience" value="' + i + '" dtype="Radio"><label for="crew-experience-' + i + '"></label>';
+      html += '<input type="radio" id="house-experience-' + i + '" name="data.experience" value="' + i + '" dtype="Radio"><label for="house-experience-' + i + '"></label>';
     }
 
     return html;
@@ -255,7 +255,7 @@ Hooks.once("init", async function() {
     // Label for 0
     html += `<label style="display: none;" class="clock-zero-label" for="clock-0-${uniq_id}"><i class="fab fa-creative-commons-zero nullifier"></i></label>`;
 
-    html += `<div id="blades-clock-${uniq_id}" class="blades-clock clock-${type} clock-${type}-${current_value}" style="background-image:url('systems/blades-in-the-dark/styles/assets/progressclocks-svg/Progress Clock ${type}-${current_value}.svg');">`;
+    html += `<div id="blades-clock-${uniq_id}" class="blades-clock clock-${type} clock-${type}-${current_value}" style="background-image:url('systems/court-of-blades/styles/assets/progressclocks-svg/Progress Clock ${type}-${current_value}.svg');">`;
 
     let zero_checked = (parseInt(current_value) === 0) ? 'checked="checked"' : '';
     html += `<input type="radio" value="0" id="clock-0-${uniq_id}" name="${parameter_name}" ${zero_checked}>`;
@@ -288,7 +288,7 @@ Hooks.once("init", async function() {
     if(current_value.length === 0){
       current_value = blank_value;
     }
-    html += `<input data-input="character-${uniq_id}-${parameter_name}" name="${parameter_name}" type="hidden" value="${current_value}" placeholder="${blank_value}"><span ${context.owner && context.actor.flags["blades-in-the-dark"]?.["allow-edit"] ? 'contenteditable="true"' : null} spellcheck="false" data-target="character-${uniq_id}-${parameter_name}" data-placeholder="${blank_value}">${current_value}</span>`;
+    html += `<input data-input="character-${uniq_id}-${parameter_name}" name="${parameter_name}" type="hidden" value="${current_value}" placeholder="${blank_value}"><span ${context.owner && context.actor.flags["court-of-blades"]?.["allow-edit"] ? 'contenteditable="true"' : null} spellcheck="false" data-target="character-${uniq_id}-${parameter_name}" data-placeholder="${blank_value}">${current_value}</span>`;
     return html;
   });
 
@@ -303,7 +303,7 @@ Hooks.once("init", async function() {
       output_value = md.render(current_value);
       // output_value = current_value;
     }
-    if(force_editable || context.owner && context.actor.flags["blades-in-the-dark"]?.["allow-edit"]){
+    if(force_editable || context.owner && context.actor.flags["court-of-blades"]?.["allow-edit"]){
      html += `<textarea data-input="character-${uniq_id}-${parameter_name}" name="${parameter_name}" value="${current_value}" placeholder="${blank_value}">${current_value}</textarea>`;
     }
     else{
@@ -314,7 +314,7 @@ Hooks.once("init", async function() {
 
   // Commented out to avoid conflict with existing foundry helper that I somehow didn't notice
   // Handlebars.registerHelper('icon', function(icon_name, classes){
-  //   let icon_folder = "/systems/blades-in-the-dark/styles/assets/icons/";
+  //   let icon_folder = "/systems/court-of-blades/styles/assets/icons/";
   //   let icon_info = BladesHelpers.icons[icon_name];
   //   let html = '';
   //   switch(icon_info.type){
@@ -347,7 +347,7 @@ Hooks.once("init", async function() {
 Hooks.once("ready", function() {
 
   // Determine whether a system migration is required
-  const currentVersion = game.settings.get("bitd", "systemMigrationVersion");
+  const currentVersion = game.settings.get("COB", "systemMigrationVersion");
   const NEEDS_MIGRATION_VERSION = "3.5.1";
 
   // let needMigration = (currentVersion < NEEDS_MIGRATION_VERSION) || (currentVersion === null);

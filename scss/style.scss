@@ -23,14 +23,14 @@ $hover-brightness: 0.8;
 @import 'fonts.scss';
 
 //namespacing to avoid conflicts with other modules
-.blades-in-the-dark{
+.court-of-blades{
   font-family: "Crimson Text", serif;
 
   @import 'import/general-styles.scss';
   @import 'import/clocks.scss';
 
-  &.crew.sheet{
-    @import 'import/crew-sheet.scss';
+  &.house.sheet{
+    @import 'import/house-sheet.scss';
   }
 
   &.actor.pc{
@@ -243,7 +243,7 @@ $hover-brightness: 0.8;
 //    color: $red;
 //  }
 //
-//  // Stress and Trauma
+//  // Stress and Scandal
 //
 //  .big-teeth-section {
 //
@@ -270,7 +270,7 @@ $hover-brightness: 0.8;
 //      @include toothradio(17px, 50px, "assets/teeth/stresstooth-halfgrey.png", "assets/teeth/stresstooth-red.png");
 //    }
 //
-//    /* Trauma */
+//    /* Scandal */
 //    .small-teeth-container {
 //
 //      .small-teeth-wrap {
@@ -284,7 +284,7 @@ $hover-brightness: 0.8;
 //      }
 //    }
 //
-//    #trauma-list {
+//    #scandal-list {
 //      @include check_underscore();
 //      justify-content: space-between;
 //      align-items: flex-start;
@@ -490,8 +490,8 @@ $hover-brightness: 0.8;
 //
 //  }
 //
-//  // Crew Coins
-//  .crew-coins {
+//  // House Coins
+//  .house-coins {
 //    @include custom_radio_square($coin_size);
 //    flex-wrap: wrap;
 //    max-width: 4 * ($coin_size + $coin_margin);
@@ -504,7 +504,7 @@ $hover-brightness: 0.8;
 //
 //
 //  // Reputation
-//  #crew-reputation {
+//  #house-reputation {
 //    border-top: 3px solid $almost_black;
 //    @include toothradio(17px, 50px, "assets/teeth/stresstooth-halfgrey.png", "assets/teeth/stresstooth-red.png");
 //
@@ -552,13 +552,13 @@ $hover-brightness: 0.8;
 //    }
 //  }
 //
-//  #crew-hold {
+//  #house-hold {
 //    border-top: 3px solid $almost_black;
 //    @include toothradio_single(17px, 50px, "assets/teeth/stresstooth-halfgrey.png", "assets/teeth/stresstooth-red.png");
 //    width: 221px;
 //  }
 //
-//  #crew-tier {
+//  #house-tier {
 //
 //    background-color: $gray;
 //    height: 33px;

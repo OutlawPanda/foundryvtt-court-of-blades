@@ -3,7 +3,7 @@
 *  Elements that can be changed will hint this by dimming and fading a little on hover
 */
 /*
- * Toothradio. Some (eg trauma) are not changeable, hence the option.
+ * Toothradio. Some (eg scandal) are not changeable, hence the option.
  */
 /*
  * Custom Radio
@@ -96,56 +96,56 @@
   font-weight: 600;
   font-style: italic;
 }
-.blades-in-the-dark {
+.court-of-blades {
   font-family: "Crimson Text", serif;
 }
-.blades-in-the-dark textarea {
+.court-of-blades textarea {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.blades-in-the-dark .debug-toggle {
+.court-of-blades .debug-toggle {
   opacity: 0.1;
 }
-.blades-in-the-dark .debug-toggle.on {
+.court-of-blades .debug-toggle.on {
   opacity: 0.75;
 }
-.blades-in-the-dark section.flex {
+.court-of-blades section.flex {
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
 }
-.blades-in-the-dark section.flex > *:not(.label-stripe) {
+.court-of-blades section.flex > *:not(.label-stripe) {
   margin-right: 10px;
 }
-.blades-in-the-dark section.flex > *:not(.label-stripe):last-child {
+.court-of-blades section.flex > *:not(.label-stripe):last-child {
   margin-right: 0px;
 }
-.blades-in-the-dark section.flex .grow-one {
+.court-of-blades section.flex .grow-one {
   flex-grow: 1;
 }
-.blades-in-the-dark section.flex .grow-two {
+.court-of-blades section.flex .grow-two {
   flex-grow: 2;
 }
-.blades-in-the-dark section.flex.experience {
+.court-of-blades section.flex.experience {
   margin-bottom: 0px;
   justify-content: center;
 }
-.blades-in-the-dark .tab[data-tab] {
+.court-of-blades .tab[data-tab] {
   display: none;
 }
-.blades-in-the-dark .tab[data-tab].active {
+.court-of-blades .tab[data-tab].active {
   display: block;
 }
-.blades-in-the-dark .flex-horizontal {
+.court-of-blades .flex-horizontal {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.blades-in-the-dark .flex-vertical {
+.court-of-blades .flex-vertical {
   display: flex;
   flex-direction: column;
 }
-.blades-in-the-dark .black-label {
+.court-of-blades .black-label {
   background-color: #191813;
   color: #EEEFFF;
   font-size: 21px;
@@ -155,7 +155,7 @@
   text-transform: capitalize;
   font-family: Kirsty, serif;
 }
-.blades-in-the-dark .gray-label {
+.court-of-blades .gray-label {
   background-color: #999;
   color: #191813;
   font-size: 21px;
@@ -165,7 +165,7 @@
   text-transform: capitalize;
   font-family: Kirsty, serif;
 }
-.blades-in-the-dark .label-stripe {
+.court-of-blades .label-stripe {
   text-transform: uppercase;
   background-color: #191813;
   color: #EEEFFF;
@@ -176,7 +176,7 @@
   display: flex;
   font-weight: bold;
 }
-.blades-in-the-dark .label-stripe-gray {
+.court-of-blades .label-stripe-gray {
   text-transform: uppercase;
   background-color: #999;
   margin-bottom: 10px;
@@ -186,23 +186,23 @@
   display: flex;
   font-weight: bold;
 }
-.blades-in-the-dark .editor,
-.blades-in-the-dark .editor-content {
+.court-of-blades .editor,
+.court-of-blades .editor-content {
   min-height: 150px;
 }
-.blades-in-the-dark .description {
+.court-of-blades .description {
   font-style: italic;
 }
-.blades-in-the-dark i.nullifier {
+.court-of-blades i.nullifier {
   transition: filter 0.2s;
   cursor: pointer;
 }
-.blades-in-the-dark i.nullifier:hover {
+.court-of-blades i.nullifier:hover {
   filter: brightness(0.8);
   opacity: 0.9;
   color: red;
 }
-.blades-in-the-dark #loadout select {
+.court-of-blades #loadout select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -220,31 +220,31 @@
   color: white;
   text-align: right;
 }
-.blades-in-the-dark #loadout select option {
+.court-of-blades #loadout select option {
   color: white;
 }
-.blades-in-the-dark #loadout select:hover {
+.court-of-blades #loadout select:hover {
   color: red;
 }
-.blades-in-the-dark #abilities .item-name, .blades-in-the-dark #loadout .item-name, .blades-in-the-dark #faction-items .item-name {
+.court-of-blades #abilities .item-name, .court-of-blades #loadout .item-name, .court-of-blades #faction-items .item-name {
   width: 100px;
   margin-left: 10px;
 }
-.blades-in-the-dark #abilities .item-body, .blades-in-the-dark #loadout .item-body, .blades-in-the-dark #faction-items .item-body {
+.court-of-blades #abilities .item-body, .court-of-blades #loadout .item-body, .court-of-blades #faction-items .item-body {
   width: auto;
 }
-.blades-in-the-dark #abilities .item-description, .blades-in-the-dark #loadout .item-description, .blades-in-the-dark #faction-items .item-description {
+.court-of-blades #abilities .item-description, .court-of-blades #loadout .item-description, .court-of-blades #faction-items .item-description {
   width: 260px;
 }
-.blades-in-the-dark td {
+.court-of-blades td {
   padding: 5px;
 }
-.blades-in-the-dark.crew.sheet .coins {
+.court-of-blades.house.sheet .coins {
   display: flex;
   /* Hide the browser's default checkbox */
   flex-wrap: wrap;
 }
-.blades-in-the-dark.crew.sheet .coins label {
+.court-of-blades.house.sheet .coins label {
   height: 15px;
   width: 15px;
   background-color: #DAA520;
@@ -253,84 +253,84 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.blades-in-the-dark.crew.sheet .coins label[for$="-0"] {
+.court-of-blades.house.sheet .coins label[for$="-0"] {
   margin-right: 0px;
 }
-.blades-in-the-dark.crew.sheet .coins label:hover {
+.court-of-blades.house.sheet .coins label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.crew.sheet .coins input {
+.court-of-blades.house.sheet .coins input {
   display: none;
 }
-.blades-in-the-dark.crew.sheet .coins input:checked ~ label {
+.court-of-blades.house.sheet .coins input:checked ~ label {
   background-color: #EEEFFF;
 }
-.blades-in-the-dark.crew.sheet .coins input:checked + label {
+.court-of-blades.house.sheet .coins input:checked + label {
   background-color: #DAA520;
 }
-.blades-in-the-dark.crew.sheet .coins input ~ label {
+.court-of-blades.house.sheet .coins input ~ label {
   margin-right: 3px;
   margin-bottom: 3px;
   transition: filter 0.2s;
   cursor: pointer;
 }
-.blades-in-the-dark.crew.sheet .coins input ~ label[for$="0"] {
+.court-of-blades.house.sheet .coins input ~ label[for$="0"] {
   border-width: 2px;
 }
-.blades-in-the-dark.crew.sheet .coins input ~ label:hover {
+.court-of-blades.house.sheet .coins input ~ label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.crew.sheet .coins.coins-hands {
+.court-of-blades.house.sheet .coins.coins-hands {
   width: 36px;
 }
-.blades-in-the-dark.crew.sheet .coins.coins-stashed {
+.court-of-blades.house.sheet .coins.coins-stashed {
   width: 190px;
 }
-.blades-in-the-dark.crew.sheet .item {
+.court-of-blades.house.sheet .item {
   justify-content: space-between;
 }
-.blades-in-the-dark.crew.sheet .item .item-body {
+.court-of-blades.house.sheet .item .item-body {
   margin-bottom: 10px;
 }
-.blades-in-the-dark.crew.sheet .item .item-body * {
+.court-of-blades.house.sheet .item .item-body * {
   margin-right: 10px;
 }
-.blades-in-the-dark.crew.sheet .item .item-body .item-description {
+.court-of-blades.house.sheet .item .item-body .item-description {
   font-style: italic;
   text-align: justify;
 }
-.blades-in-the-dark.crew.sheet .item div {
+.court-of-blades.house.sheet .item div {
   flex-grow: 2;
 }
-.blades-in-the-dark.crew.sheet .item .item-control {
+.court-of-blades.house.sheet .item .item-control {
   flex-grow: 1;
 }
-.blades-in-the-dark.crew.sheet .item .item-body,
-.blades-in-the-dark.crew.sheet .item .item-class-label {
+.court-of-blades.house.sheet .item .item-body,
+.court-of-blades.house.sheet .item .item-class-label {
   width: 100px;
 }
-.blades-in-the-dark.crew.sheet .item-class-label {
+.court-of-blades.house.sheet .item-class-label {
   margin-bottom: 10px;
 }
-.blades-in-the-dark.crew.sheet #name,
-.blades-in-the-dark.crew.sheet #lair {
+.court-of-blades.house.sheet #name,
+.court-of-blades.house.sheet #lair {
   margin-bottom: 10px;
 }
-.blades-in-the-dark.crew.sheet form.actor-sheet {
+.court-of-blades.house.sheet form.actor-sheet {
   padding: 20px;
 }
-.blades-in-the-dark.crew.sheet nav {
+.court-of-blades.house.sheet nav {
   padding-bottom: 10px;
 }
-.blades-in-the-dark.crew.sheet .crew-coins {
+.court-of-blades.house.sheet .house-coins {
   display: flex;
   /* Hide the browser's default checkbox */
   flex-wrap: wrap;
   max-width: 72px;
 }
-.blades-in-the-dark.crew.sheet .crew-coins label {
+.court-of-blades.house.sheet .house-coins label {
   height: 15px;
   width: 15px;
   background-color: #DAA520;
@@ -339,32 +339,32 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.blades-in-the-dark.crew.sheet .crew-coins label[for$="-0"] {
+.court-of-blades.house.sheet .house-coins label[for$="-0"] {
   margin-right: 0px;
 }
-.blades-in-the-dark.crew.sheet .crew-coins label:hover {
+.court-of-blades.house.sheet .house-coins label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.crew.sheet .crew-coins input {
+.court-of-blades.house.sheet .house-coins input {
   display: none;
 }
-.blades-in-the-dark.crew.sheet .crew-coins input:checked ~ label {
+.court-of-blades.house.sheet .house-coins input:checked ~ label {
   background-color: #EEEFFF;
 }
-.blades-in-the-dark.crew.sheet .crew-coins input:checked + label {
+.court-of-blades.house.sheet .house-coins input:checked + label {
   background-color: #DAA520;
 }
-.blades-in-the-dark.crew.sheet .crew-coins label {
+.court-of-blades.house.sheet .house-coins label {
   margin-right: 3px;
   margin-bottom: 3px;
 }
-.blades-in-the-dark.crew.sheet #crew-reputation {
+.court-of-blades.house.sheet #house-reputation {
   border-top: 3px solid #191813;
   display: flex;
   /* Hide the browser's default checkbox */
 }
-.blades-in-the-dark.crew.sheet #crew-reputation label {
+.court-of-blades.house.sheet #house-reputation label {
   height: 50px;
   width: 17px;
   background-image: url("assets/teeth/stresstooth-red.png");
@@ -374,56 +374,56 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.blades-in-the-dark.crew.sheet #crew-reputation label:last-of-type {
+.court-of-blades.house.sheet #house-reputation label:last-of-type {
   margin-right: 0px;
 }
-.blades-in-the-dark.crew.sheet #crew-reputation label[for$="-0"] {
+.court-of-blades.house.sheet #house-reputation label[for$="-0"] {
   width: auto;
   height: auto;
   background-image: none !important;
   color: #EEEFFF;
 }
-.blades-in-the-dark.crew.sheet #crew-reputation label[for$="-0"] i {
+.court-of-blades.house.sheet #house-reputation label[for$="-0"] i {
   margin-top: 4px;
 }
-.blades-in-the-dark.crew.sheet #crew-reputation label:hover {
+.court-of-blades.house.sheet #house-reputation label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.crew.sheet #crew-reputation input {
+.court-of-blades.house.sheet #house-reputation input {
   display: none;
 }
-.blades-in-the-dark.crew.sheet #crew-reputation label {
+.court-of-blades.house.sheet #house-reputation label {
   background-image: url("assets/teeth/stresstooth-halfgrey.png");
   background-size: 100% 100%;
 }
-.blades-in-the-dark.crew.sheet #crew-reputation label.on {
+.court-of-blades.house.sheet #house-reputation label.on {
   background-image: url("assets/teeth/stresstooth-red.png");
 }
-.blades-in-the-dark.crew.sheet #crew-reputation input[disabled=disabled] + label {
+.court-of-blades.house.sheet #house-reputation input[disabled=disabled] + label {
   background-image: url(assets/teeth/stresstooth-black.png);
 }
-.blades-in-the-dark.crew.sheet #turf-container {
+.court-of-blades.house.sheet #turf-container {
   overflow-x: scroll;
   overflow-y: clip;
 }
-.blades-in-the-dark.crew.sheet #turf-list {
+.court-of-blades.house.sheet #turf-list {
   display: flex;
   flex-direction: column;
   width: 855px;
 }
-.blades-in-the-dark.crew.sheet #turf-list .turf-row {
+.court-of-blades.house.sheet #turf-list .turf-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.blades-in-the-dark.crew.sheet #turf-list .turf-row *:first-child {
+.court-of-blades.house.sheet #turf-list .turf-row *:first-child {
   margin-left: 0px;
 }
-.blades-in-the-dark.crew.sheet #turf-list .turf-row *:last-child {
+.court-of-blades.house.sheet #turf-list .turf-row *:last-child {
   margin-right: 0px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block {
+.court-of-blades.house.sheet #turf-list.section-non-editable .turf-block {
   transition: filter 0.1s;
   cursor: pointer;
   width: 130px;
@@ -433,45 +433,45 @@
   margin: 20px;
   flex-grow: initial;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block:hover {
+.court-of-blades.house.sheet #turf-list.section-non-editable .turf-block:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block.turf-selected .connector {
+.court-of-blades.house.sheet #turf-list.section-non-editable .turf-block.turf-selected .connector {
   background-color: #999;
   z-index: 1;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block .connector {
+.court-of-blades.house.sheet #turf-list.section-non-editable .turf-block .connector {
   position: absolute;
   display: block;
   background-color: #bbb;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block .connector.right, .blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block .connector.left {
+.court-of-blades.house.sheet #turf-list.section-non-editable .turf-block .connector.right, .court-of-blades.house.sheet #turf-list.section-non-editable .turf-block .connector.left {
   width: 40px;
   height: 20px;
   top: 40px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block .connector.left {
+.court-of-blades.house.sheet #turf-list.section-non-editable .turf-block .connector.left {
   left: -40px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block .connector.right {
+.court-of-blades.house.sheet #turf-list.section-non-editable .turf-block .connector.right {
   left: 130px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block .connector.top, .blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block .connector.bottom {
+.court-of-blades.house.sheet #turf-list.section-non-editable .turf-block .connector.top, .court-of-blades.house.sheet #turf-list.section-non-editable .turf-block .connector.bottom {
   height: 40px;
   width: 20px;
   left: 55px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block .connector.top {
+.court-of-blades.house.sheet #turf-list.section-non-editable .turf-block .connector.top {
   top: -40px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block .connector.bottom {
+.court-of-blades.house.sheet #turf-list.section-non-editable .turf-block .connector.bottom {
   top: 100px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block.turf-selected {
+.court-of-blades.house.sheet #turf-list.section-non-editable .turf-block.turf-selected {
   background-color: #999;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block .turf-description {
+.court-of-blades.house.sheet #turf-list.section-non-editable .turf-block .turf-description {
   border: none;
   background: none;
   resize: none;
@@ -480,21 +480,21 @@
   min-height: auto;
   font-size: 12px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block .turf-name {
+.court-of-blades.house.sheet #turf-list.section-non-editable .turf-block .turf-name {
   border: none;
   border-radius: 0px;
   text-align: center;
   font-weight: bold;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block input[type=checkbox] {
+.court-of-blades.house.sheet #turf-list.section-non-editable .turf-block input[type=checkbox] {
   transform: scale(1);
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-non-editable .turf-block .turf-control.turf-select {
+.court-of-blades.house.sheet #turf-list.section-non-editable .turf-block .turf-control.turf-select {
   position: absolute;
   top: -7px;
   left: -7px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block {
+.court-of-blades.house.sheet #turf-list.section-editable .turf-block {
   transition: filter 0.1s;
   cursor: pointer;
   width: 130px;
@@ -504,45 +504,45 @@
   margin: 20px;
   flex-grow: initial;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block:hover {
+.court-of-blades.house.sheet #turf-list.section-editable .turf-block:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block.turf-selected .connector {
+.court-of-blades.house.sheet #turf-list.section-editable .turf-block.turf-selected .connector {
   background-color: #999;
   z-index: 1;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block .connector {
+.court-of-blades.house.sheet #turf-list.section-editable .turf-block .connector {
   position: absolute;
   display: block;
   background-color: #bbb;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block .connector.right, .blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block .connector.left {
+.court-of-blades.house.sheet #turf-list.section-editable .turf-block .connector.right, .court-of-blades.house.sheet #turf-list.section-editable .turf-block .connector.left {
   width: 40px;
   height: 25px;
   top: 50px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block .connector.left {
+.court-of-blades.house.sheet #turf-list.section-editable .turf-block .connector.left {
   left: -40px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block .connector.right {
+.court-of-blades.house.sheet #turf-list.section-editable .turf-block .connector.right {
   left: 130px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block .connector.top, .blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block .connector.bottom {
+.court-of-blades.house.sheet #turf-list.section-editable .turf-block .connector.top, .court-of-blades.house.sheet #turf-list.section-editable .turf-block .connector.bottom {
   height: 40px;
   width: 25px;
   left: 52.5px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block .connector.top {
+.court-of-blades.house.sheet #turf-list.section-editable .turf-block .connector.top {
   top: -40px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block .connector.bottom {
+.court-of-blades.house.sheet #turf-list.section-editable .turf-block .connector.bottom {
   top: 125px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block.turf-selected {
+.court-of-blades.house.sheet #turf-list.section-editable .turf-block.turf-selected {
   background-color: #999;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block .turf-description {
+.court-of-blades.house.sheet #turf-list.section-editable .turf-block .turf-description {
   border: none;
   background: none;
   resize: none;
@@ -551,35 +551,35 @@
   min-height: auto;
   font-size: 12px;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block .turf-name {
+.court-of-blades.house.sheet #turf-list.section-editable .turf-block .turf-name {
   border: none;
   border-radius: 0px;
   text-align: center;
   font-weight: bold;
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block input[type=checkbox] {
+.court-of-blades.house.sheet #turf-list.section-editable .turf-block input[type=checkbox] {
   transform: scale(1);
 }
-.blades-in-the-dark.crew.sheet #turf-list.section-editable .turf-block .turf-control.turf-select {
+.court-of-blades.house.sheet #turf-list.section-editable .turf-block .turf-control.turf-select {
   position: absolute;
   top: -7px;
   left: -7px;
 }
-.blades-in-the-dark.crew.sheet #crew-hold {
+.court-of-blades.house.sheet #house-hold {
   border-top: 3px solid #191813;
   display: flex;
   /* Hide the browser's default checkbox */
   width: 221px;
 }
-.blades-in-the-dark.crew.sheet #crew-hold label {
+.court-of-blades.house.sheet #house-hold label {
   transition: filter 0.1s;
   cursor: pointer;
 }
-.blades-in-the-dark.crew.sheet #crew-hold label:hover {
+.court-of-blades.house.sheet #house-hold label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.crew.sheet #crew-hold label {
+.court-of-blades.house.sheet #house-hold label {
   height: 50px;
   width: 17px;
   background-image: url("assets/teeth/stresstooth-halfgrey.png");
@@ -587,16 +587,16 @@
   background-size: contain;
   margin-right: 5px;
 }
-.blades-in-the-dark.crew.sheet #crew-hold label:last-of-type {
+.court-of-blades.house.sheet #house-hold label:last-of-type {
   margin-right: 0px;
 }
-.blades-in-the-dark.crew.sheet #crew-hold input {
+.court-of-blades.house.sheet #house-hold input {
   display: none;
 }
-.blades-in-the-dark.crew.sheet #crew-hold input:checked + label {
+.court-of-blades.house.sheet #house-hold input:checked + label {
   background-image: url("assets/teeth/stresstooth-red.png");
 }
-.blades-in-the-dark.crew.sheet #crew-tier {
+.court-of-blades.house.sheet #house-tier {
   background-color: #999;
   height: 33px;
   width: 145px;
@@ -606,15 +606,15 @@
   display: flex;
   /* Hide the browser's default checkbox */
 }
-.blades-in-the-dark.crew.sheet #crew-tier label {
+.court-of-blades.house.sheet #house-tier label {
   transition: filter 0.1s;
   cursor: pointer;
 }
-.blades-in-the-dark.crew.sheet #crew-tier label:hover {
+.court-of-blades.house.sheet #house-tier label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.crew.sheet #crew-tier label:not([for$="-0"]) {
+.court-of-blades.house.sheet #house-tier label:not([for$="-0"]) {
   height: 18px;
   width: 18px;
   background-color: #191813;
@@ -622,76 +622,76 @@
   border: 2px solid #191813;
   border-radius: 9px;
 }
-.blades-in-the-dark.crew.sheet #crew-tier input {
+.court-of-blades.house.sheet #house-tier input {
   display: none;
 }
-.blades-in-the-dark.crew.sheet #crew-tier input:checked ~ label:not([for$="-0"]) {
+.court-of-blades.house.sheet #house-tier input:checked ~ label:not([for$="-0"]) {
   border-color: gray;
   background-color: #EEEFFF;
 }
-.blades-in-the-dark.crew.sheet #crew-tier input:checked + label:not([for$="-0"]) {
+.court-of-blades.house.sheet #house-tier input:checked + label:not([for$="-0"]) {
   background-color: #191813;
   border-color: #191813;
 }
-.blades-in-the-dark.crew.sheet #crew-tier > * {
+.court-of-blades.house.sheet #house-tier > * {
   margin-right: 5px;
 }
-.blades-in-the-dark.crew.sheet #heat-wanted .small-teeth {
+.court-of-blades.house.sheet #heat-wanted .small-teeth {
   height: 20px;
 }
-.blades-in-the-dark.crew.sheet #heat-wanted .small-teeth label {
+.court-of-blades.house.sheet #heat-wanted .small-teeth label {
   height: 100%;
   width: 100%;
   cursor: default;
 }
-.blades-in-the-dark.crew.sheet .experience-clues-container {
+.court-of-blades.house.sheet .experience-clues-container {
   width: 340px;
   font-size: 12px;
 }
-.blades-in-the-dark.crew.sheet .experience-clues-container .experience-clues-description {
+.court-of-blades.house.sheet .experience-clues-container .experience-clues-description {
   font-weight: bold;
 }
-.blades-in-the-dark.crew.sheet .experience-clues-container .experience-clues {
+.court-of-blades.house.sheet .experience-clues-container .experience-clues {
   font-style: italic;
 }
-.blades-in-the-dark.crew.sheet .edgeflaw input {
+.court-of-blades.house.sheet .edgeflaw input {
   display: none;
 }
-.blades-in-the-dark.crew.sheet .edgeflaw input:checked + label {
+.court-of-blades.house.sheet .edgeflaw input:checked + label {
   color: red;
 }
-.blades-in-the-dark.crew.sheet #gang-expert-type-selector #gang-type-boxes {
+.court-of-blades.house.sheet #gang-expert-type-selector #gang-type-boxes {
   flex-wrap: wrap;
 }
-.blades-in-the-dark.crew.sheet .cohorts {
+.court-of-blades.house.sheet .cohorts {
   flex-wrap: wrap;
 }
-.blades-in-the-dark.crew.sheet .cohorts .cohort-block-wrapper {
+.court-of-blades.house.sheet .cohorts .cohort-block-wrapper {
   width: 400px;
 }
-.blades-in-the-dark.crew.sheet .cohorts .label-stripe {
+.court-of-blades.house.sheet .cohorts .label-stripe {
   margin-bottom: 0px;
 }
-.blades-in-the-dark.crew.sheet .cohorts .cohort-body > div {
+.court-of-blades.house.sheet .cohorts .cohort-body > div {
   margin-bottom: 10px;
 }
-.blades-in-the-dark.crew.sheet .cohorts .cohort-block-harm {
+.court-of-blades.house.sheet .cohorts .cohort-block-harm {
   justify-content: space-around;
 }
-.blades-in-the-dark.crew.sheet .cohorts .cohort-block-harm input[type=radio] {
+.court-of-blades.house.sheet .cohorts .cohort-block-harm input[type=radio] {
   display: none;
 }
-.blades-in-the-dark.crew.sheet .cohorts .cohort-block-harm input[type=radio]:checked + label {
+.court-of-blades.house.sheet .cohorts .cohort-block-harm input[type=radio]:checked + label {
   color: #EEEFFF;
   font-weight: bold;
   background-color: #191813;
 }
-.blades-in-the-dark.crew.sheet .cohorts .cohort-block-harm label {
+.court-of-blades.house.sheet .cohorts .cohort-block-harm label {
   border: 2px solid #191813;
   border-top: none;
   padding: 5px;
 }
-.blades-in-the-dark.crew.sheet .class-name {
+.court-of-blades.house.sheet .class-name {
   width: 512px;
   height: 120px;
   display: flex;
@@ -701,36 +701,36 @@
   text-transform: uppercase;
   border: 3px solid #191813;
 }
-.blades-in-the-dark.crew.sheet .class-name .big-name {
+.court-of-blades.house.sheet .class-name .big-name {
   font-weight: bold;
   font-family: Kirsty, serif;
 }
-.blades-in-the-dark.crew.sheet .class-name .big-description {
+.court-of-blades.house.sheet .class-name .big-description {
   font-size: 20px;
   font-family: "Crimson Text", serif;
   color: #191813;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section {
+.court-of-blades.house.sheet .big-teeth-section {
   border-top: 3px solid #191813;
   display: flex;
   flex-direction: row;
   margin-bottom: 0px;
-  /* Trauma */
+  /* Scandal */
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section > * {
+.court-of-blades.house.sheet .big-teeth-section > * {
   margin-right: 10px;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section > *:last-child {
+.court-of-blades.house.sheet .big-teeth-section > *:last-child {
   margin-right: 0px;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section:last-child {
+.court-of-blades.house.sheet .big-teeth-section:last-child {
   margin-right: 0px;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .big-teeth {
+.court-of-blades.house.sheet .big-teeth-section .big-teeth {
   display: flex;
   /* Hide the browser's default checkbox */
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .big-teeth label {
+.court-of-blades.house.sheet .big-teeth-section .big-teeth label {
   height: 50px;
   width: 17px;
   background-image: url("assets/teeth/stresstooth-red.png");
@@ -740,38 +740,38 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .big-teeth label:last-of-type {
+.court-of-blades.house.sheet .big-teeth-section .big-teeth label:last-of-type {
   margin-right: 0px;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .big-teeth label[for$="-0"] {
+.court-of-blades.house.sheet .big-teeth-section .big-teeth label[for$="-0"] {
   width: auto;
   height: auto;
   background-image: none !important;
   color: #EEEFFF;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .big-teeth label[for$="-0"] i {
+.court-of-blades.house.sheet .big-teeth-section .big-teeth label[for$="-0"] i {
   margin-top: 4px;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .big-teeth label:hover {
+.court-of-blades.house.sheet .big-teeth-section .big-teeth label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .big-teeth input {
+.court-of-blades.house.sheet .big-teeth-section .big-teeth input {
   display: none;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .big-teeth label {
+.court-of-blades.house.sheet .big-teeth-section .big-teeth label {
   background-image: url("assets/teeth/stresstooth-halfgrey.png");
   background-size: 100% 100%;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .big-teeth label.on {
+.court-of-blades.house.sheet .big-teeth-section .big-teeth label.on {
   background-image: url("assets/teeth/stresstooth-red.png");
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap {
+.court-of-blades.house.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap {
   display: flex;
   /* Hide the browser's default checkbox */
   flex-direction: column;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label {
+.court-of-blades.house.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label {
   height: 50px;
   width: 17px;
   background-image: url("assets/teeth/shorttooth-red.png");
@@ -780,39 +780,39 @@
   margin-right: 3px;
   cursor: not-allowed;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label:last-of-type {
+.court-of-blades.house.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label:last-of-type {
   margin-right: 0px;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label[for$="-0"] {
+.court-of-blades.house.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label[for$="-0"] {
   width: auto;
   height: auto;
   background-image: none !important;
   color: #EEEFFF;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label[for$="-0"] i {
+.court-of-blades.house.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label[for$="-0"] i {
   margin-top: 4px;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap input {
+.court-of-blades.house.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap input {
   display: none;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label {
+.court-of-blades.house.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label {
   background-image: url("assets/teeth/shorttooth-grey.png");
   background-size: 100% 100%;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label.on {
+.court-of-blades.house.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label.on {
   background-image: url("assets/teeth/shorttooth-red.png");
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap .small-teeth {
+.court-of-blades.house.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap .small-teeth {
   display: flex;
   flex-direction: row;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section #trauma-list {
+.court-of-blades.house.sheet .big-teeth-section #scandal-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section #trauma-list label {
+.court-of-blades.house.sheet .big-teeth-section #scandal-list label {
   cursor: pointer;
   font-size: 19px;
   -webkit-user-select: none;
@@ -824,80 +824,80 @@
   cursor: pointer;
   /* Hide the browser's default checkbox */
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section #trauma-list label:hover {
+.court-of-blades.house.sheet .big-teeth-section #scandal-list label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section #trauma-list label input {
+.court-of-blades.house.sheet .big-teeth-section #scandal-list label input {
   display: none;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section #trauma-list label input:checked ~ .checkmark {
+.court-of-blades.house.sheet .big-teeth-section #scandal-list label input:checked ~ .checkmark {
   color: red;
 }
-.blades-in-the-dark.crew.sheet .big-teeth-section #trauma-list label .checkmark {
+.court-of-blades.house.sheet .big-teeth-section #scandal-list label .checkmark {
   text-decoration: none;
   font-weight: bold;
 }
-.blades-in-the-dark.crew.sheet header {
+.court-of-blades.house.sheet header {
   margin-bottom: 10px;
 }
-.blades-in-the-dark.actor.pc {
+.court-of-blades.actor.pc {
   /*
    * General Styles - Redesign
    */
 }
-.blades-in-the-dark.actor.pc {
+.court-of-blades.actor.pc {
   min-width: 800px;
   min-height: 275px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign {
+.court-of-blades.actor.pc #tidy-redesign {
   position: relative;
   margin: 5px;
   font-family: "Crimson Text", serif;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign input[type=checkbox] {
+.court-of-blades.actor.pc #tidy-redesign input[type=checkbox] {
   width: 1em;
   height: 1em;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .rollable-text {
+.court-of-blades.actor.pc #tidy-redesign .rollable-text {
   transition: color 0.2s;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .rollable-text:hover {
+.court-of-blades.actor.pc #tidy-redesign .rollable-text:hover {
   cursor: pointer;
   color: red;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign a.add-button {
+.court-of-blades.actor.pc #tidy-redesign a.add-button {
   margin-left: 5px;
   font-size: 0.9rem;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign a.delete-button {
+.court-of-blades.actor.pc #tidy-redesign a.delete-button {
   position: absolute;
   right: 5px;
   top: 2px;
   font-size: 0.6rem;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign [contenteditable] {
+.court-of-blades.actor.pc #tidy-redesign [contenteditable] {
   user-select: auto !important;
   text-decoration: underline;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign [contenteditable]:active, .blades-in-the-dark.actor.pc #tidy-redesign [contenteditable]:focus {
+.court-of-blades.actor.pc #tidy-redesign [contenteditable]:active, .court-of-blades.actor.pc #tidy-redesign [contenteditable]:focus {
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
   border-radius: 3px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .hover-details, .blades-in-the-dark.actor.pc #tidy-redesign .hover-term {
+.court-of-blades.actor.pc #tidy-redesign .hover-details, .court-of-blades.actor.pc #tidy-redesign .hover-term {
   cursor: help;
   color: #660000;
   font-weight: bold;
   text-decoration: underline;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign ul.diamond {
+.court-of-blades.actor.pc #tidy-redesign ul.diamond {
   list-style: none;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign ul.diamond li {
+.court-of-blades.actor.pc #tidy-redesign ul.diamond li {
   position: relative;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign ul.diamond li:after {
+.court-of-blades.actor.pc #tidy-redesign ul.diamond li:after {
   content: "";
   height: 0.4em;
   width: 0.4em;
@@ -929,26 +929,26 @@
   color: #EEEFFF;
 }
 
-.blades-in-the-dark.actor.pc #tidy-redesign #context-menu ol li * {
+.court-of-blades.actor.pc #tidy-redesign #context-menu ol li * {
   vertical-align: initial;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .clickable-edit {
+.court-of-blades.actor.pc #tidy-redesign .clickable-edit {
   text-decoration: underline;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .rollable-text {
+.court-of-blades.actor.pc #tidy-redesign .rollable-text {
   cursor: pointer;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign input[type=text] {
+.court-of-blades.actor.pc #tidy-redesign input[type=text] {
   width: auto;
   border: 0;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .edit-only {
+.court-of-blades.actor.pc #tidy-redesign .edit-only {
   display: none;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .non-edit {
+.court-of-blades.actor.pc #tidy-redesign .non-edit {
   display: initial;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar {
   background-color: #191813;
   color: #EEEFFF;
   padding: 3px;
@@ -958,14 +958,14 @@
   position: relative;
   margin-bottom: 5px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right {
   position: absolute;
   top: 1px;
   right: 1px;
   display: flex;
   /* Hide the browser's default checkbox */
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right label {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right label {
   height: 25px;
   width: 10px;
   background-image: url("assets/teeth/xptooth-red.png");
@@ -975,40 +975,40 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right label:last-of-type {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right label:last-of-type {
   margin-right: 0px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right label[for$="-0"] {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right label[for$="-0"] {
   width: auto;
   height: auto;
   background-image: none !important;
   color: #EEEFFF;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right label[for$="-0"] i {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right label[for$="-0"] i {
   margin-top: 4px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right label:hover {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right input {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right input {
   display: none;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right label {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right label {
   background-image: url("assets/teeth/xptooth-white.png");
   background-size: 100% 100%;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right label.on {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.right label.on {
   background-image: url("assets/teeth/xptooth-red.png");
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress {
   position: absolute;
   top: 1px;
   right: 1px;
   display: flex;
   /* Hide the browser's default checkbox */
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress label {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress label {
   height: 25px;
   width: 10px;
   background-image: url("assets/teeth/xptooth-red.png");
@@ -1018,52 +1018,52 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress label:last-of-type {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress label:last-of-type {
   margin-right: 0px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress label[for$="-0"] {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress label[for$="-0"] {
   width: auto;
   height: auto;
   background-image: none !important;
   color: #EEEFFF;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress label[for$="-0"] i {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress label[for$="-0"] i {
   margin-top: 4px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress label:hover {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress input {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress input {
   display: none;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress label {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress label {
   background-image: url("assets/teeth/xptooth-white.png");
   background-size: 100% 100%;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress label.on {
+.court-of-blades.actor.pc #tidy-redesign header.full-bar .stripe-tooth-body.stress label.on {
   background-image: url("assets/teeth/xptooth-red.png");
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .sheet-toggles {
+.court-of-blades.actor.pc #tidy-redesign .sheet-toggles {
   position: absolute;
   top: -10px;
   right: -10px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .sheet-toggles > span {
+.court-of-blades.actor.pc #tidy-redesign .sheet-toggles > span {
   display: inline-block;
   padding: 4px;
   margin: 0 5px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .sheet-toggles span.toggle-expand {
+.court-of-blades.actor.pc #tidy-redesign .sheet-toggles span.toggle-expand {
   background: #0058cc;
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
   border-radius: 3px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .sheet-toggles span.toggle-expand .fa-expand {
+.court-of-blades.actor.pc #tidy-redesign .sheet-toggles span.toggle-expand .fa-expand {
   display: none;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .sheet-toggles span.toggle-expand .fa-compress {
+.court-of-blades.actor.pc #tidy-redesign .sheet-toggles span.toggle-expand .fa-compress {
   display: initial;
 }
 .can-expand span.toggle-expand .fa-expand {
@@ -1073,33 +1073,33 @@
   display: none !important;
 }
 
-.blades-in-the-dark.actor.pc #tidy-redesign .sheet-toggles span.toggle-allow-edit {
+.court-of-blades.actor.pc #tidy-redesign .sheet-toggles span.toggle-allow-edit {
   cursor: pointer;
   background: #008000;
   color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .sheet-toggles span.toggle-allow-edit:hover {
+.court-of-blades.actor.pc #tidy-redesign .sheet-toggles span.toggle-allow-edit:hover {
   color: #fff;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .sheet-toggles span.toggle-allow-edit i {
+.court-of-blades.actor.pc #tidy-redesign .sheet-toggles span.toggle-allow-edit i {
   width: 100%;
   text-align: center;
   padding: 4px 6px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .sheet-toggles span.toggle-allow-edit .fa-lock-open {
+.court-of-blades.actor.pc #tidy-redesign .sheet-toggles span.toggle-allow-edit .fa-lock-open {
   display: none;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign.allow-edit .sheet-toggles .toggle-allow-edit {
+.court-of-blades.actor.pc #tidy-redesign.allow-edit .sheet-toggles .toggle-allow-edit {
   background-color: #800000;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign.allow-edit .sheet-toggles .toggle-allow-edit .fa-lock-open {
+.court-of-blades.actor.pc #tidy-redesign.allow-edit .sheet-toggles .toggle-allow-edit .fa-lock-open {
   display: inline-block;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign.allow-edit .sheet-toggles .toggle-allow-edit .fa-lock {
+.court-of-blades.actor.pc #tidy-redesign.allow-edit .sheet-toggles .toggle-allow-edit .fa-lock {
   display: none;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view {
   display: grid;
   height: 235px;
   grid-template-columns: auto 1fr;
@@ -1107,7 +1107,7 @@
   grid-template-rows: 2fr 1fr 1fr 1fr 4fr;
   grid-template-areas: "portrait main-row" "portrait sub-row-1" "portrait sub-row-2" "portrait sub-row-3" "portrait actions";
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait {
   grid-area: portrait;
   place-self: center;
   width: 200px;
@@ -1116,7 +1116,7 @@
   flex-grow: 0;
   position: relative;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .portrait {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .portrait {
   border-radius: 100px;
   overflow: hidden;
   border: 6px solid #999;
@@ -1125,7 +1125,7 @@
   position: relative;
   top: -10px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .portrait > img {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .portrait > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1134,7 +1134,7 @@
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) inset;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons {
   position: absolute;
   top: 15px;
   left: -15px;
@@ -1147,14 +1147,14 @@
   flex-direction: column;
   justify-content: space-around;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons > div {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons > div {
   overflow: visible;
   position: relative;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons > div:not(:last-of-type) {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons > div:not(:last-of-type) {
   margin-bottom: 20px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box {
   max-width: 30px;
   max-height: 30px;
   box-sizing: border-box;
@@ -1165,17 +1165,17 @@
   text-align: left;
   z-index: 600;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .mini-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .mini-view {
   text-align: center;
   position: relative;
   width: 30px;
   height: 30px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .mini-view .placeholder {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .mini-view .placeholder {
   height: 100%;
   width: 100%;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .mini-view .label-text {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .mini-view .label-text {
   position: relative;
   top: -5px;
   left: 0px;
@@ -1185,13 +1185,13 @@
   border-radius: 10px;
   text-align: center;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view {
   display: none;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box.open {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box.open {
   color: #191813;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box.open .full-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box.open .full-view {
   background-color: #bbb;
   border: 3px solid #666;
   display: block;
@@ -1204,20 +1204,20 @@
   width: 250px;
   box-shadow: 0px 7px 6px 0px rgba(0, 0, 0, 0.25);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box > div {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box > div {
   display: inline-block;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .mini-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .mini-view {
   background-repeat: no-repeat;
   background-image: url(assets/icons/coins.png);
   background-size: contain;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins {
   display: flex;
   /* Hide the browser's default checkbox */
   flex-wrap: wrap;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins label {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins label {
   height: 15px;
   width: 15px;
   background-color: #DAA520;
@@ -1226,50 +1226,50 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins label[for$="-0"] {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins label[for$="-0"] {
   margin-right: 0px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins label:hover {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input {
   display: none;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input:checked ~ label {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input:checked ~ label {
   background-color: #EEEFFF;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input:checked + label {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input:checked + label {
   background-color: #DAA520;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input ~ label {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input ~ label {
   margin-right: 3px;
   margin-bottom: 3px;
   transition: filter 0.2s;
   cursor: pointer;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input ~ label[for$="0"] {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input ~ label[for$="0"] {
   border-width: 2px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input ~ label:hover {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input ~ label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins.coins-hands {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins.coins-hands {
   width: 36px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins.coins-stashed {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins.coins-stashed {
   width: 190px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box.open .full-view .coins {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box.open .full-view .coins {
   display: flex;
   justify-content: space-between;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box.open .full-view .coins .hand, .blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box.open .full-view .coins .stash {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box.open .full-view .coins .hand, .court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box.open .full-view .coins .stash {
   display: inline-block;
   text-align: left;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box {
   max-width: 30px;
   max-height: 30px;
   box-sizing: border-box;
@@ -1280,17 +1280,17 @@
   text-align: left;
   z-index: 600;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view {
   text-align: center;
   position: relative;
   width: 30px;
   height: 30px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view .placeholder {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view .placeholder {
   height: 100%;
   width: 100%;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view .label-text {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view .label-text {
   position: relative;
   top: -5px;
   left: 0px;
@@ -1300,13 +1300,13 @@
   border-radius: 10px;
   text-align: center;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .full-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .full-view {
   display: none;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open {
   color: #191813;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view {
   background-color: #bbb;
   border: 3px solid #666;
   display: block;
@@ -1319,33 +1319,33 @@
   width: 550px;
   box-shadow: 0px 7px 6px 0px rgba(0, 0, 0, 0.25);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view {
   background-repeat: no-repeat;
   background-image: url(assets/icons/harm.png);
   background-size: contain;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view.harm-1 {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view.harm-1 {
   background-image: url(assets/icons/harm-1.png);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view.harm-1-2 {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view.harm-1-2 {
   background-image: url(assets/icons/harm-1-2.png);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view.harm-1-3 {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view.harm-1-3 {
   background-image: url(assets/icons/harm-1-3.png);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view.harm-1-2-3 {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view.harm-1-2-3 {
   background-image: url(assets/icons/harm-1-2-3.png);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view.harm-2 {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view.harm-2 {
   background-image: url(assets/icons/harm-2.png);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view.harm-2-3 {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view.harm-2-3 {
   background-image: url(assets/icons/harm-2-3.png);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view.harm-3 {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view.harm-3 {
   background-image: url(assets/icons/harm-3.png);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view .harm-effects {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box .mini-view .harm-effects {
   position: absolute;
   bottom: 4px;
   font-weight: bold;
@@ -1355,7 +1355,7 @@
   width: 100%;
   color: #EEEFFF;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm {
   display: grid;
   grid-template-columns: 1em repeat(6, 1fr);
   grid-template-rows: repeat(5, 1.6em);
@@ -1364,62 +1364,62 @@
   place-items: center;
   grid-template-areas: "empty header-harm header-harm header-harm header-harm header-effect header-healing" "rownum3 heavy heavy heavy heavy heavy-effect healing" "rownum2 medium1 medium1 medium2 medium2 medium-effect healing" "rownum1 light1 light1 light2 light2 light-effect healing" "armor armor armor armor armor armor armor";
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm input[type=text] {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm input[type=text] {
   height: 100%;
   width: 100%;
   border-radius: 0;
   background-color: #a2a2a2;
   z-index: 10;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm header {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm header {
   width: calc(100% + 5px);
   background-color: #191813;
   color: #EEEFFF;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm header.harm {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm header.harm {
   grid-area: header-harm;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm header.effect {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm header.effect {
   grid-area: header-effect;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm header.healing {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm header.healing {
   grid-area: header-healing;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .rownum3 {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .rownum3 {
   grid-area: rownum3;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .heavy {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .heavy {
   grid-area: heavy;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .effect-text.heavy {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .effect-text.heavy {
   grid-area: heavy-effect;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .rownum2 {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .rownum2 {
   grid-area: rownum2;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .medium1 {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .medium1 {
   grid-area: medium1;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .medium2 {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .medium2 {
   grid-area: medium2;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .effect-text.medium {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .effect-text.medium {
   grid-area: medium-effect;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .light1 {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .light1 {
   grid-area: light1;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .light2 {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .light2 {
   grid-area: light2;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .effect-text.light {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .effect-text.light {
   grid-area: light-effect;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock {
   grid-area: healing;
   position: relative;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock {
   position: relative;
   padding: 0;
   width: 100px;
@@ -1429,7 +1429,7 @@
   overflow: hidden;
   background-size: cover;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock label {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock label {
   overflow: hidden;
   position: absolute;
   top: -50%;
@@ -1440,48 +1440,48 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock label:hover {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock input {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock input {
   position: absolute;
   display: none;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock input[value="0"] {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock input[value="0"] {
   display: none;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock *:nth-child(3) {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock *:nth-child(3) {
   transform: rotate(0deg) skewY(180deg);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock *:nth-child(5) {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock *:nth-child(5) {
   transform: rotate(90deg) skewY(180deg);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock *:nth-child(7) {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock *:nth-child(7) {
   transform: rotate(180deg) skewY(180deg);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock *:nth-child(9) {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .healing-clock .blades-clock *:nth-child(9) {
   transform: rotate(270deg) skewY(180deg);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .rownum1 {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .rownum1 {
   grid-area: rownum1;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .armor-use {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .armor-use {
   grid-area: armor;
   text-align: right;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .effect-text {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .effect-text {
   font-family: "Crimson Text", serif;
   font-size: 0.9rem;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .grid-lines {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .harm-box.open .full-view .character-harm .grid-lines {
   background-color: #191813;
   grid-area: 2/2/5/6;
   width: 100%;
   height: calc(100% - 1px);
   z-index: 1;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box {
   max-width: 30px;
   max-height: 30px;
   box-sizing: border-box;
@@ -1492,17 +1492,17 @@
   text-align: left;
   z-index: 600;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .mini-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .mini-view {
   text-align: center;
   position: relative;
   width: 30px;
   height: 30px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .mini-view .placeholder {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .mini-view .placeholder {
   height: 100%;
   width: 100%;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .mini-view .label-text {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .mini-view .label-text {
   position: relative;
   top: -5px;
   left: 0px;
@@ -1512,13 +1512,13 @@
   border-radius: 10px;
   text-align: center;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .full-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .full-view {
   display: none;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box.open {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box.open {
   color: #191813;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box.open .full-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box.open .full-view {
   background-color: #bbb;
   border: 3px solid #666;
   display: block;
@@ -1531,40 +1531,40 @@
   width: 100px;
   box-shadow: 0px 7px 6px 0px rgba(0, 0, 0, 0.25);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box > div {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box > div {
   display: inline-block;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .mini-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .mini-view {
   background-repeat: no-repeat;
   background-image: url(assets/icons/backpack.png);
   background-size: contain;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .below-max {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .below-max {
   color: #006600;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .at-max {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .at-max {
   color: #e07f1a;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .over-max {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .load-box .over-max {
   color: #660000;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .stress-trauma-box {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .stress-scandal-box {
   width: 100%;
   height: 2em;
   position: absolute;
   bottom: 10px;
   left: 0;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .stress-trauma-box .stress-bar {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .stress-scandal-box .stress-bar {
   position: relative;
   z-index: 100;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .stress-trauma-box .trauma-box {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .stress-scandal-box .scandal-box {
   padding: 0 0 2px;
   position: relative;
   z-index: 1;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .stress-trauma-box .trauma-box .trauma-list {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .stress-scandal-box .scandal-box .scandal-list {
   width: 100%;
   height: 100%;
   background-color: #bbb;
@@ -1575,60 +1575,60 @@
   padding-top: 5px;
   border-radius: 0 0 1em 1em;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .stress-trauma-box .trauma-box .trauma-list .trauma-item {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .stress-scandal-box .scandal-box .scandal-list .scandal-item {
   pointer-events: all;
   display: inline-block;
   font-weight: bold;
   color: #660000;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .stress-trauma-box .trauma-box .trauma-list .trauma-item:not(:last-of-type)::after {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .stress-scandal-box .scandal-box .scandal-list .scandal-item:not(:last-of-type)::after {
   content: " •";
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .character-portrait .stress-trauma-box .trauma-box .trauma-list .add_trauma {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .stress-scandal-box .scandal-box .scandal-list .add_scandal {
   font-size: 0.8em;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .name-alias {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .name-alias {
   font-family: Kirsty, serif;
   font-weight: bold;
   font-size: 3em;
   color: #191813;
   grid-area: main-row;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .name-alias .alias {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .name-alias .alias {
   font-size: 0.6em;
   font-weight: normal;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .heritage-background {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .heritage-background {
   grid-area: sub-row-1;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .look {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .look {
   grid-area: sub-row-2;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .bio {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .bio {
   border-bottom: 2px solid #191813;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .abilities-list {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .abilities-list {
   grid-area: sub-row-3;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .attributes-actions {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .attributes-actions {
   grid-area: actions;
   display: flex;
   justify-content: space-between;
   justify-items: stretch;
   max-width: 600px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute {
   flex-grow: 1;
   margin: 0 5px 10px 5px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action {
   padding: 0 5px;
   display: flex;
   /* Hide the browser's default checkbox */
   justify-content: flex-start;
   align-items: stretch;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action label {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action label {
   height: 1em;
   width: 1em;
   background-color: #cc0000;
@@ -1638,7 +1638,7 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action label[for$="-0"] {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action label[for$="-0"] {
   height: 5px;
   width: 5px;
   border-radius: 24px;
@@ -1646,39 +1646,39 @@
   background-color: red !important;
   margin-right: 0px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action label:hover {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action label:hover {
   filter: brightness(0.7);
   opacity: 0.7;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action input {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action input {
   display: none;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action input:checked ~ label {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action input:checked ~ label {
   background-color: transparent;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action input:checked + label {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action input:checked + label {
   transition: filter 0.1s;
   cursor: pointer;
   background-color: #cc0000;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action input:checked + label:hover {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action input:checked + label:hover {
   filter: brightness(0.7);
   opacity: 0.7;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action .attribute-skill-label {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action .attribute-skill-label {
   font-weight: bold;
   font-variant: small-caps;
   padding: 3px 0;
   margin-left: 0.4em;
   line-height: 0.8em;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action label {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action label {
   margin: 2px;
   border: 1px solid #666666;
   box-sizing: border-box;
   position: relative;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action label:first-of-type::after {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute .action label:first-of-type::after {
   content: "";
   display: inline-block;
   height: 150%;
@@ -1688,17 +1688,17 @@
   right: -3px;
   top: -3px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute input.zero {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .attributes-actions .attribute input.zero {
   display: none;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space nav.tabs {
+.court-of-blades.actor.pc #tidy-redesign .tab-space nav.tabs {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 1em;
   grid-template-rows: auto;
   grid-template-areas: "tab1 tab2 ";
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-item {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-item {
   flex-grow: 0;
   display: inline-flex;
   justify-content: space-between;
@@ -1710,7 +1710,7 @@
   padding: 5px 15px;
   font-size: 2.6em;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-item select {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-item select {
   font-family: Kirsty;
   font-size: 1em;
   height: 80%;
@@ -1718,16 +1718,16 @@
   top: -6px;
   left: 2px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-item > div {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-item > div {
   margin: 5px 10px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-item.playbook {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-item.playbook {
   grid-area: tab1;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-item.notes {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-item.notes {
   grid-area: tab2;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-item .playbook-description {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-item .playbook-description {
   font-family: "Crimson Text", serif;
   font-size: 0.4em;
   font-variant: small-caps;
@@ -1735,16 +1735,16 @@
   color: #666;
   text-align: center;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-item.active {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-item.active {
   margin-bottom: 0;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-item:not(.active) {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-item:not(.active) {
   background-color: rgba(187, 187, 187, 0.5);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content {
   flex-basis: 100%;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook {
   display: grid;
   align-items: stretch;
   justify-items: stretch;
@@ -1752,64 +1752,64 @@
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "abilities gutter pb-items all-items" "abilities gutter friends all-items" "abilities gutter xp-notes xp-notes";
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook select {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook select {
   font-family: Kirsty, serif;
   text-transform: capitalize;
   font-size: 2.6em;
   border: none;
   background-color: #f00;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook::after {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook::after {
   content: "";
   background: #bbb;
   grid-area: gutter;
   height: 100%;
   width: 100%;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .abilities {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .abilities {
   grid-area: abilities;
   background: #bbb;
   padding-bottom: 1em;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .abilities .ability-list .ability-block {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .abilities .ability-list .ability-block {
   display: flex;
   align-items: flex-start;
   position: relative;
   padding: 5px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .abilities .ability-list .ability-block:nth-child(even) {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .abilities .ability-list .ability-block:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .abilities .ability-list .ability-block input {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .abilities .ability-list .ability-block input {
   margin: 0;
   margin-right: 3px;
   position: relative;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .abilities .ability-list .ability-block input.offset {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .abilities .ability-list .ability-block input.offset {
   margin-top: -3px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .abilities .ability-list label {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .abilities .ability-list label {
   margin: 0;
   line-height: 0.8em;
   font-size: 1.2em;
   margin-bottom: 6px;
   padding-right: 1em;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .abilities .ability-list label .ability-name {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .abilities .ability-list label .ability-name {
   font-weight: bold;
   font-variant: small-caps;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .playbook-items {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .playbook-items {
   grid-area: pb-items;
   background: #bbb;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .item-list {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .item-list {
   font-size: 1.2em;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .item-list .free-item {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .item-list .free-item {
   font-style: italic;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .item-list .item-block {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .item-list .item-block {
   padding-left: 5px;
   padding-right: 1em;
   position: relative;
@@ -1818,11 +1818,11 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .item-list .item-block .item-name {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .item-list .item-block .item-name {
   width: 100%;
   position: relative;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .item-list .item-block .join-line {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .item-list .item-block .join-line {
   border: 1px solid #666;
   width: 1em;
   display: inline-block;
@@ -1832,61 +1832,61 @@
   position: relative;
   z-index: 0;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .item-list .item-block * {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .item-list .item-block * {
   vertical-align: bottom;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .item-list .item-block input {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .item-list .item-block input {
   margin-left: 0;
   position: relative;
   z-index: 10;
   bottom: 2px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .friends-rivals {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .friends-rivals {
   grid-area: friends;
   background: #bbb;
   font-size: 1.2em;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .friends-rivals .acquaintance i {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .friends-rivals .acquaintance i {
   padding: 1px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .friends-rivals .acquaintance i.red-icon {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .friends-rivals .acquaintance i.red-icon {
   color: #880000;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .friends-rivals .acquaintance i.green-icon {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .friends-rivals .acquaintance i.green-icon {
   color: #006600;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .all-items {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .all-items {
   grid-area: all-items;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .xp-notes {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .xp-notes {
   grid-area: xp-notes;
   background: #bbb;
   font-size: 1.2em;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .xp-notes p {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .xp-notes p {
   line-height: 1em;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .xp-notes ul {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .xp-notes ul {
   list-style-type: square;
   padding-right: 5px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .xp-notes ul li {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook .xp-notes ul li {
   font-style: italic;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook header.full-bar {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .playbook header.full-bar {
   background-color: #666;
   color: #EEEFFF;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime {
   line-height: 1em;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime h3 {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime h3 {
   text-align: center;
   font-family: Kirsty, serif;
   font-size: 2em;
   margin: 0.5em;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime header {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime header {
   width: 100%;
   font-family: Kirsty, serif;
   background-color: #191813;
@@ -1894,62 +1894,62 @@
   padding: 3px;
   text-align: center;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime header .header-row {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime header .header-row {
   display: flex;
   justify-content: space-evenly;
   margin: 2px 0;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper {
   display: flex;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper table tr {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper table tr {
   text-align: center;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper table tr td, .blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper table tr th {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper table tr td, .court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper table tr th {
   padding: 3px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper table tr th {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper table tr th {
   background-color: #191813;
   color: #EEEFFF;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper .column {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper .column {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper .column section {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper .column section {
   background-color: #bbb;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper .column section p {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper .column section p {
   text-align: center;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper .column section ul {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper .column section ul {
   padding-right: 1em;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper .column section ul li {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab.downtime .downtimeWrapper .column section ul li {
   margin-bottom: 3px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .character-notes-area {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .character-notes-area {
   background-color: #bbb;
   box-sizing: border-box;
   padding: 10px;
   font-size: 1.2em;
   height: 650px;
 }
-.blades-in-the-dark.actor.pc #tidy-redesign .tab-space .tab-content .tab .character-notes-area textarea {
+.court-of-blades.actor.pc #tidy-redesign .tab-space .tab-content .tab .character-notes-area textarea {
   height: 600px;
 }
-.blades-in-the-dark.actor.clock {
+.court-of-blades.actor.clock {
   min-width: 420px;
   min-height: 320px;
 }
-.blades-in-the-dark.actor.clock .clock-zero-label {
+.court-of-blades.actor.clock .clock-zero-label {
   color: #191813;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-4 {
+.court-of-blades.actor.clock .clocks.clocks-4 {
   position: relative;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-4 .blades-clock {
+.court-of-blades.actor.clock .clocks.clocks-4 .blades-clock {
   position: relative;
   padding: 0;
   width: 200px;
@@ -1959,7 +1959,7 @@
   overflow: hidden;
   background-size: cover;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-4 .blades-clock label {
+.court-of-blades.actor.clock .clocks.clocks-4 .blades-clock label {
   overflow: hidden;
   position: absolute;
   top: -50%;
@@ -1970,33 +1970,33 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-4 .blades-clock label:hover {
+.court-of-blades.actor.clock .clocks.clocks-4 .blades-clock label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-4 .blades-clock input {
+.court-of-blades.actor.clock .clocks.clocks-4 .blades-clock input {
   position: absolute;
   display: none;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-4 .blades-clock input[value="0"] {
+.court-of-blades.actor.clock .clocks.clocks-4 .blades-clock input[value="0"] {
   display: none;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-4 .blades-clock *:nth-child(3) {
+.court-of-blades.actor.clock .clocks.clocks-4 .blades-clock *:nth-child(3) {
   transform: rotate(0deg) skewY(180deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-4 .blades-clock *:nth-child(5) {
+.court-of-blades.actor.clock .clocks.clocks-4 .blades-clock *:nth-child(5) {
   transform: rotate(90deg) skewY(180deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-4 .blades-clock *:nth-child(7) {
+.court-of-blades.actor.clock .clocks.clocks-4 .blades-clock *:nth-child(7) {
   transform: rotate(180deg) skewY(180deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-4 .blades-clock *:nth-child(9) {
+.court-of-blades.actor.clock .clocks.clocks-4 .blades-clock *:nth-child(9) {
   transform: rotate(270deg) skewY(180deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-6 {
+.court-of-blades.actor.clock .clocks.clocks-6 {
   position: relative;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-6 .blades-clock {
+.court-of-blades.actor.clock .clocks.clocks-6 .blades-clock {
   position: relative;
   padding: 0;
   width: 200px;
@@ -2006,7 +2006,7 @@
   overflow: hidden;
   background-size: cover;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-6 .blades-clock label {
+.court-of-blades.actor.clock .clocks.clocks-6 .blades-clock label {
   overflow: hidden;
   position: absolute;
   top: -50%;
@@ -2017,39 +2017,39 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-6 .blades-clock label:hover {
+.court-of-blades.actor.clock .clocks.clocks-6 .blades-clock label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-6 .blades-clock input {
+.court-of-blades.actor.clock .clocks.clocks-6 .blades-clock input {
   position: absolute;
   display: none;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-6 .blades-clock input[value="0"] {
+.court-of-blades.actor.clock .clocks.clocks-6 .blades-clock input[value="0"] {
   display: none;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-6 .blades-clock *:nth-child(3) {
+.court-of-blades.actor.clock .clocks.clocks-6 .blades-clock *:nth-child(3) {
   transform: rotate(0deg) skewY(150deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-6 .blades-clock *:nth-child(5) {
+.court-of-blades.actor.clock .clocks.clocks-6 .blades-clock *:nth-child(5) {
   transform: rotate(60deg) skewY(150deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-6 .blades-clock *:nth-child(7) {
+.court-of-blades.actor.clock .clocks.clocks-6 .blades-clock *:nth-child(7) {
   transform: rotate(120deg) skewY(150deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-6 .blades-clock *:nth-child(9) {
+.court-of-blades.actor.clock .clocks.clocks-6 .blades-clock *:nth-child(9) {
   transform: rotate(180deg) skewY(150deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-6 .blades-clock *:nth-child(11) {
+.court-of-blades.actor.clock .clocks.clocks-6 .blades-clock *:nth-child(11) {
   transform: rotate(240deg) skewY(150deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-6 .blades-clock *:nth-child(13) {
+.court-of-blades.actor.clock .clocks.clocks-6 .blades-clock *:nth-child(13) {
   transform: rotate(300deg) skewY(150deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-8 {
+.court-of-blades.actor.clock .clocks.clocks-8 {
   position: relative;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-8 .blades-clock {
+.court-of-blades.actor.clock .clocks.clocks-8 .blades-clock {
   position: relative;
   padding: 0;
   width: 200px;
@@ -2059,7 +2059,7 @@
   overflow: hidden;
   background-size: cover;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-8 .blades-clock label {
+.court-of-blades.actor.clock .clocks.clocks-8 .blades-clock label {
   overflow: hidden;
   position: absolute;
   top: -50%;
@@ -2070,71 +2070,71 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-8 .blades-clock label:hover {
+.court-of-blades.actor.clock .clocks.clocks-8 .blades-clock label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-8 .blades-clock input {
+.court-of-blades.actor.clock .clocks.clocks-8 .blades-clock input {
   position: absolute;
   display: none;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-8 .blades-clock input[value="0"] {
+.court-of-blades.actor.clock .clocks.clocks-8 .blades-clock input[value="0"] {
   display: none;
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(3) {
+.court-of-blades.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(3) {
   transform: rotate(0deg) skewY(135deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(5) {
+.court-of-blades.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(5) {
   transform: rotate(45deg) skewY(135deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(7) {
+.court-of-blades.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(7) {
   transform: rotate(90deg) skewY(135deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(9) {
+.court-of-blades.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(9) {
   transform: rotate(135deg) skewY(135deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(11) {
+.court-of-blades.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(11) {
   transform: rotate(180deg) skewY(135deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(13) {
+.court-of-blades.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(13) {
   transform: rotate(225deg) skewY(135deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(15) {
+.court-of-blades.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(15) {
   transform: rotate(270deg) skewY(135deg);
 }
-.blades-in-the-dark.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(17) {
+.court-of-blades.actor.clock .clocks.clocks-8 .blades-clock *:nth-child(17) {
   transform: rotate(315deg) skewY(135deg);
 }
-.blades-in-the-dark.actor.clock .blades-clock-name-type > * {
+.court-of-blades.actor.clock .blades-clock-name-type > * {
   margin-bottom: 10px;
 }
-.blades-in-the-dark.actor.clock .blades-clock-name-type .blades-clock {
+.court-of-blades.actor.clock .blades-clock-name-type .blades-clock {
   margin: 10px auto;
 }
-.blades-in-the-dark.item.sheet .item {
+.court-of-blades.item.sheet .item {
   justify-content: space-between;
 }
-.blades-in-the-dark.item.sheet .item .item-body {
+.court-of-blades.item.sheet .item .item-body {
   margin-bottom: 10px;
 }
-.blades-in-the-dark.item.sheet .item .item-body * {
+.court-of-blades.item.sheet .item .item-body * {
   margin-right: 10px;
 }
-.blades-in-the-dark.item.sheet .item .item-body .item-description {
+.court-of-blades.item.sheet .item .item-body .item-description {
   font-style: italic;
   text-align: justify;
 }
-.blades-in-the-dark.item.sheet .item div {
+.court-of-blades.item.sheet .item div {
   flex-grow: 2;
 }
-.blades-in-the-dark.item.sheet .item .item-control {
+.court-of-blades.item.sheet .item .item-control {
   flex-grow: 1;
 }
-.blades-in-the-dark.item.sheet .item .item-body,
-.blades-in-the-dark.item.sheet .item .item-class-label {
+.court-of-blades.item.sheet .item .item-body,
+.court-of-blades.item.sheet .item .item-class-label {
   width: 100px;
 }
-.blades-in-the-dark.item.sheet .item-class-label {
+.court-of-blades.item.sheet .item-class-label {
   margin-bottom: 10px;
 }
 

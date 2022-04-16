@@ -2,25 +2,25 @@
   <header class="sheet-header">
       <img src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
       <div class="header-fields">
-          <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'BITD.Name'}}"/></h1>
+          <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'COB.Name'}}"/></h1>
       </div>
   </header>
   
   <section class="flex-vertical flex">
-    <label class="label-stripe">{{localize "BITD.Description"}}</label>
+    <label class="label-stripe">{{localize "COB.Description"}}</label>
     {{{editable-textarea "data.description" "Description" false editable data.description item.id this}}}
-    <label class="label-stripe">{{localize "BITD.ExpClues"}}</label>
-    <div><i>- {{localize "BITD.ClassExpClue1"}}</i></div>
-    <div>{{localize "BITD.ClassExpClueDescription"}}</div>
-    <div><i>- {{localize "BITD.ClassExpClue2"}}</i></div>
-    <div><i>- {{localize "BITD.ClassExpClue3"}}</i></div>
+    <label class="label-stripe">{{localize "COB.ExpClues"}}</label>
+    <div><i>- {{localize "COB.ClassExpClue1"}}</i></div>
+    <div>{{localize "COB.ClassExpClueDescription"}}</div>
+    <div><i>- {{localize "COB.ClassExpClue2"}}</i></div>
+    <div><i>- {{localize "COB.ClassExpClue3"}}</i></div>
     {{{editable-textarea "data.experience_clues" "Experience clues" false editable data.experience_clues item.id this}}}
 
     {{#if isGM}}
-      <div class="label-stripe">{{localize "BITD.Logic"}}</div>
+      <div class="label-stripe">{{localize "COB.Logic"}}</div>
       <textarea name="data.logic">{{{data.logic}}}</textarea>
-      <div class="label-stripe">{{localize "BITD.Effects"}}</div>
-      <div id="effects">{{> "systems/blades-in-the-dark/templates/parts/active-effects.html"}}</div>
+      <div class="label-stripe">{{localize "COB.Effects"}}</div>
+      <div id="effects">{{> "systems/court-of-blades/templates/parts/active-effects.html"}}</div>
     {{/if}}
   </section>
 

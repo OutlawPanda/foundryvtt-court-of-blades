@@ -3,7 +3,7 @@
  * @return {Promise}      A Promise which resolves once the migration is completed
  */
 export const migrateWorld = async function() {
-  ui.notifications.info(`Applying BITD Actors migration for version ${game.system.data.version}. Please be patient and do not close your game or shut down your server.`, {permanent: true});
+  ui.notifications.info(`Applying COB Actors migration for version ${game.system.data.version}. Please be patient and do not close your game or shut down your server.`, {permanent: true});
 
   // Migrate World Actors
   for ( let a of game.actors.contents ) {
@@ -19,8 +19,8 @@ export const migrateWorld = async function() {
       }
     }
 
-    // Migrate Token Link for Character and Crew
-    if (a.data.type === 'character' || a.data.type === 'crew') {
+    // Migrate Token Link for Character and House
+    if (a.data.type === 'character' || a.data.type === 'house') {
       try {
         const updateData = _migrateTokenLink(a.data);
         if ( !isObjectEmpty(updateData) ) {
@@ -48,8 +48,8 @@ export const migrateWorld = async function() {
   }
 
   // Set the migration as complete
-  game.settings.set("bitd", "systemMigrationVersion", game.system.data.version);
-  ui.notifications.info(`BITD System Migration to version ${game.system.data.version} completed!`, {permanent: true});
+  game.settings.set("COB", "systemMigrationVersion", game.system.data.version);
+  ui.notifications.info(`COB System Migration to version ${game.system.data.version} completed!`, {permanent: true});
 };
 
 
@@ -118,18 +118,18 @@ function _migrateActor(actor) {
     updateData[`data.stress.value`] = actor.data.stress;
     updateData[`data.stress.max`] = 9;
     updateData[`data.stress.max_default`] = 9;
-    updateData[`data.stress.name_default`] = "BITD.Stress";
-    updateData[`data.stress.name`] = "BITD.Stress";
+    updateData[`data.stress.name_default`] = "COB.Stress";
+    updateData[`data.stress.name`] = "COB.Stress";
   }
 
-  // Migrate Trauma to Array
-  if (typeof actor.data.trauma === 'undefined') {
-    updateData[`data.trauma.list`] = actor.data.traumas;
-    updateData[`data.trauma.value`] = [actor.data.traumas.length];
-    updateData[`data.trauma.max`] = 4;
-    updateData[`data.trauma.max_default`] = 4;
-    updateData[`data.trauma.name_default`] = "BITD.Trauma";
-    updateData[`data.trauma.name`] = "BITD.Trauma";
+  // Migrate Scandal to Array
+  if (typeof actor.data.scandal === 'undefined') {
+    updateData[`data.scandal.list`] = actor.data.scandals;
+    updateData[`data.scandal.value`] = [actor.data.scandals.length];
+    updateData[`data.scandal.max`] = 4;
+    updateData[`data.scandal.max_default`] = 4;
+    updateData[`data.scandal.name_default`] = "COB.Scandal";
+    updateData[`data.scandal.name`] = "COB.Scandal";
   }
 
   return updateData;

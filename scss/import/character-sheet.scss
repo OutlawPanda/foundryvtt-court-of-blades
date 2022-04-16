@@ -427,7 +427,7 @@
       }
 
 
-      .stress-trauma-box{
+      .stress-scandal-box{
         width: 100%;
         height: 2em;
         position: absolute;
@@ -439,11 +439,11 @@
           z-index: 100;
         }
 
-        .trauma-box{
+        .scandal-box{
           padding: 0 0 2px;
           position: relative;
           z-index: 1;
-          .trauma-list{
+          .scandal-list{
             width: 100%;
             height: 100%;
             background-color: $lightgray;
@@ -453,7 +453,7 @@
             top: -5px;
             padding-top: 5px;
             border-radius: 0 0 1em 1em;
-            .trauma-item{
+            .scandal-item{
               pointer-events: all;
               display: inline-block;
               font-weight: bold;
@@ -462,7 +462,7 @@
                 content: " \2022";
               }
             }
-            .add_trauma{
+            .add_scandal{
               font-size: 0.8em;
             }
 

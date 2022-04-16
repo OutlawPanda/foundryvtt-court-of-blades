@@ -9,19 +9,19 @@
         <div class="status-buttons">
           <div class="coins-box {{#if actor.flags.court-of-blades.coins_open}}open{{/if}}">
             <div class="mini-view"><div class="placeholder"></div><span class="coin-values label-text">{{data.coins}}/{{data.coins_stashed}}</span></div>
-            <div class="full-view">{{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/coins.html" actor=actor}}</div>
+            <div class="full-view">{{> "systems/court-of-blades/templates/parts/coins.html" actor=actor}}</div>
           </div>
           <div class="load-box {{#if actor.flags.court-of-blades.load_open}}open{{/if}}">
             <div class="mini-view"><div class="placeholder"></div><span class="load-amounts label-text {{#if (lt data.loadout max_load)}}below-max{{else if (eq data.loadout max_load)}}at-max{{else if (gt data.loadout max_load)}}over-max{{/if}}">{{data.loadout}}/{{max_load}}</span></div>
-            <div class="full-view">{{> "systems/https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/load.html"}}</div>
+            <div class="full-view">{{> "systems/systems/court-of-blades/templates/parts/load.html"}}</div>
           </div>
           <div class="harm-box {{#if actor.flags.court-of-blades.harm_open}}open{{/if}}">
             <div class="mini-view harm{{#if (or data.harm.light.one data.harm.light.two)}}-1{{/if}}{{#if
               (or data.harm.medium.one data.harm.medium.two)}}-2{{/if}}{{#if data.harm.heavy.one}}-3{{/if}}"><div class="placeholder"></div></div>
-            <div class="full-view">{{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/harm.html" actor=actor}}</div>
+            <div class="full-view">{{> "systems/court-of-blades/templates/parts/harm.html" actor=actor}}</div>
           </div>
 
-        </div>        <div class="stress-trauma-box">
+        </div>        <div class="stress-scandal-box">
           <header class="stress-bar full-bar">
             {{localize data.stress.name}}
             <div class="stripe-tooth-body stress">
@@ -39,7 +39,7 @@
                 <div class="scandal-list count-{{ownedScandals.length}}">
                 {{#if (gt data.scandal.list.length 0)}}
                 {{#each data.scandal.list as |scandal index|}}
-                  <div class="scandal-item" data-scandal="{{scandal}}">{{localize (concat "BITD.Scandal" (upper-first scandal))}}</div>
+                  <div class="scandal-item" data-scandal="{{scandal}}">{{localize (concat "COB.Scandal" (upper-first scandal))}}</div>
                 {{/each}}
                 {{else}}
                   <em>{{localize data.scandal.name}}</em>
@@ -54,7 +54,7 @@
         </div>
       </section>
       <div class="name-alias bio">
-        <span class="name">{{{inline-editable-text "name" (localize "BITD.Name") actor.name actor._id this}}}</span> <span class="alias">&bull; "{{{inline-editable-text "data.alias" (localize "BITD.Alias") data.alias actor._id this}}}"</span>
+        <span class="name">{{{inline-editable-text "name" (localize "COB.Name") actor.name actor._id this}}}</span> <span class="alias">&bull; "{{{inline-editable-text "data.alias" (localize "COB.Alias") data.alias actor._id this}}}"</span>
       </div>
       <div class="heritage-background bio">
         {{{inline-editable-text "data.heritage" "Heritage" data.heritage actor._id this}}} &bull; {{{inline-editable-text "data.background" "Background" data.background actor._id this}}} &bull; {{{inline-editable-text "data.background-details" "Background Details" data.background-details actor._id this}}} &bull; {{{inline-editable-text "data.vice" "Vice" data.vice actor._id this}}} &bull; {{{inline-editable-text "data.vice-purveyor" "Vice Purveyor" data.vice-purveyor actor._id this}}}
@@ -62,7 +62,7 @@
       <div class="look bio">{{{inline-editable-text "data.look" "Look" data.look actor._id this}}}</div>
       <div class="abilities-list">{{#each my_abilities}}<span title="{{this.data.description}}" class="hover-term">{{this.name}}</span>&nbsp;{{#unless @last}}-&nbsp;{{/unless}}{{/each}}</div>
       <section class="attributes-actions">
-        {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/attributes.html" actor=actor}}
+        {{> "systems/court-of-blades/templates/parts/attributes.html" actor=actor}}
       </section>
     </section>
     <section class="tab-space">
@@ -90,7 +90,7 @@
           <div class="playbook">
             <section class="abilities">
               <header class="full-bar">
-                <span class="context-abilities">{{localize "BITD.SpecialAbilities"}}</span>{{#if actor.flags.court-of-blades.allow-edit}}<a class="ability-add-popup add-button" data-item-type="ability" data-group-by="data.class"><i class="fas fa-plus"></i></a>{{/if}}
+                <span class="context-abilities">{{localize "COB.SpecialAbilities"}}</span>{{#if actor.flags.court-of-blades.allow-edit}}<a class="ability-add-popup add-button" data-item-type="ability" data-group-by="data.class"><i class="fas fa-plus"></i></a>{{/if}}
                 <div class="stripe-tooth-body right">
                 {{#multiboxes data.experience}}
                   <input type="radio" id="{{actor._id}}-experience-0"
@@ -105,20 +105,20 @@
               <section class="ability-list check-list">
                 {{#each available_abilities as |ability index|}}
                 {{#with ../actor as |actor|}}
-                  {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/ability.html" actor=actor ability=ability}}
+                  {{> "systems/court-of-blades/templates/parts/ability.html" actor=actor ability=ability}}
                 {{/with}}
                 {{/each}}
               </section>
             </section>
             <section class="playbook-items item-list">
-              <header class="full-bar flex-header context-items"><span>{{localize "BITD.Items"}}</span>{{#if actor.flags.court-of-blades.allow-edit}}<a class="item-list-add add-button" data-item-type="item" data-group-by="data.class"><i class="fas fa-plus"></i></a>{{/if}}</header>
+              <header class="full-bar flex-header context-items"><span>{{localize "COB.Items"}}</span>{{#if actor.flags.court-of-blades.allow-edit}}<a class="item-list-add add-button" data-item-type="item" data-group-by="data.class"><i class="fas fa-plus"></i></a>{{/if}}</header>
               {{#each my_items as |item index|}}
                 {{#with ../actor as |actor|}}
                 <div class="item-block" data-item-id="{{item._id}}">
                   <input type="checkbox" class="item-checkbox main-checkbox" id="character-{{actor._id}}-item-{{item._id}}-1" {{checked item.data.equipped}}><!--
                   -->{{#if (gte item.data.load 2)}}<span class="join-line"></span><input type="checkbox" class="item-checkbox child-checkbox" id="character-{{actor._id}}-item-{{item._id}}-2" {{checked item.data.equipped}}>{{/if}}<!--
                   -->{{#if (eq item.data.load 3)}}<span class="join-line"></span><input type="checkbox" class="item-checkbox child-checkbox" id="character-{{actor._id}}-item-{{item._id}}-3"{{checked item.data.equipped}}>{{/if}}
-                  <label class="item-name {{#if (eq item.data.load "0")}}free-item{{/if}} {{#if actor.flags.blades-in-the-dark.allow-edit}}clickable-edit{{/if}}" for="character-{{actor._id}}-item-{{item._id}}-1" title="{{item.data.description}}">{{item.name}}</label>{{#if actor.flags.court-of-blades.allow-edit}}<a class="item-delete delete-button" data-type="item" data-id="{{item._id}}"><i class="fas fa-trash"></i></a>{{/if}}
+                  <label class="item-name {{#if (eq item.data.load "0")}}free-item{{/if}} {{#if actor.flags.court-of-blades.allow-edit}}clickable-edit{{/if}}" for="character-{{actor._id}}-item-{{item._id}}-1" title="{{item.data.description}}">{{item.name}}</label>{{#if actor.flags.court-of-blades.allow-edit}}<a class="item-delete delete-button" data-type="item" data-id="{{item._id}}"><i class="fas fa-trash"></i></a>{{/if}}
                 </div>
                 {{/with}}
               {{/each}}
@@ -145,7 +145,7 @@
                   <input type="checkbox" class="item-checkbox main-checkbox {{#if (eq item.data.load "0")}}free-item{{/if}}" id="character-{{actor._id}}-item-{{item._id}}-1" {{checked item.data.equipped}}><!--
                   -->{{#if (gte item.data.load 2)}}<span class="join-line"></span><input type="checkbox" class="item-checkbox child-checkbox"  id="character-{{actor._id}}-item-{{item._id}}-2" {{checked item.data.equipped}} >{{/if}}<!--
                   -->{{#if (gte item.data.load 3)}}<span class="join-line"></span><input type="checkbox" class="item-checkbox child-checkbox" id="character-{{actor._id}}-item-{{item._id}}-3" {{checked item.data.equipped}} >{{/if}}
-                  <label class="item-name  {{#if (eq item.data.load "0")}}free-item{{/if}} {{#if actor.flags.blades-in-the-dark.allow-edit}}clickable-edit{{/if}}" for="character-{{actor._id}}-item-{{item._id}}-1" title="{{item.data.description}}">{{item.name}}</label>{{#if actor.flags.court-of-blades.allow-edit}}<a class="item-delete delete-button" data-type="item" data-id="{{item._id}}"><i class="fas fa-trash"></i></a>{{/if}}
+                  <label class="item-name  {{#if (eq item.data.load "0")}}free-item{{/if}} {{#if actor.flags.court-of-blades.allow-edit}}clickable-edit{{/if}}" for="character-{{actor._id}}-item-{{item._id}}-1" title="{{item.data.description}}">{{item.name}}</label>{{#if actor.flags.court-of-blades.allow-edit}}<a class="item-delete delete-button" data-type="item" data-id="{{item._id}}"><i class="fas fa-trash"></i></a>{{/if}}
                 </div>
                 {{/with}}
               {{/each}}
@@ -157,7 +157,7 @@
                 <p>At the end of each session, for each item below, mark 1 xp (in your playbook or an attribute) or 2 xp if that item occurred multiple times.</p>
                 <li>{{selected_playbook_full.data.data.experience_clues}}</li>
                 <li>You expressed your beliefs, drives, heritage, or background.</li>
-                <li>You struggled with issues from your vice or traumas during the session.</li>
+                <li>You struggled with issues from your vice or scandals during the session.</li>
               </ul>
             </section>
           </div>
@@ -257,7 +257,7 @@
 <!--                <p><em>(2 activities per downtime; 1 if at war &mdash; +1 action for 1 Coin or 1 Rep)</em></p>-->
 <!--                <h4>Acquire Asset <i class="fas fa-dice"></i></h4>-->
 <!--                <ul>-->
-<!--                  <li>Roll crew's Tier to determine relative quality of temporary asset (usually 1 score)</li>-->
+<!--                  <li>Roll house's Tier to determine relative quality of temporary asset (usually 1 score)</li>-->
 <!--                  <ul>-->
 <!--                    <li>Extra Quality: +1 quality per 2 COIN beyond Critical Effect</li>-->
 <!--                  </ul>-->
@@ -265,7 +265,7 @@
 <!--                  <li>Minimum Quality: Set by the GM for certain assets</li>-->
 <!--                  <li>Reacquire Asset: +1d to re-acquire the same asset</li>-->
 <!--                  <li>Dangerous Items: +2 HEAT (alchemicals, poisons, bombs, etc.)</li>-->
-<!--                  <li>Permanent Acquisition: Crew Upgrade or long-term project</li>-->
+<!--                  <li>Permanent Acquisition: House Upgrade or long-term project</li>-->
 <!--                </ul>-->
 <!--                <h4>Long-Term Project</h4>-->
 <!--                <ul>-->
@@ -298,7 +298,7 @@
 <!--                  <ul>-->
 <!--                    <li>Overindulge: If you clear more stress than you had, select an overindulgence.</li>-->
 <!--                  </ul>-->
-<!--                  <li>Ignoring Your Vice: If you do not indulge vice in downtime, take stress = Trauma</li>-->
+<!--                  <li>Ignoring Your Vice: If you do not indulge vice in downtime, take stress = Scandal</li>-->
 <!--                  <li>Lost in Vice: PC indulges vice for entire game session (Player uses different character)</li>-->
 <!--                </ul>-->
 <!--              </section>-->
@@ -312,14 +312,14 @@
   {{#if isGM}}
     <i class="fas fa-bug debug-toggle {{#if actor.flags.court-of-blades.show-debug}}on{{/if}} "></i>
     {{#if actor.flags.court-of-blades.show-debug}}
-        {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/active-effects.html"}}</div>
+        {{> "systems/court-of-blades/templates/parts/active-effects.html"}}</div>
         {{#each actor.items as |item id|}}
             <div class="item flex-horizontal" data-item-id="{{item._id}}">
                 <div class="item-body item-sheet-open flex-horizontal">
                     <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
                     <div class="item-name">{{item.name}}</div>
                 </div>
-                <a class="item-control item-delete" title="{{localize 'BITD.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
+                <a class="item-control item-delete" title="{{localize 'COB.TitleDeleteItem'}}"><i class="fas fa-trash"></i></a>
             </div>
         {{/each}}
     {{/if}}

@@ -10,7 +10,7 @@ export class BladesHelpers {
    */
   static removeDuplicatedItemType(item_data, actor) {
     let dupe_list = [];
-    let distinct_types = ["crew_reputation", "class", "vice", "background", "heritage", "crew_type"];
+    let distinct_types = ["house_reputation", "class", "vice", "background", "heritage", "house_type"];
     let allowed_types = ["item"];
     let should_be_distinct = distinct_types.includes(item_data.type);
     // If the Item has the exact same name - remove it from list.
@@ -265,15 +265,15 @@ export class BladesHelpers {
   }
 
   static async getSourcedItemsByType(item_type){
-    const populateFromCompendia = game.settings.get('blades-in-the-dark','populateFromCompendia');
-    const populateFromWorld = game.settings.get('blades-in-the-dark','populateFromWorld');
+    const populateFromCompendia = game.settings.get('court-of-blades','populateFromCompendia');
+    const populateFromWorld = game.settings.get('court-of-blades','populateFromWorld');
     let limited_items;
 
     if(populateFromCompendia && populateFromWorld){
       limited_items = await this.getAllItemsByType(item_type);
     }
     else if(populateFromCompendia && !populateFromWorld){
-      limited_items = await game.packs.get("blades-in-the-dark." + item_type).getDocuments();
+      limited_items = await game.packs.get("court-of-blades." + item_type).getDocuments();
     }
     else if(!populateFromCompendia && populateFromWorld){
       if(item_type === "npc"){

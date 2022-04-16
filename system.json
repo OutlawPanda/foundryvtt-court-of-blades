@@ -44,91 +44,91 @@
     }
   ],
   "url": "https://outlawpanda.github.io/",
-  "manifest": "https://github.com/OutlawPanda/OutlawPanda.github.io/system.json",
+  "manifest": "https://raw.githubusercontent.com/OutlawPanda/OutlawPanda.github.io/main/system.json",
   "download": "https://github.com/OutlawPanda/OutlawPanda.github.io/archive/refs/heads/main.zip",
   "packs": [
     {
       "name": "class",
       "label": "Classes",
       "system": "court-of-blades",
-      "path": "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/packs/classes.db",
+      "path": "./packs/classes.db",
       "entity": "Item"
     },
     {
       "name": "heritage",
       "label": "Heritages",
       "system": "court-of-blades",
-      "path": "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/packs/heritages.db",
+      "path": "./packs/heritages.db",
       "entity": "Item"
     },
     {
       "name": "vice",
       "label": "Vices",
       "system": "court-of-blades",
-      "path": "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/packs/vices.db",
+      "path": "./packs/vices.db",
       "entity": "Item"
     },
     {
       "name": "background",
       "label": "Backgrounds",
       "system": "court-of-blades",
-      "path": "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/packs/backgrounds.db",
+      "path": "./packs/backgrounds.db",
       "entity": "Item"
     },
     {
       "name": "item",
       "label": "Items",
       "system": "court-of-blades",
-      "path": "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/packs/items.db",
+      "path": "./packs/items.db",
       "entity": "Item"
     },
     {
       "name": "ability",
       "label": "Abilities",
       "system": "court-of-blades",
-      "path": "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/packs/abilities.db",
+      "path": "./packs/abilities.db",
       "entity": "Item"
     },
     {
-      "name": "crew_reputation",
-      "label": "Crew Reputation",
-      "system": "blades-in-the-dark",
-      "path": "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/packs/crew_reputation.db",
-      "entity": "Item"
-    },
-    {
-      "name": "crew_type",
-      "label": "Crew Types",
+      "name": "house_reputation",
+      "label": "House Reputation",
       "system": "court-of-blades",
-      "path": "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/packs/crew_types.db",
+      "path": "./packs/house_reputation.db",
       "entity": "Item"
     },
     {
-      "name": "crew_upgrade",
-      "label": "Crew Upgrades",
+      "name": "house_type",
+      "label": "House Types",
       "system": "court-of-blades",
-      "path": "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/packs/crew_upgrades.db",
+      "path": "./packs/house_types.db",
       "entity": "Item"
     },
     {
-      "name": "crew_ability",
-      "label": "Crew Abilities",
+      "name": "house_upgrade",
+      "label": "House Upgrades",
       "system": "court-of-blades",
-      "path": "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/packs/crew_abilities.db",
+      "path": "./packs/house_upgrades.db",
+      "entity": "Item"
+    },
+    {
+      "name": "house_ability",
+      "label": "House Abilities",
+      "system": "court-of-blades",
+      "path": "./packs/house_abilities.db",
       "entity": "Item"
     },
 	{
       "name": "faction",
       "label": "Factions",
       "system": "court-of-blades",
-      "path": "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/packs/factions.db",
+      "path": "./packs/factions.db",
       "entity": "Item"
     },
     {
       "name": "npc",
       "label": "NPCs",
       "system": "court-of-blades",
-      "path": "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/packs/npcs.db",
+      "path": "./packs/npcs.db",
       "entity": "Actor"
     }
   ]

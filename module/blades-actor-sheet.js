@@ -14,8 +14,8 @@ export class BladesActorSheet extends BladesSheet {
   /** @override */
 	static get defaultOptions() {
 	  return foundry.utils.mergeObject(super.defaultOptions, {
-  	  classes: ["blades-in-the-dark", "sheet", "actor", "pc"],
-  	  template: "systems/blades-in-the-dark/templates/actor-sheet.html",
+  	  classes: ["court-of-blades", "sheet", "actor", "pc"],
+  	  template: "./systems/court-of-blades/templates/actor-sheet.html",
       width: 800,
       height: 1200,
       tabs: [{navSelector: ".tabs", contentSelector: ".tab-content", initial: "playbook"}]
@@ -97,14 +97,14 @@ export class BladesActorSheet extends BladesSheet {
     items_html += '</div>';
 
     let d = new Dialog({
-      title: game.i18n.localize("BITD.AddExisting" + BladesHelpers.capitalizeFirstLetter(item_type)),
-      content:  `<h3>${game.i18n.localize("BITD.SelectToAdd" + BladesHelpers.capitalizeFirstLetter(item_type))}</h3>
+      title: game.i18n.localize("COB.AddExisting" + BladesHelpers.capitalizeFirstLetter(item_type)),
+      content:  `<h3>${game.i18n.localize("COB.SelectToAdd" + BladesHelpers.capitalizeFirstLetter(item_type))}</h3>
                     ${items_html}
                     `,
       buttons: {
         add: {
           icon: "<i class='fas fa-check'></i>",
-          label: game.i18n.localize("BITD.Add"),
+          label: game.i18n.localize("COB.Add"),
           callback: async (html)=> {
             let itemInputs = html.find("input:checked");
             let items = [];
@@ -117,7 +117,7 @@ export class BladesActorSheet extends BladesSheet {
         },
         cancel: {
           icon: "<i class='fas fa-times'></i>",
-          label: game.i18n.localize("BITD.Cancel"),
+          label: game.i18n.localize("COB.Cancel"),
           callback: ()=> close()
         }
       },
@@ -135,7 +135,7 @@ export class BladesActorSheet extends BladesSheet {
 
   itemContextMenu = [
     {
-      name: game.i18n.localize("BITD.TitleDeleteItem"),
+      name: game.i18n.localize("COB.TitleDeleteItem"),
       icon: '<i class="fas fa-trash"></i>',
       callback: element => {
         this.actor.deleteEmbeddedDocuments("Item", [element.data("item-id")]);
@@ -145,14 +145,14 @@ export class BladesActorSheet extends BladesSheet {
 
   itemListContextMenu = [
     {
-      name: game.i18n.localize("BITD.AddNewItem"),
+      name: game.i18n.localize("COB.AddNewItem"),
       icon: '<i class="fas fa-plus"></i>',
       callback: async (element) => {
         await this.addNewItem();
       }
     },
     {
-      name: game.i18n.localize("BITD.AddExistingItem"),
+      name: game.i18n.localize("COB.AddExistingItem"),
       icon: '<i class="fas fa-plus"></i>',
       callback: async (element) => {
         await this.generateAddExistingItemDialog("item", this.actor);
@@ -160,23 +160,23 @@ export class BladesActorSheet extends BladesSheet {
     }
   ];
 
-  traumaListContextMenu = [
+  scandalListContextMenu = [
     {
-      name: game.i18n.localize("BITD.DeleteTrauma"),
+      name: game.i18n.localize("COB.DeleteScandal"),
       icon: '<i class="fas fa-trash"></i>',
       callback: element => {
-        let traumaToDisable = element.data("trauma");
-        let traumaUpdateObject = this.actor.data.data.trauma.list;
-        let index = traumaUpdateObject.indexOf(traumaToDisable.toLowerCase());
-        traumaUpdateObject.splice(index, 1);
-        this.actor.update({data:{trauma:{list: traumaUpdateObject}}});
+        let scandalToDisable = element.data("scandal");
+        let scandalUpdateObject = this.actor.data.data.scandal.list;
+        let index = scandalUpdateObject.indexOf(scandalToDisable.toLowerCase());
+        scandalUpdateObject.splice(index, 1);
+        this.actor.update({data:{scandal:{list: scandalUpdateObject}}});
       }
     }
   ];
 
   abilityContextMenu = [
     {
-      name: game.i18n.localize("BITD.DeleteAbility"),
+      name: game.i18n.localize("COB.DeleteAbility"),
       icon: '<i class="fas fa-trash"></i>',
       callback: element => {
         this.actor.deleteEmbeddedDocuments("Item", [element.data("ability-id")]);
@@ -186,7 +186,7 @@ export class BladesActorSheet extends BladesSheet {
 
   acquaintanceContextMenu = [
     {
-      name: game.i18n.localize("BITD.DeleteItem"),
+      name: game.i18n.localize("COB.DeleteItem"),
       icon: '<i class="fas fa-trash"></i>',
       callback: element => {
         this.actor.removeAcquaintance(element.data("acquaintance"));
@@ -198,14 +198,14 @@ export class BladesActorSheet extends BladesSheet {
 
   abilityListContextMenu = [
     {
-      name: game.i18n.localize("BITD.AddNewAbility"),
+      name: game.i18n.localize("COB.AddNewAbility"),
       icon: '<i class="fas fa-plus"></i>',
       callback: async (element) => {
         await this.addNewAbility();
       }
     },
     {
-      name: game.i18n.localize("BITD.AddExistingAbility"),
+      name: game.i18n.localize("COB.AddExistingAbility"),
       icon: '<i class="fas fa-plus"></i>',
       callback: async (element) => {
         await this.generateAddExistingItemDialog("ability", this.actor);
@@ -255,10 +255,10 @@ export class BladesActorSheet extends BladesSheet {
     data.data.loadout = loadout;
 
     // Encumbrance Levels
-    let load_level=["BITD.Light","BITD.Light","BITD.Light","BITD.Light","BITD.Normal","BITD.Normal","BITD.Heavy","BITD.Encumbered",
-			"BITD.Encumbered","BITD.Encumbered","BITD.OverMax"];
-    let mule_level=["BITD.Light","BITD.Light","BITD.Light","BITD.Light","BITD.Light","BITD.Light","BITD.Normal","BITD.Normal",
-			"BITD.Heavy","BITD.Encumbered","BITD.OverMax"];
+    let load_level=["COB.Light","COB.Light","COB.Light","COB.Light","COB.Normal","COB.Normal","COB.Heavy","COB.Encumbered",
+			"COB.Encumbered","COB.Encumbered","COB.OverMax"];
+    let mule_level=["COB.Light","COB.Light","COB.Light","COB.Light","COB.Light","COB.Light","COB.Normal","COB.Normal",
+			"COB.Heavy","COB.Encumbered","COB.OverMax"];
     let mule_present=0;
 
     //Sanity Check
@@ -285,25 +285,25 @@ export class BladesActorSheet extends BladesSheet {
     }
 
     switch (data.data.selected_load_level){
-      case "BITD.Light":
+      case "COB.Light":
         data.max_load = data.data.base_max_load + 3;
         break;
-      case "BITD.Normal":
+      case "COB.Normal":
         data.max_load = data.data.base_max_load + 5;
         break;
-      case "BITD.Heavy":
+      case "COB.Heavy":
         data.max_load = data.data.base_max_load + 6;
         break;
       default:
-        data.data.selected_load_level = "BITD.Normal";
+        data.data.selected_load_level = "COB.Normal";
         data.max_load = data.base_max_load + 5;
         break;
     }
 
-    data.load_levels = {"BITD.Light":"BITD.Light", "BITD.Normal":"BITD.Normal", "BITD.Heavy":"BITD.Heavy"};
+    data.load_levels = {"COB.Light":"COB.Light", "COB.Normal":"COB.Normal", "COB.Heavy":"COB.Heavy"};
 
     //load up playbook options/data for playbook select
-    // data.playbook_options = await game.packs.get("blades-in-the-dark.class").getIndex();
+    // data.playbook_options = await game.packs.get("court-of-blades.class").getIndex();
     data.playbook_options = await BladesHelpers.getSourcedItemsByType("class");
     data.playbook_select = this.prepIndexForHelper(data.playbook_options);
 
@@ -346,12 +346,12 @@ export class BladesActorSheet extends BladesSheet {
     });
     data.generic_items = data.items.filter(item => item.type == "item" && item.data.class == "");
 
-    // data.ownedTraumas = [];
-    // if(data.data.trauma.list.length > 0){
-    //   for (const trauma in data.data.trauma.list){
-    //     console.log(trauma);
-    //     if(data.data.trauma.list[trauma]){
-    //       data.ownedTraumas.push(trauma.charAt(0).toUpperCase() + trauma.slice(1));
+    // data.ownedScandals = [];
+    // if(data.data.scandal.list.length > 0){
+    //   for (const scandal in data.data.scandal.list){
+    //     console.log(scandal);
+    //     if(data.data.scandal.list[scandal]){
+    //       data.ownedScandals.push(scandal.charAt(0).toUpperCase() + scandal.slice(1));
     //     }
     //   }
     // }
@@ -388,7 +388,7 @@ export class BladesActorSheet extends BladesSheet {
 
   async showPlaybookChangeDialog(changed){
     let modifications = await this.actor.modifiedFromPlaybookDefault(this.actor.data.data.playbook);
-    return new Promise(async (resolve, reject)=>{
+    return new Promise(async (spirit, reject)=>{
       if(modifications){
         let abilitiesToKeepOptions = {name : "abilities", value:"none", options : {all: "Keep all Abilities", custom: "Keep added abilities", owned: "Keep owned abilities", ghost: `Keep "Ghost" abilities`, none: "Replace all"}};
         let acquaintancesToKeepOptions = {name : "acquaintances", value:"none", options : {all: "All contacts", friendsrivals: "Keep only friends and rivals", custom: "Keep any added contacts", both: "Keep added contacts and friends/rivals", none: "Replace all"}};
@@ -430,7 +430,7 @@ export class BladesActorSheet extends BladesSheet {
                 for (const select of $.makeArray(selects)) {
                   selectedOptions[select.name] = select.value;
                 };
-                resolve(selectedOptions);
+                spirit(selectedOptions);
               }
             },
             cancel:{
@@ -452,7 +452,7 @@ export class BladesActorSheet extends BladesSheet {
           "skillpoints": "reset",
           "acquaintances": "none"
         };
-        resolve(selectedOptions);
+        spirit(selectedOptions);
       }
     });
   }
@@ -475,7 +475,7 @@ export class BladesActorSheet extends BladesSheet {
     new ContextMenu(html, ".item-list-add", this.itemListContextMenu, {eventName : "click"});
     new ContextMenu(html, ".context-abilities", this.abilityListContextMenu);
     new ContextMenu(html, ".ability-add-popup", this.abilityListContextMenu, {eventName : "click"});
-    new ContextMenu(html, ".trauma-item", this.traumaListContextMenu);
+    new ContextMenu(html, ".scandal-item", this.scandalListContextMenu);
     new ContextMenu(html, ".acquaintance", this.acquaintanceContextMenu);
 
     // // todo - remove
@@ -486,8 +486,8 @@ export class BladesActorSheet extends BladesSheet {
     });
 
     html.find('.debug-toggle').click(async ev => {
-      let debug = await this.actor.getFlag('blades-in-the-dark', 'show-debug');
-      await this.actor.setFlag('blades-in-the-dark', 'show-debug', !debug);
+      let debug = await this.actor.getFlag('court-of-blades', 'show-debug');
+      await this.actor.setFlag('court-of-blades', 'show-debug', !debug);
     });
 
     // Update Inventory Item
@@ -514,10 +514,10 @@ export class BladesActorSheet extends BladesSheet {
 
     html.find('.toggle-allow-edit').click(async (event) => {
       event.preventDefault();
-      if(this.actor.getFlag('blades-in-the-dark', 'allow-edit')){
-        await this.actor.unsetFlag('blades-in-the-dark', 'allow-edit');
+      if(this.actor.getFlag('court-of-blades', 'allow-edit')){
+        await this.actor.unsetFlag('court-of-blades', 'allow-edit');
       } else {
-        await this.actor.setFlag('blades-in-the-dark', 'allow-edit', true);
+        await this.actor.setFlag('court-of-blades', 'allow-edit', true);
       }
     });
 
@@ -567,7 +567,7 @@ export class BladesActorSheet extends BladesSheet {
 
     html.find('.coins-box').click(ev => {
       //note: apparently have to do this via flag, as just adding a class doesn't help when the box get rerendered on data change. Fun. Only downside is that it will probably show the coins opening and closing for anyone else viewing the sheet, too.
-      this.actor.getFlag('blades-in-the-dark', 'coins_open') ? this.actor.setFlag('blades-in-the-dark', 'coins_open', false) : this.actor.setFlag('blades-in-the-dark', 'coins_open', true);
+      this.actor.getFlag('court-of-blades', 'coins_open') ? this.actor.setFlag('court-of-blades', 'coins_open', false) : this.actor.setFlag('court-of-blades', 'coins_open', true);
     });
 
     html.find('.coins-box .full-view').click(ev => {
@@ -575,7 +575,7 @@ export class BladesActorSheet extends BladesSheet {
     });
 
     html.find('.harm-box').click(ev => {
-      this.actor.getFlag('blades-in-the-dark', 'harm_open') ? this.actor.setFlag('blades-in-the-dark', 'harm_open', false) : this.actor.setFlag('blades-in-the-dark', 'harm_open', true);
+      this.actor.getFlag('court-of-blades', 'harm_open') ? this.actor.setFlag('court-of-blades', 'harm_open', false) : this.actor.setFlag('court-of-blades', 'harm_open', true);
     });
 
     html.find('.harm-box .full-view').click(ev => {
@@ -583,7 +583,7 @@ export class BladesActorSheet extends BladesSheet {
     });
 
     html.find('.load-box').click(ev => {
-      this.actor.getFlag('blades-in-the-dark', 'load_open') ? this.actor.setFlag('blades-in-the-dark', 'load_open', false) : this.actor.setFlag('blades-in-the-dark', 'load_open', true);
+      this.actor.getFlag('court-of-blades', 'load_open') ? this.actor.setFlag('court-of-blades', 'load_open', false) : this.actor.setFlag('court-of-blades', 'load_open', true);
     });
 
     html.find('.load-box .full-view').click(ev => {
@@ -603,7 +603,7 @@ export class BladesActorSheet extends BladesSheet {
 
       let unownedScandalsOptions;
       unownedScandals.forEach((Scandal)=>{
-        unownedScandalsOptions += `<option value=${Scandal}>${game.i18n.localize("BITD.Scandal"+Scandal)}</option>`;
+        unownedScandalsOptions += `<option value=${Scandal}>${game.i18n.localize("COB.Scandal"+Scandal)}</option>`;
       });
       let unownedScandalsSelect = `
         <select id="${this.actor.id}-Scandal-select">

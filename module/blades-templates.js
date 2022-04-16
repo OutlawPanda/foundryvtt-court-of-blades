@@ -9,16 +9,16 @@ export const preloadHandlebarsTemplates = async function() {
   const templatePaths = [
 
     // Actor Sheet Partials
-    "systems/blades-in-the-dark/templates/parts/coins.html",
-    "systems/blades-in-the-dark/templates/parts/attributes.html",
-    "systems/blades-in-the-dark/templates/parts/harm.html",
-    "systems/blades-in-the-dark/templates/parts/load.html",
-    "systems/blades-in-the-dark/templates/parts/radiotoggles.html",
-    "systems/blades-in-the-dark/templates/parts/ability.html",
-    "systems/blades-in-the-dark/templates/parts/turf-list.html",
-    "systems/blades-in-the-dark/templates/parts/cohort-block.html",
-    "systems/blades-in-the-dark/templates/parts/factions.html",
-    "systems/blades-in-the-dark/templates/parts/active-effects.html",
+    "systems/court-of-blades/templates/parts/coins.html",
+    "systems/court-of-blades/templates/parts/attributes.html",
+    "systems/court-of-blades/templates/parts/harm.html",
+    "systems/court-of-blades/templates/parts/load.html",
+    "systems/court-of-blades/templates/parts/radiotoggles.html",
+    "systems/court-of-blades/templates/parts/ability.html",
+    "systems/court-of-blades/templates/parts/turf-list.html",
+    "systems/court-of-blades/templates/parts/cohort-block.html",
+    "systems/court-of-blades/templates/parts/factions.html",
+    "systems/court-of-blades/templates/parts/active-effects.html",
   ];
 
   // Load the template parts

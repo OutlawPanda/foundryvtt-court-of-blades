@@ -14,10 +14,10 @@ export class BladesActor extends Actor {
 
     data.token = data.token || {};
 
-    // For Crew and Character set the Token to sync with charsheet.
+    // For House and Character set the Token to sync with charsheet.
     switch (data.type) {
       case 'character':
-      case 'crew':
+      case 'house':
       case '\uD83D\uDD5B clock':
         data.token.actorLink = true;
         break;
@@ -178,10 +178,10 @@ export class BladesActor extends Actor {
     let attribute_label = BladesHelpers.getAttributeLabel(attribute_name);
 
     var content = `
-        <h2>${game.i18n.localize('BITD.Roll')} ${game.i18n.localize(attribute_label)}</h2>
+        <h2>${game.i18n.localize('COB.Roll')} ${game.i18n.localize(attribute_label)}</h2>
         <form>
           <div class="form-group">
-            <label>${game.i18n.localize('BITD.Modifier')}:</label>
+            <label>${game.i18n.localize('COB.Modifier')}:</label>
             <select id="mod" name="mod">
               ${this.createListOfDiceMods(-3,+3,0)}
             </select>
@@ -189,19 +189,19 @@ export class BladesActor extends Actor {
     if (BladesHelpers.isAttributeAction(attribute_name)) {
       content += `
             <div class="form-group">
-              <label>${game.i18n.localize('BITD.Position')}:</label>
+              <label>${game.i18n.localize('COB.Position')}:</label>
               <select id="pos" name="pos">
-                <option value="controlled">${game.i18n.localize('BITD.PositionControlled')}</option>
-                <option value="risky" selected>${game.i18n.localize('BITD.PositionRisky')}</option>
-                <option value="desperate">${game.i18n.localize('BITD.PositionDesperate')}</option>
+                <option value="controlled">${game.i18n.localize('COB.PositionControlled')}</option>
+                <option value="risky" selected>${game.i18n.localize('COB.PositionRisky')}</option>
+                <option value="desperate">${game.i18n.localize('COB.PositionDesperate')}</option>
               </select>
             </div>
             <div class="form-group">
-              <label>${game.i18n.localize('BITD.Effect')}:</label>
+              <label>${game.i18n.localize('COB.Effect')}:</label>
               <select id="fx" name="fx">
-                <option value="limited">${game.i18n.localize('BITD.EffectLimited')}</option>
-                <option value="standard" selected>${game.i18n.localize('BITD.EffectStandard')}</option>
-                <option value="great">${game.i18n.localize('BITD.EffectGreat')}</option>
+                <option value="limited">${game.i18n.localize('COB.EffectLimited')}</option>
+                <option value="standard" selected>${game.i18n.localize('COB.EffectStandard')}</option>
+                <option value="great">${game.i18n.localize('COB.EffectGreat')}</option>
               </select>
             </div>`;
     } else {
@@ -214,12 +214,12 @@ export class BladesActor extends Actor {
       `;
     
     new Dialog({
-      title: `${game.i18n.localize('BITD.Roll')} ${game.i18n.localize(attribute_label)}`,
+      title: `${game.i18n.localize('COB.Roll')} ${game.i18n.localize(attribute_label)}`,
       content: content,
       buttons: {
         yes: {
           icon: "<i class='fas fa-check'></i>",
-          label: game.i18n.localize('BITD.Roll'),
+          label: game.i18n.localize('COB.Roll'),
           callback: async (html) => {
             let modifier = parseInt(html.find('[name="mod"]')[0].value);
             let position = html.find('[name="pos"]')[0].value;
@@ -447,7 +447,7 @@ export class BladesActor extends Actor {
     //get the original playbook
     let selected_playbook_source;
     if(this.data.data.playbook !== "" && this.data.data.playbook){
-      // selected_playbook_source = await game.packs.get("blades-in-the-dark.class").getDocument(this.data.data.playbook);
+      // selected_playbook_source = await game.packs.get("court-of-blades.class").getDocument(this.data.data.playbook);
       selected_playbook_source = await BladesHelpers.getItemByType("class", this.data.data.playbook);
 
       let startingAttributes = await BladesHelpers.getStartingAttributes(selected_playbook_source.name);

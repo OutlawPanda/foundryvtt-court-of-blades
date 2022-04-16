@@ -11,7 +11,7 @@ export class BladesLookup {
     },
     {
       aliases: ["DEMONIC NOTICE"],
-      details: "Demon approaches crew with a dark offer. Accept bargain, hide until it loses interest (-3 REP), or deal with it another way."
+      details: "Demon approaches house with a dark offer. Accept bargain, hide until it loses interest (-3 REP), or deal with it another way."
     },
     {
       aliases: ["FLIPPED"],
@@ -27,7 +27,7 @@ export class BladesLookup {
     },
     {
       aliases: ["QUESTIONING"],
-      details: "Bluecoats round up NPC crew member or contact for questioning. Who do the Bluecoats think is most vulnerable? Make a fortune roll (1-3: +2 HEAT, 4/5: +1 HEAT) or pay them off with 2 COIN."
+      details: "Bluecoats round up NPC house member or contact for questioning. Who do the Bluecoats think is most vulnerable? Make a fortune roll (1-3: +2 HEAT, 4/5: +1 HEAT) or pay them off with 2 COIN."
     },
     {
       aliases: ["REPRISALS"],
@@ -43,11 +43,11 @@ export class BladesLookup {
     },
     {
       aliases: ["UNQUIET DEAD"],
-      details: "Rogue spirit is drawn to you. Need Whisper or Rail Jack (as an asset) to deal with it, or deal with it yourself."
+      details: "Rogue spirit is drawn to you. Need Kiss or Rail Jack (as an asset) to deal with it, or deal with it yourself."
     },
     {
       aliases: ["USUAL SUSPECTS"],
-      details: "Bluecoats grab someone in the periphery of crew for questioning. Whose friend or vice purveyor is most likely to be taken? Make a fortune roll (1-3: +2 HEAT, 4/5: level 2 HARM) or pay them off with 1 COIN."
+      details: "Bluecoats grab someone in the periphery of house for questioning. Whose friend or vice purveyor is most likely to be taken? Make a fortune roll (1-3: +2 HEAT, 4/5: level 2 HARM) or pay them off with 1 COIN."
     }
   ];
 

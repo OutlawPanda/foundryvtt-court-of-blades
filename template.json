@@ -1,6 +1,6 @@
 {
   "Actor": {
-  "types": ["character", "npc", "crew", "\uD83D\uDD5B clock", "factions"],
+  "types": ["character", "npc", "house", "\uD83D\uDD5B clock", "factions"],
   "character": {
     "alias": "",
     "look": "",
@@ -11,27 +11,27 @@
     "vice-purveyor": "",
     "playbook": "",
     "acquaintances": [],
-    "acquaintances_label": "BITD.Acquaintances",
+    "acquaintances_label": "COB.Acquaintances",
     "stress": {
       "value": [0],
       "max": 9,
       "max_default": 9,
-      "name_default": "BITD.Stress",
-      "name": "BITD.Stress"
+      "name_default": "COB.Stress",
+      "name": "COB.Stress"
     },
     "Scandal": {
       "max": 4,
       "max_default": 4,
       "value": [0],
-      "name": "BITD.Scandal",
-      "name_default": "BITD.Scandal",
+      "name": "COB.Scandal",
+      "name_default": "COB.Scandal",
       "options": ["sentimental", "wicked", "grasping", "false", "gauche", "jealous", "faithless", "fragile"],
       "list": []
     },
     "healing-clock": [0],
     "experience": [0],
     "experience_max": 8,
-    "experience_clues": ["BITD.ClassExpClue3", "BITD.ClassExpClue2"],
+    "experience_clues": ["COB.ClassExpClue3", "COB.ClassExpClue2"],
     "coins": [0],
     "coins_stashed": [0],
     "special_abilities": [],
@@ -64,22 +64,22 @@
         "body": {
           "exp": 0,
           "exp_max": 8,
-          "label": "BITD.SkillsBody",
+          "label": "COB.SkillsBody",
           "skills": {
             "skulk": {
-              "label": "BITD.SkillsSkulk",
+              "label": "COB.SkillsSkulk",
               "value": 0
             },
             "maneuver": {
-              "label": "BITD.SkillsManeuver",
+              "label": "COB.SkillsManeuver",
               "value": 0
             },
             "skirmish": {
-              "label": "BITD.SkillsSkirmish",
+              "label": "COB.SkillsSkirmish",
               "value": 0
             },
             "wreck": {
-              "label": "BITD.SkillsWreck",
+              "label": "COB.SkillsWreck",
               "value": 0
             }
           }
@@ -87,22 +87,22 @@
         "mind": {
           "exp": 0,
           "exp_max": 8,
-          "label": "BITD.SkillsMind",
+          "label": "COB.SkillsMind",
           "skills": {
             "tinker": {
-              "label": "BITD.SkillsTinker",
+              "label": "COB.SkillsTinker",
               "value": 0
             },
             "study": {
-              "label": "BITD.SkillsStudy",
+              "label": "COB.SkillsStudy",
               "value": 0
             },
             "survey": {
-              "label": "BITD.SkillsSurvey",
+              "label": "COB.SkillsSurvey",
               "value": 0
             },
             "hunt": {
-              "label": "BITD.SkillsHunt",
+              "label": "COB.SkillsHunt",
               "value": 0
             }
           }
@@ -110,29 +110,29 @@
         "spirit": {
           "exp": 0,
           "exp_max": 8,
-          "label": "BITD.SkillsSpirit",
+          "label": "COB.SkillsSpirit",
           "skills": {
             "channel": {
-              "label": "BITD.SkillsChannel",
+              "label": "COB.SkillsChannel",
               "value": 0
             },
             "command": {
-              "label": "BITD.SkillsCommand",
+              "label": "COB.SkillsCommand",
               "value": 0
             },
             "consort": {
-              "label": "BITD.SkillsConsort",
+              "label": "COB.SkillsConsort",
               "value": 0
             },
             "sway": {
-              "label": "BITD.SkillsSway",
+              "label": "COB.SkillsSway",
               "value": 0
             }
           }
         }
     }
   },
-  "crew": {
+  "house": {
     "name": "",
     "reputation": [0],
     "lair": "",
@@ -168,12 +168,12 @@
       "description": "",
       "associated_class": "",
       "associated_faction": "",
-      "associated_crew_type": "",
+      "associated_house_type": "",
       "notes": ""
     }
   },
   "Item": {
-    "types": ["faction", "item", "class", "ability", "heritage", "background", "vice", "crew_upgrade", "cohort", "crew_type", "crew_reputation", "crew_upgrade", "crew_ability"],
+    "types": ["faction", "item", "class", "ability", "heritage", "background", "vice", "house_upgrade", "cohort", "house_type", "house_reputation", "house_upgrade", "house_ability"],
     "templates": {
       "default": {
         "description": ""
@@ -242,15 +242,15 @@
         "value": [1],
         "max": 2,
         "max_default": 2,
-        "name_default": "BITD.Hold",
-        "name": "BITD.Hold"
+        "name_default": "COB.Hold",
+        "name": "COB.Hold"
       },
       "status": {
         "value": [4],
         "max": 7,
         "max_default": 7,
-        "name_default": "BITD.Status",
-        "name": "BITD.Status"
+        "name_default": "COB.Status",
+        "name": "COB.Status"
       }
     },
     "item": {
@@ -296,34 +296,34 @@
     "quality": 0,
     "cohort_list": {
       "Gang": {
-        "label": "BITD.Gang"
+        "label": "COB.Gang"
       },
       "Expert": {
-        "label": "BITD.Expert"
+        "label": "COB.Expert"
       }
     },
     "gang_type": ["Adepts"],
     "gang_type_list": {
 
       "Adepts": {
-        "label": "BITD.GangTypeAdepts",
-        "description": "BITD.GangTypeAdeptsDescription"
+        "label": "COB.GangTypeAdepts",
+        "description": "COB.GangTypeAdeptsDescription"
       },
       "Rooks": {
-        "label": "BITD.GangTypeRooks",
-        "description": "BITD.GangTypeRooksDescription"
+        "label": "COB.GangTypeRooks",
+        "description": "COB.GangTypeRooksDescription"
       },
       "Rovers": {
-        "label": "BITD.GangTypeRovers",
-        "description": "BITD.GangTypeRoversDescription"
+        "label": "COB.GangTypeRovers",
+        "description": "COB.GangTypeRoversDescription"
       },
       "Skulks": {
-        "label": "BITD.GangTypeSkulks",
-        "description": "BITD.GangTypeSkulksDescription"
+        "label": "COB.GangTypeSkulks",
+        "description": "COB.GangTypeSkulksDescription"
       },
       "Thugs": {
-        "label": "BITD.GangTypeThugs",
-        "description": "BITD.GangTypeThugsDescription"
+        "label": "COB.GangTypeThugs",
+        "description": "COB.GangTypeThugsDescription"
       }
     },
     "expert_type": "",
@@ -332,90 +332,90 @@
     "edges": [],
     "edges_list": {
       "Fearsome": {
-        "label": "BITD.EdgesFearsome",
-        "description": "BITD.EdgesFearsomeDescription",
+        "label": "COB.EdgesFearsome",
+        "description": "COB.EdgesFearsomeDescription",
         "selected": false
       },
       "Independent": {
-        "label": "BITD.EdgesIndependent",
-        "description": "BITD.EdgesIndependentDescription",
+        "label": "COB.EdgesIndependent",
+        "description": "COB.EdgesIndependentDescription",
         "selected": false
       },
       "Loyal": {
-        "label": "BITD.EdgesLoyal",
-        "description": "BITD.EdgesLoyalDescription",
+        "label": "COB.EdgesLoyal",
+        "description": "COB.EdgesLoyalDescription",
         "selected": false
       },
       "Tenacious": {
-        "label": "BITD.EdgesTenacious",
-        "description": "BITD.EdgesTenaciousDescription",
+        "label": "COB.EdgesTenacious",
+        "description": "COB.EdgesTenaciousDescription",
         "selected": false
       }
     },
     "flaws": [],
     "flaws_list": {
       "Principled": {
-        "label": "BITD.FlawsPrincipled",
-        "description": "BITD.FlawsPrincipledDescription",
+        "label": "COB.FlawsPrincipled",
+        "description": "COB.FlawsPrincipledDescription",
         "selected": false
       },
       "Savage": {
-        "label": "BITD.FlawsSavage",
-        "description": "BITD.FlawsSavageDescription",
+        "label": "COB.FlawsSavage",
+        "description": "COB.FlawsSavageDescription",
         "selected": false
       },
       "Unreliable": {
-        "label": "BITD.FlawsUnreliable",
-        "description": "BITD.FlawsUnreliableDescription",
+        "label": "COB.FlawsUnreliable",
+        "description": "COB.FlawsUnreliableDescription",
         "selected": false
       },
       "Wild": {
-        "label": "BITD.FlawsWild",
-        "description": "BITD.FlawsWildDescription",
+        "label": "COB.FlawsWild",
+        "description": "COB.FlawsWildDescription",
         "selected": false
       }
     },
     "harm": ["No"],
     "harm_list": {
       "No": {
-        "label": "BITD.HarmNoHarm",
-        "description": "BITD.HarmNoHarmDescription",
+        "label": "COB.HarmNoHarm",
+        "description": "COB.HarmNoHarmDescription",
         "value": 0
       },
       "Weakened": {
-        "label": "BITD.HarmWeakened",
-        "description": "BITD.HarmWeakenedDescription",
+        "label": "COB.HarmWeakened",
+        "description": "COB.HarmWeakenedDescription",
         "value": 1
       },
       "Impaired": {
-        "label": "BITD.HarmImpaired",
-        "description": "BITD.HarmImpairedDescription",
+        "label": "COB.HarmImpaired",
+        "description": "COB.HarmImpairedDescription",
         "value": 2
       },
       "Broken": {
-        "label": "BITD.HarmBroken",
-        "description": "BITD.HarmBrokenDescription",
+        "label": "COB.HarmBroken",
+        "description": "COB.HarmBrokenDescription",
         "value": 3
       },
       "Dead": {
-        "label": "BITD.HarmDead",
-        "description": "BITD.HarmDeadDescription",
+        "label": "COB.HarmDead",
+        "description": "COB.HarmDeadDescription",
         "value": 4
       }
     },
     "armor": false
   },
-  "crew_reputation": {
+  "house_reputation": {
     "templates": ["default"]
   },
-  "crew_upgrade": {
+  "house_upgrade": {
     "templates": ["ability", "logic", "activatedEffect"],
-    "crew_type": ""
+    "house_type": ""
   },
-  "crew_ability": {
+  "house_ability": {
     "templates": ["ability", "activatedEffect"]
   },
-  "crew_type": {
+  "house_type": {
     "description": "",
     "experience_clues": "",
     "turfs": {
@@ -462,7 +462,7 @@
         "connects": []
       },
       "8": {
-        "name": "BITD.Lair",
+        "name": "COB.Lair",
         "value": 1,
         "description": "",
         "connects": []

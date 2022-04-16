@@ -6,16 +6,16 @@
 
     <div id="name-alias" class="grow-two flex-column">
       <div id="name">
-        <label for="crew-name">{{localize "BITD.Name"}}</label>
-        <input type="text" id="crew-name" name="name" value="{{actor.name}}">
+        <label for="house-name">{{localize "COB.Name"}}</label>
+        <input type="text" id="house-name" name="name" value="{{actor.name}}">
       </div>
   
       <div class="flex-vertical">
         <div class="item-class-label">
-          <a class="item-add-popup" data-distinct="true" data-item-type="crew_reputation">{{localize "BITD.CrewReputation"}}</a>
+          <a class="item-add-popup" data-distinct="true" data-item-type="house_reputation">{{localize "COB.HouseReputation"}}</a>
         </div>
         {{#each actor.items as |item id|}}
-        {{#if (eq item.type "crew_reputation")}}
+        {{#if (eq item.type "house_reputation")}}
           <div class="item flex-horizontal" data-item-id="{{item._id}}">
             <div class="item-body item-sheet-open flex-horizontal">
               <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
@@ -30,34 +30,34 @@
 
     <div class="grow-two flex-vertical">
       <div id="lair">
-        <label for="crew-lair">{{localize "BITD.Lair"}}</label>
-        <input type="text" id="crew-lair" name="data.lair" value="{{data.lair}}">
+        <label for="house-lair">{{localize "COB.Lair"}}</label>
+        <input type="text" id="house-lair" name="data.lair" value="{{data.lair}}">
       </div>
 
 
       <div class="flex-horizontal">
 
-        <div id="crew-hold" class="flex-horizontal">
-          <div class="black-label">{{localize "BITD.Hold"}}</div>
+        <div id="house-hold" class="flex-horizontal">
+          <div class="black-label">{{localize "COB.Hold"}}</div>
           {{#multiboxes data.hold}}
           <div class="flex-horizontal">
-            <div class="gray-label">{{localize "BITD.Weak"}}</div>
-            <input id="crew-hold-weak" type="radio" name="data.hold" value="weak">
-            <label for="crew-hold-weak"></label>
+            <div class="gray-label">{{localize "COB.Weak"}}</div>
+            <input id="house-hold-weak" type="radio" name="data.hold" value="weak">
+            <label for="house-hold-weak"></label>
           </div>
           <div class="flex-horizontal">
-            <div class="gray-label">{{localize "BITD.Strong"}}</div>
-            <input id="crew-hold-strong" type="radio" name="data.hold" value="strong">
-            <label for="crew-hold-strong"></label>
+            <div class="gray-label">{{localize "COB.Strong"}}</div>
+            <input id="house-hold-strong" type="radio" name="data.hold" value="strong">
+            <label for="house-hold-strong"></label>
           </div>
           {{/multiboxes}}
         </div>
 
-        <div id="crew-tier">
+        <div id="house-tier">
           {{#multiboxes data.tier}}
-          <input id="crew-tier-0" type="radio" name="data.tier" value="0">
-          <label for="crew-tier-0" class="black-label">{{localize "BITD.Tier"}}</label>
-          {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/radiotoggles.html" count=4 actor=../actor field="data.tier" name="tier" currentval=../data.tier }}
+          <input id="house-tier-0" type="radio" name="data.tier" value="0">
+          <label for="house-tier-0" class="black-label">{{localize "COB.Tier"}}</label>
+          {{> "systems/court-of-blades/templates/parts/radiotoggles.html" count=4 actor=../actor field="data.tier" name="tier" currentval=../data.tier }}
           {{/multiboxes}}
         </div>
       </div>
@@ -67,41 +67,41 @@
 
 
   <section class="flex-horizontal flex">
-    <div id="crew-reputation">
+    <div id="house-reputation">
       {{#multiboxes data.reputation}}
       {{#repturf data.turfs_amount}}
-        <label class="black-label" for="crew-reputation-0">{{localize "BITD.Rep"}}</label>
-        <input type="radio" id="{{../actor._id}}-crew-reputation-0" name="data.reputation" value="0" dtype="Radio">
-        {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/radiotoggles.html" count=12 actor=../actor field="data.reputation" name="reputation" currentval=../data.reputation }}
+        <label class="black-label" for="house-reputation-0">{{localize "COB.Rep"}}</label>
+        <input type="radio" id="{{../actor._id}}-house-reputation-0" name="data.reputation" value="0" dtype="Radio">
+        {{> "systems/court-of-blades/templates/parts/radiotoggles.html" count=12 actor=../actor field="data.reputation" name="reputation" currentval=../data.reputation }}
       {{/repturf}}
       {{/multiboxes}}
-      <div class="gray-label">{{localize "BITD.Turf"}}</div>
+      <div class="gray-label">{{localize "COB.Turf"}}</div>
     </div>
 
     {{!-- Coins --}}
-    <div id="crew-coins">
+    <div id="house-coins">
 
-      <div id="crew-coins-hands">
+      <div id="house-coins-hands">
         <div class="stripe">
-          <label for="crew-coins-hands-0">{{localize "BITD.Coins"}} <!-- <i class="fab fa-creative-commons-zero nullifier"></i>--></label>
+          <label for="house-coins-hands-0">{{localize "COB.Coins"}} <!-- <i class="fab fa-creative-commons-zero nullifier"></i>--></label>
         </div>
-        <div class="crew-coins coins-hands">
+        <div class="house-coins coins-hands">
           {{#multiboxes data.coins.value}}
-          {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/radiotoggles.html" count=4 actor=../actor field="data.coins.value" name="coins-hands" currentval=../data.coins.value }}
+          {{> "systems/court-of-blades/templates/parts/radiotoggles.html" count=4 actor=../actor field="data.coins.value" name="coins-hands" currentval=../data.coins.value }}
           {{/multiboxes}}
         </div>
       </div>
 
       {{#if data.vault.max}}
-      <div id="crew-coins-vault">
+      <div id="house-coins-vault">
         
         <div class="stripe">
-          <label for="crew-coins-vault-0">{{localize "BITD.Vault"}} <!-- <i class="fab fa-creative-commons-zero nullifier"></i> --></label>
+          <label for="house-coins-vault-0">{{localize "COB.Vault"}} <!-- <i class="fab fa-creative-commons-zero nullifier"></i> --></label>
         </div>
-        <div class="crew-coins coins-vault">
+        <div class="house-coins coins-vault">
           {{#multiboxes data.vault.value}}
-            <input type="radio" id="crew-coins-vault-0" name="data.vault.value" value="0" checked="checked" hidden>
-            {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/radiotoggles.html" count=data.vault.max actor=../actor field="data.vault.value" name="coins-vault" currentval=../data.vault.value }}
+            <input type="radio" id="house-coins-vault-0" name="data.vault.value" value="0" checked="checked" hidden>
+            {{> "systems/court-of-blades/templates/parts/radiotoggles.html" count=data.vault.max actor=../actor field="data.vault.value" name="coins-vault" currentval=../data.vault.value }}
           {{/multiboxes}}
         </div>
 
@@ -113,20 +113,20 @@
     {{!-- Heat/Wanted --}}
     <div id="heat-wanted" class="flex-horizontal big-teeth-section">
   
-      <div id="crew-heat" class="big-teeth">
+      <div id="house-heat" class="big-teeth">
         {{#multiboxes data.heat}}
-          <label class="black-label" for="crew-heat-0">{{localize "BITD.Heat"}}</label>
-          <input type="radio" id="{{../actor._id}}-crew-heat-0" name="data.heat" value="0" dtype="Radio">
-          {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/radiotoggles.html" count=9 actor=actor field="data.heat" name="heat" currentval=data.heat }}
+          <label class="black-label" for="house-heat-0">{{localize "COB.Heat"}}</label>
+          <input type="radio" id="{{../actor._id}}-house-heat-0" name="data.heat" value="0" dtype="Radio">
+          {{> "systems/court-of-blades/templates/parts/radiotoggles.html" count=9 actor=actor field="data.heat" name="heat" currentval=data.heat }}
         {{/multiboxes}}
   
       </div>
-      <div id="crew-wanted-container" class="small-teeth-container">
+      <div id="house-wanted-container" class="small-teeth-container">
         {{#multiboxes data.wanted}}
-        <div id="crew-wanted" class="small-teeth-wrap">
-          <label class="black-label" for="crew-wanted-counter-0">{{localize "BITD.Wanted"}}</label>
+        <div id="house-wanted" class="small-teeth-wrap">
+          <label class="black-label" for="house-wanted-counter-0">{{localize "COB.Wanted"}}</label>
           <div class="small-teeth">
-            {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/radiotoggles.html" count=4 actor=actor field="data.wanted" name="wanted" currentval=data.wanted }}
+            {{> "systems/court-of-blades/templates/parts/radiotoggles.html" count=4 actor=actor field="data.wanted" name="wanted" currentval=data.wanted }}
           </div>
         </div>
         {{/multiboxes}}
@@ -139,42 +139,42 @@
 
     <div class="flex-vertical">
 
-      <div id="crew-class" class="class-name">
+      <div id="house-class" class="class-name">
         {{#each actor.items as |item id|}}
-        {{#if (eq item.type "crew_type")}}
+        {{#if (eq item.type "house_type")}}
         <div class="big-name">{{item.name}}</div>
         <div class="big-description">{{item.data.description}}</div>
         {{/if}}
         {{/each}}
       </div>
       <nav class="tabs flex-horizontal">
-        <a class="item" data-tab="turfs">{{localize "BITD.Turfs"}}</a>
-        <a class="item" data-tab="upgrades">{{localize "BITD.Upgrades"}}</a>
-        <a class="item" data-tab="abilities">{{localize "BITD.Abilities"}}</a>
-        <a class="item" data-tab="cohorts">{{localize "BITD.Cohorts"}}</a>
-        <a class="item" data-tab="notes">{{localize "BITD.Notes"}}</a>
-        <a class="item" data-tab="all-items">{{localize "BITD.AllItems"}}</a>
+        <a class="item" data-tab="turfs">{{localize "COB.Turfs"}}</a>
+        <a class="item" data-tab="upgrades">{{localize "COB.Upgrades"}}</a>
+        <a class="item" data-tab="abilities">{{localize "COB.Abilities"}}</a>
+        <a class="item" data-tab="cohorts">{{localize "COB.Cohorts"}}</a>
+        <a class="item" data-tab="notes">{{localize "COB.Notes"}}</a>
+        <a class="item" data-tab="all-items">{{localize "COB.AllItems"}}</a>
       </nav>
     </div>
 
 
-    {{!-- Crew XP --}}
+    {{!-- House XP --}}
     <div class="flex-fertical">
       <div class="big-teeth-section">
-        <div id="crew-xp" class="big-teeth">
-          <label class="black-label" for="crew-experience-0">{{localize "BITD.CrewXP"}}</label>
+        <div id="house-xp" class="big-teeth">
+          <label class="black-label" for="house-experience-0">{{localize "COB.HouseXP"}}</label>
           {{#multiboxes data.experience}}
-          <input type="radio" id="crew-experience-0" name="data.experience" value="0" dtype="Radio">
-          {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/radiotoggles.html" count=10 actor=actor field="data.experience" name="experience" currentval=data.experience }}
-<!--          {{#crew_experience}}{{/crew_experience}}-->
+          <input type="radio" id="house-experience-0" name="data.experience" value="0" dtype="Radio">
+          {{> "systems/court-of-blades/templates/parts/radiotoggles.html" count=10 actor=actor field="data.experience" name="experience" currentval=data.experience }}
+<!--          {{#house_experience}}{{/house_experience}}-->
           {{/multiboxes}}
         </div>
       </div>
       <div class="experience-clues-container">
-        <div class="experience-clues-description">{{localize "BITD.CrewExpClue1"}}</div>
+        <div class="experience-clues-description">{{localize "COB.HouseExpClue1"}}</div>
         <div class="experience-clues">
           {{#each actor.items as |item id|}}
-          {{#if (eq item.type "crew_type")}}
+          {{#if (eq item.type "house_type")}}
           {{html text=item.data.experience_clues}}
           {{/if}}
           {{/each}}
@@ -190,26 +190,26 @@
     {{!-- Turfs --}}
     <div class="tab" data-tab="turfs">
       <div class="label-stripe">
-        <p><label>{{localize "BITD.Turfs"}}</label></p>
+        <p><label>{{localize "COB.Turfs"}}</label></p>
       </div>
       {{#each actor.items as |item id|}}
-      {{#if (eq item.type "crew_type")}}
+      {{#if (eq item.type "house_type")}}
       <div class="item" data-item-id="{{item._id}}">
-      {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/turf-list.html" turfs_data=item.data.turfs can_edit=false}}
+      {{> "systems/court-of-blades/templates/parts/turf-list.html" turfs_data=item.data.turfs can_edit=false}}
       </div>
       {{/if}}
       {{/each}}
     </div>
 
 
-    {{!-- Crew Upgrades --}}
-    <div id="crew-upgrades" class="tab grow-two flex-vertical" data-tab="upgrades">
+    {{!-- House Upgrades --}}
+    <div id="house-upgrades" class="tab grow-two flex-vertical" data-tab="upgrades">
       <div class="label-stripe flex-horizontal">
-        <p>{{localize "BITD.CrewUpgrades"}}</p>
-        <p><a class="item-add-popup" data-item-type="crew_upgrade"><i class="fas fa-plus-square"></i></a></p>
+        <p>{{localize "COB.HouseUpgrades"}}</p>
+        <p><a class="item-add-popup" data-item-type="house_upgrade"><i class="fas fa-plus-square"></i></a></p>
       </div>
       {{#each actor.items as |item id|}}
-      {{#if (eq item.type "crew_upgrade")}}
+      {{#if (eq item.type "house_upgrade")}}
         <div class="item flex-horizontal" data-item-id="{{item._id}}">
           <div class="item-body item-sheet-open flex-horizontal">
             <b><div class="item-name">{{item.name}}</div></b>
@@ -221,14 +221,14 @@
       {{/each}}
     </div>
 
-    {{!-- Crew Abilities --}}
-    <div id="crew-abilities" class="tab grow-two flex-vertical" data-tab="abilities">
+    {{!-- House Abilities --}}
+    <div id="house-abilities" class="tab grow-two flex-vertical" data-tab="abilities">
       <div class="label-stripe flex-horizontal">
-        <p>{{localize "BITD.SpecialAbilities"}}</p>
-        <p><a class="item-add-popup" data-item-type="crew_ability"><i class="fas fa-plus-square"></i></a></p>
+        <p>{{localize "COB.SpecialAbilities"}}</p>
+        <p><a class="item-add-popup" data-item-type="house_ability"><i class="fas fa-plus-square"></i></a></p>
       </div>
       {{#each actor.items as |item id|}}
-      {{#if (eq item.type "crew_ability")}}
+      {{#if (eq item.type "house_ability")}}
         <div class="item flex-horizontal" data-item-id="{{item._id}}">
           <div class="item-body item-sheet-open flex-horizontal">
             <b><div class="item-name">{{item.name}}</div></b>
@@ -241,16 +241,16 @@
     </div>
 
     {{!-- Cohorts --}}
-    <div id="crew-cohorts" class="tab grow-two flex-vertical" data-tab="cohorts">
+    <div id="house-cohorts" class="tab grow-two flex-vertical" data-tab="cohorts">
       <div class="label-stripe flex-horizontal">
-        <p>{{localize "BITD.Cohorts"}}</p>
+        <p>{{localize "COB.Cohorts"}}</p>
         <p><a class="add-item" data-item-type="cohort"><i class="fas fa-plus-square"></i></a></p>
       </div>
       <div class="cohorts flex-horizontal">
         {{#each actor.items as |item id|}}
           {{#if (eq item.type "cohort")}}
           
-            {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/cohort-block.html" item=item}}
+            {{> "systems/court-of-blades/templates/parts/cohort-block.html" item=item}}
     
           {{/if}}
         {{/each}}
@@ -260,7 +260,7 @@
     {{!-- Notes --}}
     <div id="notes" class="tab grow-two flex-vertical" data-tab="notes">
       <div class="label-stripe">
-        <p>{{localize "BITD.Notes"}}</p>
+        <p>{{localize "COB.Notes"}}</p>
       </div>
       <textarea rows="15" name="data.description">{{{data.description}}}</textarea>
     </div>
@@ -268,7 +268,7 @@
     {{!-- Full Item List --}}
     <div class="tab grow-two flex-vertical" data-tab="all-items">
       <div class="label-stripe">
-        <p><label>{{localize "BITD.AllItems"}}</label></p>
+        <p><label>{{localize "COB.AllItems"}}</label></p>
       </div>
       {{#each actor.items as |item id|}}
       <div class="item flex-horizontal" data-item-id="{{item._id}}">
