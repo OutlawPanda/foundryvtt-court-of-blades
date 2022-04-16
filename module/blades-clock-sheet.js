@@ -1,5 +1,5 @@
 
-import { BladesSheet } from "./module/blades-sheet.js";
+import { BladesSheet } from "./blades-sheet.js";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -11,7 +11,7 @@ export class BladesClockSheet extends BladesSheet {
 	static get defaultOptions() {
 	  return foundry.utils.mergeObject(super.defaultOptions, {
   	  classes: ["court-of-blades", "sheet", "actor", "clock"],
-  	  template: "templates/actors/clock-sheet.html",
+  	  template: "system/court-of-blades/templates/actors/clock-sheet.html",
       width: 420,
       height: 320,
     });

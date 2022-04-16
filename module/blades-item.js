@@ -1,4 +1,4 @@
-import { BladesHelpers } from "./module/blades-helpers.js";
+import { BladesHelpers } from "./blades-helpers.js";
 
 /**
  * Extend the basic Item
