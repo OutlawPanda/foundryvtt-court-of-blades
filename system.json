@@ -14,10 +14,6 @@
     {
       "name": "blades-in-the-dark",
       "manifest": "https://raw.githubusercontent.com/justinross/foundryvtt-blades-in-the-dark/tidy-sheet-redesign/system.json"
-    },
-    {
-      "name": "Blades in the Dark",
-      "type": "system"
     }
   ],
   "scripts": [

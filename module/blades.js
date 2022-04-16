@@ -5,20 +5,20 @@
  */
 
 // Import Modules
-import { registerSystemSettings } from "./settings.js";
-import { preloadHandlebarsTemplates } from "./blades-templates.js";
-import { bladesRoll, simpleRollPopup } from "./blades-roll.js";
-import { BladesHelpers } from "./blades-helpers.js";
-import { BladesLookup } from "./blades-lookup.js";
-import { BladesActor } from "./blades-actor.js";
-import { BladesActiveEffect } from "./blades-active-effect.js";
-import { BladesItem } from "./blades-item.js";
-import { BladesItemSheet } from "./blades-item-sheet.js";
-import { BladesActorSheet } from "./blades-actor-sheet.js";
-import { BladesHouseSheet } from "./blades-house-sheet.js";
-import { BladesClockSheet } from "./blades-clock-sheet.js";
-import { BladesNPCSheet } from "./blades-npc-sheet.js";
-import { BladesFactionSheet } from "./blades-faction-sheet.js";
+import { registerSystemSettings } from "OutlawPanda/foundryvtt-court-of-blades/module/settings.js";
+import { preloadHandlebarsTemplates } from "OutlawPanda/foundryvtt-court-of-blades/module/blades-templates.js";
+import { bladesRoll, simpleRollPopup } from "OutlawPanda/foundryvtt-court-of-blades/module/blades-roll.js";
+import { BladesHelpers } from "OutlawPanda/foundryvtt-court-of-blades/module/blades-helpers.js";
+import { BladesLookup } from "OutlawPanda/foundryvtt-court-of-blades/module/blades-lookup.js";
+import { BladesActor } from "OutlawPanda/foundryvtt-court-of-blades/module/blades-actor.js";
+import { BladesActiveEffect } from "OutlawPanda/foundryvtt-court-of-blades/module/blades-active-effect.js";
+import { BladesItem } from "OutlawPanda/foundryvtt-court-of-blades/module/blades-active-effect.js";
+import { BladesItemSheet } from "OutlawPanda/foundryvtt-court-of-blades/module/blades-active-effect.js";
+import { BladesActorSheet } from "OutlawPanda/foundryvtt-court-of-blades/module/blades-actor-sheet.js";
+import { BladesHouseSheet } from "OutlawPanda/foundryvtt-court-of-blades/module/blades-faction-sheet.js";
+import { BladesClockSheet } from "OutlawPanda/foundryvtt-court-of-blades/module/blades-clock-sheet.js";
+import { BladesNPCSheet } from "OutlawPanda/foundryvtt-court-of-blades/module/blades-npc-sheet.js";
+import { BladesFactionSheet } from "OutlawPanda/foundryvtt-court-of-blades/module/blades-faction-sheet.js";
 import * as migrations from "/./migration.js";
 import {checkLocalizations} from "./localization.js";
 
