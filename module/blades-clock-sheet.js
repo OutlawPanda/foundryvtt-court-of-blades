@@ -1,5 +1,5 @@
 
-import { BladesSheet } from "./blades-sheet.js";
+import { BladesSheet } from "./module/blades-sheet.js";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -11,7 +11,7 @@ export class BladesClockSheet extends BladesSheet {
 	static get defaultOptions() {
 	  return foundry.utils.mergeObject(super.defaultOptions, {
   	  classes: ["court-of-blades", "sheet", "actor", "clock"],
-  	  template: "systems/court-of-blades/templates/actors/clock-sheet.html",
+  	  template: "templates/actors/clock-sheet.html",
       width: 420,
       height: 320,
     });
@@ -33,7 +33,7 @@ export class BladesClockSheet extends BladesSheet {
 
   /** @override */
   async _updateObject(event, formData) {
-    let image_path = `systems/court-of-blades/styles/assets/progressclocks-svg/Progress Clock ${formData['data.type']}-${formData['data.value']}.svg`;
+    let image_path = `styles/assets/progressclocks-svg ${formData['data.type']}-${formData['data.value']}.svg`;
     formData['img'] = image_path;
     formData['token.img'] = image_path;
     let data = [];

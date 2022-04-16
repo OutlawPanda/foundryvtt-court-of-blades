@@ -7,11 +7,11 @@
 // Import Modules
 import { registerSystemSettings } from "./settings.js";
 import { preloadHandlebarsTemplates } from "./blades-templates.js";
-import { bladesRoll, simpleRollPopup } from "./blades-roll.js";
-import { BladesHelpers } from "./blades-helpers.js";
+import { bladesRoll, simpleRollPopup } from "./module/blades-roll.js";
+import { BladesHelpers } from "./module/blades-helpers.js";
 import { BladesLookup } from "./blades-lookup.js";
 import { BladesActor } from "./blades-actor.js";
-import { BladesActiveEffect } from "./blades-active-effect.js";
+import { BladesActiveEffect } from "./module/blades-active-effect.js";
 import { BladesItem } from "./blades-item.js";
 import { BladesItemSheet } from "./blades-item-sheet.js";
 import { BladesActorSheet } from "./blades-actor-sheet.js";
@@ -19,7 +19,7 @@ import { BladesHouseSheet } from "./blades-house-sheet.js";
 import { BladesClockSheet } from "./blades-clock-sheet.js";
 import { BladesNPCSheet } from "./blades-npc-sheet.js";
 import { BladesFactionSheet } from "./blades-faction-sheet.js";
-import * as migrations from "./migration.js";
+import * as migrations from "/./module/migration.js";
 import {checkLocalizations} from "./localization.js";
 
 
@@ -314,7 +314,7 @@ Hooks.once("init", async function() {
 
   // Commented out to avoid conflict with existing foundry helper that I somehow didn't notice
   // Handlebars.registerHelper('icon', function(icon_name, classes){
-  //   let icon_folder = "/systems/court-of-blades/styles/assets/icons/";
+  //   let icon_folder = "/./styles/assets/icons/";
   //   let icon_info = BladesHelpers.icons[icon_name];
   //   let html = '';
   //   switch(icon_info.type){

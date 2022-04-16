@@ -1,4 +1,4 @@
-import { BladesHelpers } from "./blades-helpers.js";
+import { BladesHelpers } from "./module/blades-helpers.js";
 
 /**
  * Extend the base ActiveEffect class to implement system-specific logic.
@@ -69,7 +69,7 @@ export class BladesActiveEffect extends ActiveEffect {
       case "create":
         return owner.createEmbeddedDocuments("ActiveEffect", [{
           label: "New Effect",
-          icon: "systems/court-of-blades/styles/assets/icons/Icon.3_13.png",
+          icon: "./styles/assets/icons/Icon.3_13.png",
           origin: owner.uuid,
           "duration.rounds": selector.dataset.effectType === "temporary" ? 1 : undefined,
           disabled: selector.dataset.effectType === "inactive"

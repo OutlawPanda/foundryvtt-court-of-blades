@@ -1,9 +1,9 @@
 
-import { BladesSheet } from "./blades-sheet.js";
+import { BladesSheet } from "./module/blades-sheet.js";
 // import {onManageActiveEffect, prepareActiveEffectCategories} from "./effects.js";
-import { BladesActiveEffect } from "./blades-active-effect.js";
-import { BladesHelpers } from "./blades-helpers.js";
-import { migrateWorld } from "./migration.js";
+import { BladesActiveEffect } from "./module/blades-active-effect.js";
+import { BladesHelpers } from "./module/blades-helpers.js";
+import { migrateWorld } from "./module/migration.js";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -15,7 +15,7 @@ export class BladesActorSheet extends BladesSheet {
 	static get defaultOptions() {
 	  return foundry.utils.mergeObject(super.defaultOptions, {
   	  classes: ["court-of-blades", "sheet", "actor", "pc"],
-  	  template: "./systems/court-of-blades/templates/actor-sheet.html",
+  	  template: "templates/actor-sheet.html",
       width: 800,
       height: 1200,
       tabs: [{navSelector: ".tabs", contentSelector: ".tab-content", initial: "playbook"}]
