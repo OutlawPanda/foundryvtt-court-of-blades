@@ -1,14 +1,24 @@
 {
   "name": "court-of-blades",
   "title": "Court of Blades",
-  "description": "Court of Blades game system. Based on Blades in the Dark system",
-  "version": "4.0.1-b9",
+  "description": "Court of Blades game system. Based on Blades in the Dark system by Megastruktur and JustinRoss",
+  "version": "4.0.2-b9",
   "minimumCoreVersion": "0.8.5",
   "compatibleCoreVersion": "0.8.9",
   "templateVersion": 1,
   "author": "OutlawPanda",
   "esmodules": [
     "module/blades.js"
+  ],
+	"dependencies": [
+    {
+      "name": "blades-in-the-dark",
+      "manifest": "https://raw.githubusercontent.com/justinross/foundryvtt-blades-in-the-dark/tidy-sheet-redesign/system.json"
+    },
+    {
+      "name": "Blades in the Dark",
+      "type": "system"
+    }
   ],
   "scripts": [
     "module/lib/markdown-it.min.js"
@@ -43,9 +53,9 @@
       "path": "lang/de.json"
     }
   ],
-  "url": "https://outlawpanda.github.io/",
-  "manifest": "https://raw.githubusercontent.com/OutlawPanda/OutlawPanda.github.io/main/system.json",
-  "download": "https://github.com/OutlawPanda/OutlawPanda.github.io/archive/refs/heads/main.zip",
+  "url": "https://github.com/OutlawPanda/foundryvtt-court-of-blades.git",
+  "manifest": "https://raw.githubusercontent.com/OutlawPanda/foundryvtt-court-of-blades/main/system.json",
+  "download": "https://github.com/OutlawPanda/foundryvtt-court-of-blades/archive/refs/heads/main.zip",
   "packs": [
     {
       "name": "class",
