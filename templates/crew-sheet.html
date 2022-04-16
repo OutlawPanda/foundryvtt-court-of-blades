@@ -57,7 +57,7 @@
           {{#multiboxes data.tier}}
           <input id="crew-tier-0" type="radio" name="data.tier" value="0">
           <label for="crew-tier-0" class="black-label">{{localize "BITD.Tier"}}</label>
-          {{> "systems/blades-in-the-dark/templates/parts/radiotoggles.html" count=4 actor=../actor field="data.tier" name="tier" currentval=../data.tier }}
+          {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/radiotoggles.html" count=4 actor=../actor field="data.tier" name="tier" currentval=../data.tier }}
           {{/multiboxes}}
         </div>
       </div>
@@ -72,7 +72,7 @@
       {{#repturf data.turfs_amount}}
         <label class="black-label" for="crew-reputation-0">{{localize "BITD.Rep"}}</label>
         <input type="radio" id="{{../actor._id}}-crew-reputation-0" name="data.reputation" value="0" dtype="Radio">
-        {{> "systems/blades-in-the-dark/templates/parts/radiotoggles.html" count=12 actor=../actor field="data.reputation" name="reputation" currentval=../data.reputation }}
+        {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/radiotoggles.html" count=12 actor=../actor field="data.reputation" name="reputation" currentval=../data.reputation }}
       {{/repturf}}
       {{/multiboxes}}
       <div class="gray-label">{{localize "BITD.Turf"}}</div>
@@ -87,7 +87,7 @@
         </div>
         <div class="crew-coins coins-hands">
           {{#multiboxes data.coins.value}}
-          {{> "systems/blades-in-the-dark/templates/parts/radiotoggles.html" count=4 actor=../actor field="data.coins.value" name="coins-hands" currentval=../data.coins.value }}
+          {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/radiotoggles.html" count=4 actor=../actor field="data.coins.value" name="coins-hands" currentval=../data.coins.value }}
           {{/multiboxes}}
         </div>
       </div>
@@ -101,7 +101,7 @@
         <div class="crew-coins coins-vault">
           {{#multiboxes data.vault.value}}
             <input type="radio" id="crew-coins-vault-0" name="data.vault.value" value="0" checked="checked" hidden>
-            {{> "systems/blades-in-the-dark/templates/parts/radiotoggles.html" count=data.vault.max actor=../actor field="data.vault.value" name="coins-vault" currentval=../data.vault.value }}
+            {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/radiotoggles.html" count=data.vault.max actor=../actor field="data.vault.value" name="coins-vault" currentval=../data.vault.value }}
           {{/multiboxes}}
         </div>
 
@@ -117,7 +117,7 @@
         {{#multiboxes data.heat}}
           <label class="black-label" for="crew-heat-0">{{localize "BITD.Heat"}}</label>
           <input type="radio" id="{{../actor._id}}-crew-heat-0" name="data.heat" value="0" dtype="Radio">
-          {{> "systems/blades-in-the-dark/templates/parts/radiotoggles.html" count=9 actor=actor field="data.heat" name="heat" currentval=data.heat }}
+          {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/radiotoggles.html" count=9 actor=actor field="data.heat" name="heat" currentval=data.heat }}
         {{/multiboxes}}
   
       </div>
@@ -126,7 +126,7 @@
         <div id="crew-wanted" class="small-teeth-wrap">
           <label class="black-label" for="crew-wanted-counter-0">{{localize "BITD.Wanted"}}</label>
           <div class="small-teeth">
-            {{> "systems/blades-in-the-dark/templates/parts/radiotoggles.html" count=4 actor=actor field="data.wanted" name="wanted" currentval=data.wanted }}
+            {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/radiotoggles.html" count=4 actor=actor field="data.wanted" name="wanted" currentval=data.wanted }}
           </div>
         </div>
         {{/multiboxes}}
@@ -165,7 +165,7 @@
           <label class="black-label" for="crew-experience-0">{{localize "BITD.CrewXP"}}</label>
           {{#multiboxes data.experience}}
           <input type="radio" id="crew-experience-0" name="data.experience" value="0" dtype="Radio">
-          {{> "systems/blades-in-the-dark/templates/parts/radiotoggles.html" count=10 actor=actor field="data.experience" name="experience" currentval=data.experience }}
+          {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/radiotoggles.html" count=10 actor=actor field="data.experience" name="experience" currentval=data.experience }}
 <!--          {{#crew_experience}}{{/crew_experience}}-->
           {{/multiboxes}}
         </div>
@@ -195,7 +195,7 @@
       {{#each actor.items as |item id|}}
       {{#if (eq item.type "crew_type")}}
       <div class="item" data-item-id="{{item._id}}">
-      {{> "systems/blades-in-the-dark/templates/parts/turf-list.html" turfs_data=item.data.turfs can_edit=false}}
+      {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/turf-list.html" turfs_data=item.data.turfs can_edit=false}}
       </div>
       {{/if}}
       {{/each}}
@@ -250,7 +250,7 @@
         {{#each actor.items as |item id|}}
           {{#if (eq item.type "cohort")}}
           
-            {{> "systems/blades-in-the-dark/templates/parts/cohort-block.html" item=item}}
+            {{> "https://github.com/OutlawPanda/OutlawPanda.github.io/blob/main/templates/parts/cohort-block.html" item=item}}
     
           {{/if}}
         {{/each}}
