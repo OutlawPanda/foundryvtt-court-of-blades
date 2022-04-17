@@ -22,3 +22,26 @@ Court of Blades is currently under development by **A Couple of Drakes**
 -https://acoupleofdrakes.itch.io/court-of-blades
 
 
+
+## Usage
+`"Item" - all playbooks, house types, upgrades, items, abilities,  etc.`
+
+
+Playbooks:
+- (B)  Bravo
+- (H)  Hawk
+- (E)  Eye
+- (Co) Couth
+- (Kn) Knack
+- (Ke) Key
+- (Ki) Kiss
+- (Cu) Curse
+
+House Types:
+- (A)  House Al-Mari
+- (C)  House Corvetto
+- (Bs)  House Bastien
+- (Bt)  House Battala
+- (L) House Lovell
+
+[ ]
