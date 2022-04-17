@@ -15,7 +15,7 @@ import { BladesActiveEffect } from "./module/blades-active-effect.js";
 import { BladesItem } from "./module/blades-item.js";
 import { BladesItemSheet } from "./module/blades-item-sheet.js";
 import { BladesActorSheet } from "./module/blades-actor-sheet.js";
-import { BladesCrewSheet } from ".module/blades-crew-sheet.js";
+import { BladesCrewSheet } from "./module/blades-crew-sheet.js";
 import { BladesClockSheet } from "./module/blades-clock-sheet.js";
 import { BladesNPCSheet } from "./module/blades-npc-sheet.js";
 import { BladesFactionSheet } from "./module/blades-faction-sheet.js";
