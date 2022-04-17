@@ -22,13 +22,9 @@
 - (Bt)  House Battalia
 - (L) House Lovell
 
+# Screenshots
 
 [bookcover]: ./images/Court-of-Blades.png "bookcover"
-
-
-
-
-
 
 
 
