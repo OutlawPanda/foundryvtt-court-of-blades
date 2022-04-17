@@ -44,4 +44,4 @@ House Types:
 - (Bt)  House Battala
 - (L) House Lovell
 
-[ ]
+[https://github.com/OutlawPanda/foundryvtt-court-of-blades/raw/main/images/Court-of-Blades.png]
