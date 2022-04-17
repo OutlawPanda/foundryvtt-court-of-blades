@@ -2,7 +2,7 @@
   "name": "court-of-blades",
   "title": "Court of Blades",
   "description": "Court of Blades game system. Based on Blades in the Dark system by Megastruktur and JustinRoss",
-  "version": "4.0.2-b9",
+  "version": "0.0.2-a2",
   "minimumCoreVersion": "0.8.5",
   "compatibleCoreVersion": "0.8.9",
   "templateVersion": 1,
@@ -13,7 +13,7 @@
 	"dependencies": [
     {
       "name": "blades-in-the-dark",
-      "manifest": "https://raw.githubusercontent.com/justinross/foundryvtt-blades-in-the-dark/tidy-sheet-redesign/system.json"
+      "type": "system"
     }
   ],
   "scripts": [

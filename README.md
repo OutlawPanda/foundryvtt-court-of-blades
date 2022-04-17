@@ -1,6 +1,6 @@
 ## A **Court of Blades** module for FoundryVTT
 
-#This system is currently a work in progress and needs a significant amount of editing before it will be ready to be released.
+# This system is currently a work in progress and needs a significant amount of editing before it will be ready to be released.
 
 ## Usage
 `"Item" - all playbooks, house types, upgrades, items, abilities,  etc.`
