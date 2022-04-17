@@ -23,7 +23,7 @@
 - (L) House Lovell
 
 
-[altscreen]: ./images/Court-of-Blades.png",
+[bookcover]: ./images/Court-of-Blades.png "bookcover"
 
 
 
