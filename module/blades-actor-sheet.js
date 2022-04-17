@@ -1,9 +1,9 @@
 
-import { BladesSheet } from "./blades-sheet.js";
+import { BladesSheet } from "./module/blades-sheet.js";
 // import {onManageActiveEffect, prepareActiveEffectCategories} from "./effects.js";
-import { BladesActiveEffect } from "./blades-active-effect.js";
-import { BladesHelpers } from "./blades-helpers.js";
-import { migrateWorld } from "./migration.js";
+import { BladesActiveEffect } from "./module/blades-active-effect.js";
+import { BladesHelpers } from "./module/blades-helpers.js";
+import { migrateWorld } from "./module/migration.js";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
