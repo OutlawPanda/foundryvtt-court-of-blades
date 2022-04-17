@@ -32,8 +32,8 @@
     "experience": [0],
     "experience_max": 8,
     "experience_clues": ["COB.ClassExpClue3", "COB.ClassExpClue2"],
-    "coins": [0],
-    "coins_stashed": [0],
+    "Influences": [0],
+    "Influences_stashed": [0],
     "special_abilities": [],
     "loadout": 0,
     "load_level": "",
@@ -135,13 +135,13 @@
   "house": {
     "name": "",
     "reputation": [0],
-    "lair": "",
+    "house": "",
     "tier": [0],
     "deity": "",
     "hold": ["strong"],
     "experience": [0],
     "hold_types": ["weak", "strong"],
-    "coins": {
+    "Influences": {
       "max": 4,
       "value": [0]
     },
@@ -462,7 +462,7 @@
         "connects": []
       },
       "8": {
-        "name": "COB.Lair",
+        "name": "COB.house",
         "value": 1,
         "description": "",
         "connects": []

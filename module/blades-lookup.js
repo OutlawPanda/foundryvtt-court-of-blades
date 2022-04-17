@@ -3,7 +3,7 @@ export class BladesLookup {
   static terms = [
     {
       aliases: ["ARREST"],
-      details: "Bluecoats send detail to arrest you (scale = WANTED LEVEL). Pay them off with COIN = WANTED LEVEL, hand someone over for arrest, or attempt to evade them."
+      details: "Bluecoats send detail to arrest you (scale = WANTED LEVEL). Pay them off with Influence = WANTED LEVEL, hand someone over for arrest, or attempt to evade them."
     },
     {
       aliases: ["COOPERATION"],
@@ -23,19 +23,19 @@ export class BladesLookup {
     },
     {
       aliases: ["INTERROGATION"],
-      details: "Bluecoats round up a PC for questioning. How did they manage to capture you? Pay them with with 3 COIN, or they beat you up for 2 HARM + you tell them what they want to know for +3 HEAT. (Effects can be resisted separately.)"
+      details: "Bluecoats round up a PC for questioning. How did they manage to capture you? Pay them with with 3 Influence, or they beat you up for 2 HARM + you tell them what they want to know for +3 HEAT. (Effects can be resisted separately.)"
     },
     {
       aliases: ["QUESTIONING"],
-      details: "Bluecoats round up NPC house member or contact for questioning. Who do the Bluecoats think is most vulnerable? Make a fortune roll (1-3: +2 HEAT, 4/5: +1 HEAT) or pay them off with 2 COIN."
+      details: "Bluecoats round up NPC house member or contact for questioning. Who do the Bluecoats think is most vulnerable? Make a fortune roll (1-3: +2 HEAT, 4/5: +1 HEAT) or pay them off with 2 Influence."
     },
     {
       aliases: ["REPRISALS"],
-      details: "Enemy faction makes a move against you. Pay 1 REP or 1 COIN, allow them to mess with yours, or fight back."
+      details: "Enemy faction makes a move against you. Pay 1 REP or 1 Influence, allow them to mess with yours, or fight back."
     },
     {
       aliases: ["RIVALS"],
-      details: "Neutral faction threaten you, a friend, a contact, or vice purveyor. Forfeit 1 REP or 1 COIN per rival Tier, or stand up to them and -1 faction status."
+      details: "Neutral faction threaten you, a friend, a contact, or vice purveyor. Forfeit 1 REP or 1 Influence per rival Tier, or stand up to them and -1 faction status."
     },
     {
       aliases: ["SHOW OF FORCE"],
@@ -47,7 +47,7 @@ export class BladesLookup {
     },
     {
       aliases: ["USUAL SUSPECTS"],
-      details: "Bluecoats grab someone in the periphery of house for questioning. Whose friend or vice purveyor is most likely to be taken? Make a fortune roll (1-3: +2 HEAT, 4/5: level 2 HARM) or pay them off with 1 COIN."
+      details: "Bluecoats grab someone in the periphery of house for questioning. Whose friend or vice purveyor is most likely to be taken? Make a fortune roll (1-3: +2 HEAT, 4/5: level 2 HARM) or pay them off with 1 Influence."
     }
   ];
 

@@ -33,7 +33,7 @@
 
           <input class="turf-name" type="text" name="data.turfs.{{id}}.name" value="{{#if ../editable}}{{turf.name}}{{else}}{{localize turf.name}}{{/if}}">
           {{#noteq turf.name "COB.Turf"}}
-          {{#noteq turf.name "COB.Lair"}}
+          {{#noteq turf.name "COB.house"}}
           <textarea class="turf-description" name="data.turfs.{{id}}.description">{{localize turf.description}}</textarea>
           {{/noteq}}
           {{/noteq}}

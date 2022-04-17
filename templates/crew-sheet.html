@@ -29,9 +29,9 @@
     </div>
 
     <div class="grow-two flex-vertical">
-      <div id="lair">
-        <label for="house-lair">{{localize "COB.Lair"}}</label>
-        <input type="text" id="house-lair" name="data.lair" value="{{data.lair}}">
+      <div id="house">
+        <label for="house-house">{{localize "COB.house"}}</label>
+        <input type="text" id="house-house" name="data.house" value="{{data.house}}">
       </div>
 
 
@@ -78,30 +78,30 @@
       <div class="gray-label">{{localize "COB.Turf"}}</div>
     </div>
 
-    {{!-- Coins --}}
-    <div id="house-coins">
+    {{!-- Influences --}}
+    <div id="house-Influences">
 
-      <div id="house-coins-hands">
+      <div id="house-Influences-hands">
         <div class="stripe">
-          <label for="house-coins-hands-0">{{localize "COB.Coins"}} <!-- <i class="fab fa-creative-commons-zero nullifier"></i>--></label>
+          <label for="house-Influences-hands-0">{{localize "COB.Influences"}} <!-- <i class="fab fa-creative-commons-zero nullifier"></i>--></label>
         </div>
-        <div class="house-coins coins-hands">
-          {{#multiboxes data.coins.value}}
-          {{> "systems/court-of-blades/templates/parts/radiotoggles.html" count=4 actor=../actor field="data.coins.value" name="coins-hands" currentval=../data.coins.value }}
+        <div class="house-Influences Influences-hands">
+          {{#multiboxes data.Influences.value}}
+          {{> "systems/court-of-blades/templates/parts/radiotoggles.html" count=4 actor=../actor field="data.Influences.value" name="Influences-hands" currentval=../data.Influences.value }}
           {{/multiboxes}}
         </div>
       </div>
 
       {{#if data.vault.max}}
-      <div id="house-coins-vault">
+      <div id="house-Influences-vault">
         
         <div class="stripe">
-          <label for="house-coins-vault-0">{{localize "COB.Vault"}} <!-- <i class="fab fa-creative-commons-zero nullifier"></i> --></label>
+          <label for="house-Influences-vault-0">{{localize "COB.Vault"}} <!-- <i class="fab fa-creative-commons-zero nullifier"></i> --></label>
         </div>
-        <div class="house-coins coins-vault">
+        <div class="house-Influences Influences-vault">
           {{#multiboxes data.vault.value}}
-            <input type="radio" id="house-coins-vault-0" name="data.vault.value" value="0" checked="checked" hidden>
-            {{> "systems/court-of-blades/templates/parts/radiotoggles.html" count=data.vault.max actor=../actor field="data.vault.value" name="coins-vault" currentval=../data.vault.value }}
+            <input type="radio" id="house-Influences-vault-0" name="data.vault.value" value="0" checked="checked" hidden>
+            {{> "systems/court-of-blades/templates/parts/radiotoggles.html" count=data.vault.max actor=../actor field="data.vault.value" name="Influences-vault" currentval=../data.vault.value }}
           {{/multiboxes}}
         </div>
 

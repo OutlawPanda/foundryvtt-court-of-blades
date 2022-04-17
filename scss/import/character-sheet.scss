@@ -284,7 +284,7 @@
           margin-bottom: 20px;
         }
 
-        .coins-box{
+        .Influences-box{
           @include css_popup(30px, 30px, 250px, 50px);
 
           > div{
@@ -292,21 +292,21 @@
           }
           .mini-view{
             background-repeat: no-repeat;
-            background-image: url(assets/icons/coins.png);
+            background-image: url(assets/icons/Influences.png);
             background-size: contain;
 
-            .coin-values{
+            .Influence-values{
             }
 
           }
 
           .full-view{
-            @import 'coins.scss';
+            @import 'Influences.scss';
           }
 
           &.open{
             .full-view{
-              .coins{
+              .Influences{
                 display: flex;
                 justify-content: space-between;
                 .hand, .stash{

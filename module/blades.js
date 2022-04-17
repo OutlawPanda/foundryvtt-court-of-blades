@@ -132,12 +132,12 @@ Hooks.once("init", async function() {
     return html;
   });
 
-  Handlebars.registerHelper('house_vault_coins', (max_coins, options) => {
+  Handlebars.registerHelper('house_vault_Influences', (max_Influences, options) => {
 
     let html = options.fn(this);
-    for (let i = 1; i <= max_coins; i++) {
+    for (let i = 1; i <= max_Influences; i++) {
 
-      html += "<input type=\"radio\" id=\"house-coins-vault-" + i + "\" name=\"data.vault.value\" value=\"" + i + "\"><label for=\"house-coins-vault-" + i + "\"></label>";
+      html += "<input type=\"radio\" id=\"house-Influences-vault-" + i + "\" name=\"data.vault.value\" value=\"" + i + "\"><label for=\"house-Influences-vault-" + i + "\"></label>";
     }
 
     return html;

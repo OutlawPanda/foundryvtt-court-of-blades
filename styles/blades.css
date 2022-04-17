@@ -12,7 +12,7 @@
  * Custom Radio Squared
  */
 /*
- * Checkboxes underscored.
+ * Checkboxes underErrandd.
  */
 /*
  * Create Clock
@@ -239,12 +239,12 @@
 .court-of-blades td {
   padding: 5px;
 }
-.court-of-blades.house.sheet .coins {
+.court-of-blades.house.sheet .Influences {
   display: flex;
   /* Hide the browser's default checkbox */
   flex-wrap: wrap;
 }
-.court-of-blades.house.sheet .coins label {
+.court-of-blades.house.sheet .Influences label {
   height: 15px;
   width: 15px;
   background-color: #DAA520;
@@ -253,39 +253,39 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.court-of-blades.house.sheet .coins label[for$="-0"] {
+.court-of-blades.house.sheet .Influences label[for$="-0"] {
   margin-right: 0px;
 }
-.court-of-blades.house.sheet .coins label:hover {
+.court-of-blades.house.sheet .Influences label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.court-of-blades.house.sheet .coins input {
+.court-of-blades.house.sheet .Influences input {
   display: none;
 }
-.court-of-blades.house.sheet .coins input:checked ~ label {
+.court-of-blades.house.sheet .Influences input:checked ~ label {
   background-color: #EEEFFF;
 }
-.court-of-blades.house.sheet .coins input:checked + label {
+.court-of-blades.house.sheet .Influences input:checked + label {
   background-color: #DAA520;
 }
-.court-of-blades.house.sheet .coins input ~ label {
+.court-of-blades.house.sheet .Influences input ~ label {
   margin-right: 3px;
   margin-bottom: 3px;
   transition: filter 0.2s;
   cursor: pointer;
 }
-.court-of-blades.house.sheet .coins input ~ label[for$="0"] {
+.court-of-blades.house.sheet .Influences input ~ label[for$="0"] {
   border-width: 2px;
 }
-.court-of-blades.house.sheet .coins input ~ label:hover {
+.court-of-blades.house.sheet .Influences input ~ label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.court-of-blades.house.sheet .coins.coins-hands {
+.court-of-blades.house.sheet .Influences.Influences-hands {
   width: 36px;
 }
-.court-of-blades.house.sheet .coins.coins-stashed {
+.court-of-blades.house.sheet .Influences.Influences-stashed {
   width: 190px;
 }
 .court-of-blades.house.sheet .item {
@@ -315,7 +315,7 @@
   margin-bottom: 10px;
 }
 .court-of-blades.house.sheet #name,
-.court-of-blades.house.sheet #lair {
+.court-of-blades.house.sheet #house {
   margin-bottom: 10px;
 }
 .court-of-blades.house.sheet form.actor-sheet {
@@ -324,13 +324,13 @@
 .court-of-blades.house.sheet nav {
   padding-bottom: 10px;
 }
-.court-of-blades.house.sheet .house-coins {
+.court-of-blades.house.sheet .house-Influences {
   display: flex;
   /* Hide the browser's default checkbox */
   flex-wrap: wrap;
   max-width: 72px;
 }
-.court-of-blades.house.sheet .house-coins label {
+.court-of-blades.house.sheet .house-Influences label {
   height: 15px;
   width: 15px;
   background-color: #DAA520;
@@ -339,23 +339,23 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.court-of-blades.house.sheet .house-coins label[for$="-0"] {
+.court-of-blades.house.sheet .house-Influences label[for$="-0"] {
   margin-right: 0px;
 }
-.court-of-blades.house.sheet .house-coins label:hover {
+.court-of-blades.house.sheet .house-Influences label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.court-of-blades.house.sheet .house-coins input {
+.court-of-blades.house.sheet .house-Influences input {
   display: none;
 }
-.court-of-blades.house.sheet .house-coins input:checked ~ label {
+.court-of-blades.house.sheet .house-Influences input:checked ~ label {
   background-color: #EEEFFF;
 }
-.court-of-blades.house.sheet .house-coins input:checked + label {
+.court-of-blades.house.sheet .house-Influences input:checked + label {
   background-color: #DAA520;
 }
-.court-of-blades.house.sheet .house-coins label {
+.court-of-blades.house.sheet .house-Influences label {
   margin-right: 3px;
   margin-bottom: 3px;
 }
@@ -1154,7 +1154,7 @@
 .court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons > div:not(:last-of-type) {
   margin-bottom: 20px;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box {
   max-width: 30px;
   max-height: 30px;
   box-sizing: border-box;
@@ -1165,17 +1165,17 @@
   text-align: left;
   z-index: 600;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .mini-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .mini-view {
   text-align: center;
   position: relative;
   width: 30px;
   height: 30px;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .mini-view .placeholder {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .mini-view .placeholder {
   height: 100%;
   width: 100%;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .mini-view .label-text {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .mini-view .label-text {
   position: relative;
   top: -5px;
   left: 0px;
@@ -1185,13 +1185,13 @@
   border-radius: 10px;
   text-align: center;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .full-view {
   display: none;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box.open {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box.open {
   color: #191813;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box.open .full-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box.open .full-view {
   background-color: #bbb;
   border: 3px solid #666;
   display: block;
@@ -1204,20 +1204,20 @@
   width: 250px;
   box-shadow: 0px 7px 6px 0px rgba(0, 0, 0, 0.25);
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box > div {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box > div {
   display: inline-block;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .mini-view {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .mini-view {
   background-repeat: no-repeat;
-  background-image: url(assets/icons/coins.png);
+  background-image: url(assets/icons/Influences.png);
   background-size: contain;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .full-view .Influences {
   display: flex;
   /* Hide the browser's default checkbox */
   flex-wrap: wrap;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins label {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .full-view .Influences label {
   height: 15px;
   width: 15px;
   background-color: #DAA520;
@@ -1226,46 +1226,46 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins label[for$="-0"] {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .full-view .Influences label[for$="-0"] {
   margin-right: 0px;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins label:hover {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .full-view .Influences label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .full-view .Influences input {
   display: none;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input:checked ~ label {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .full-view .Influences input:checked ~ label {
   background-color: #EEEFFF;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input:checked + label {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .full-view .Influences input:checked + label {
   background-color: #DAA520;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input ~ label {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .full-view .Influences input ~ label {
   margin-right: 3px;
   margin-bottom: 3px;
   transition: filter 0.2s;
   cursor: pointer;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input ~ label[for$="0"] {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .full-view .Influences input ~ label[for$="0"] {
   border-width: 2px;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins input ~ label:hover {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .full-view .Influences input ~ label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins.coins-hands {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .full-view .Influences.Influences-hands {
   width: 36px;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box .full-view .coins.coins-stashed {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box .full-view .Influences.Influences-stashed {
   width: 190px;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box.open .full-view .coins {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box.open .full-view .Influences {
   display: flex;
   justify-content: space-between;
 }
-.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box.open .full-view .coins .hand, .court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .coins-box.open .full-view .coins .stash {
+.court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box.open .full-view .Influences .hand, .court-of-blades.actor.pc #tidy-redesign .minimized-view .character-portrait .status-buttons .Influences-box.open .full-view .Influences .stash {
   display: inline-block;
   text-align: left;
 }

@@ -1,13 +1,13 @@
-$coin_size: 15px;
-$coin_margin: 3px;
+$Influence_size: 15px;
+$Influence_margin: 3px;
 
-.coins {
-  @include custom_radio_square($coin_size);
+.Influences {
+  @include custom_radio_square($Influence_size);
   flex-wrap: wrap;
 
   input ~ label {
-    margin-right: $coin_margin;
-    margin-bottom: $coin_margin;
+    margin-right: $Influence_margin;
+    margin-bottom: $Influence_margin;
 
     &[for$="0"] {
       border-width: 2px;
@@ -16,11 +16,11 @@ $coin_margin: 3px;
     @include changeable($transition-period, $hover-brightness, $hover-opacity);
   }
 
-  &.coins-hands {
+  &.Influences-hands {
     width: 36px;
   }
 
-  &.coins-stashed {
+  &.Influences-stashed {
     width: 190px;
   }
 

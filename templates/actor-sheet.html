@@ -7,9 +7,9 @@
           <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" >
         </div>
         <div class="status-buttons">
-          <div class="coins-box {{#if actor.flags.court-of-blades.coins_open}}open{{/if}}">
-            <div class="mini-view"><div class="placeholder"></div><span class="coin-values label-text">{{data.coins}}/{{data.coins_stashed}}</span></div>
-            <div class="full-view">{{> "systems/court-of-blades/templates/parts/coins.html" actor=actor}}</div>
+          <div class="Influences-box {{#if actor.flags.court-of-blades.Influences_open}}open{{/if}}">
+            <div class="mini-view"><div class="placeholder"></div><span class="Influence-values label-text">{{data.Influences}}/{{data.Influences_stashed}}</span></div>
+            <div class="full-view">{{> "systems/court-of-blades/templates/parts/Influences.html" actor=actor}}</div>
           </div>
           <div class="load-box {{#if actor.flags.court-of-blades.load_open}}open{{/if}}">
             <div class="mini-view"><div class="placeholder"></div><span class="load-amounts label-text {{#if (lt data.loadout max_load)}}below-max{{else if (eq data.loadout max_load)}}at-max{{else if (gt data.loadout max_load)}}over-max{{/if}}">{{data.loadout}}/{{max_load}}</span></div>
@@ -181,17 +181,17 @@
 <!--                  </ul>-->
 <!--                </ul>-->
 <!--                <ul>-->
-<!--                  <li>COIN</li>-->
+<!--                  <li>Influence</li>-->
 <!--                  <ul>-->
-<!--                    <li>2 COIN: A minor job; several full purses.</li>-->
-<!--                    <li>4 COIN: A small job; a strongbox.</li>-->
-<!--                    <li>6 COIN: A standard score; decent loot</li>-->
-<!--                    <li>8 COIN: A big score; serious loot.</li>-->
-<!--                    <li>10 COIN: A major score; impressive loot.</li>-->
+<!--                    <li>2 Influence: A minor job; several full purses.</li>-->
+<!--                    <li>4 Influence: A small job; a strongbox.</li>-->
+<!--                    <li>6 Influence: A standard Errand; decent loot</li>-->
+<!--                    <li>8 Influence: A big Errand; serious loot.</li>-->
+<!--                    <li>10 Influence: A major Errand; impressive loot.</li>-->
 <!--                  </ul>-->
 <!--                </ul>-->
 <!--                <ul>-->
-<!--                  <li>TITHE: Pay Tier - 1 COIN to crime boss.</li>-->
+<!--                  <li>TITHE: Pay Tier - 1 Influence to crime boss.</li>-->
 <!--                  <ul>-->
 <!--                    <li> Refusing to Pay: Start clock for that boss’ patience running out. -1 faction status-->
 <!--                      when clock fills.-->
@@ -254,12 +254,12 @@
 <!--                  <div class="header-row"><span>Crit: 5 segments</span><span>6: 3 segments</span><span>4/5: 2 segments</span><span>1-3: 1 segment</span></div>-->
 <!--                  <div class="header-row"><span>Crit: Tier +2</span><span>6: Tier +1</span><span>4/5: Tier</span><span>1-3: Tier -1</span></div>-->
 <!--                </header>-->
-<!--                <p><em>(2 activities per downtime; 1 if at war &mdash; +1 action for 1 Coin or 1 Rep)</em></p>-->
+<!--                <p><em>(2 activities per downtime; 1 if at war &mdash; +1 action for 1 Influence or 1 Rep)</em></p>-->
 <!--                <h4>Acquire Asset <i class="fas fa-dice"></i></h4>-->
 <!--                <ul>-->
-<!--                  <li>Roll house's Tier to determine relative quality of temporary asset (usually 1 score)</li>-->
+<!--                  <li>Roll house's Tier to determine relative quality of temporary asset (usually 1 Errand)</li>-->
 <!--                  <ul>-->
-<!--                    <li>Extra Quality: +1 quality per 2 COIN beyond Critical Effect</li>-->
+<!--                    <li>Extra Quality: +1 quality per 2 Influence beyond Critical Effect</li>-->
 <!--                  </ul>-->
 <!--                  <li>Assets: special item, set of common items, cohort, vehicle, service</li>-->
 <!--                  <li>Minimum Quality: Set by the GM for certain assets</li>-->

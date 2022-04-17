@@ -9,7 +9,7 @@ export const preloadHandlebarsTemplates = async function() {
   const templatePaths = [
 
     // Actor Sheet Partials
-    "systems/court-of-blades/templates/parts/coins.html",
+    "systems/court-of-blades/templates/parts/Influences.html",
     "systems/court-of-blades/templates/parts/attributes.html",
     "systems/court-of-blades/templates/parts/harm.html",
     "systems/court-of-blades/templates/parts/load.html",

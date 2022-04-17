@@ -1,7 +1,7 @@
-$coin_size: 15px;
-$coin_margin: 3px;
+$Influence_size: 15px;
+$Influence_margin: 3px;
 
-@import 'coins.scss';
+@import 'Influences.scss';
 
 .item {
 
@@ -37,7 +37,7 @@ $coin_margin: 3px;
 }
 
 #name,
-#lair,
+#house,
 {
   margin-bottom: 10px;
 }
@@ -53,15 +53,15 @@ nav{
 }
 
 
-// House Coins
-.house-coins {
-  @include custom_radio_square($coin_size);
+// House Influences
+.house-Influences {
+  @include custom_radio_square($Influence_size);
   flex-wrap: wrap;
-  max-width: 4 * ($coin_size + $coin_margin);
+  max-width: 4 * ($Influence_size + $Influence_margin);
 
   label {
-    margin-right: $coin_margin;
-    margin-bottom: $coin_margin;
+    margin-right: $Influence_margin;
+    margin-bottom: $Influence_margin;
   }
 }
 
@@ -286,7 +286,7 @@ nav{
   }
 
   #scandal-list {
-    @include check_underscore();
+    @include check_underErrand();
     justify-content: space-between;
     align-items: flex-start;
   }

@@ -285,7 +285,7 @@ $hover-brightness: 0.8;
 //    }
 //
 //    #scandal-list {
-//      @include check_underscore();
+//      @include check_underErrand();
 //      justify-content: space-between;
 //      align-items: flex-start;
 //    }
@@ -457,21 +457,21 @@ $hover-brightness: 0.8;
 //  }
 //
 //  #name,
-//  #lair,
+//  #house,
 //  #alias {
 //    margin-bottom: 10px;
 //  }
 //
-//  $coin_size: 15px;
-//  $coin_margin: 3px;
+//  $Influence_size: 15px;
+//  $Influence_margin: 3px;
 //
-//  .coins {
-//    @include custom_radio_square($coin_size);
+//  .Influences {
+//    @include custom_radio_square($Influence_size);
 //    flex-wrap: wrap;
 //
 //    input ~ label {
-//      margin-right: $coin_margin;
-//      margin-bottom: $coin_margin;
+//      margin-right: $Influence_margin;
+//      margin-bottom: $Influence_margin;
 //
 //      &[for$="0"] {
 //        border-width: 2px;
@@ -480,25 +480,25 @@ $hover-brightness: 0.8;
 //      @include changeable($transition-period, $hover-brightness, $hover-opacity);
 //    }
 //
-//    &.coins-hands {
+//    &.Influences-hands {
 //      width: 36px;
 //    }
 //
-//    &.coins-stashed {
+//    &.Influences-stashed {
 //      width: 190px;
 //    }
 //
 //  }
 //
-//  // House Coins
-//  .house-coins {
-//    @include custom_radio_square($coin_size);
+//  // House Influences
+//  .house-Influences {
+//    @include custom_radio_square($Influence_size);
 //    flex-wrap: wrap;
-//    max-width: 4 * ($coin_size + $coin_margin);
+//    max-width: 4 * ($Influence_size + $Influence_margin);
 //
 //    label {
-//      margin-right: $coin_margin;
-//      margin-bottom: $coin_margin;
+//      margin-right: $Influence_margin;
+//      margin-bottom: $Influence_margin;
 //    }
 //  }
 //
