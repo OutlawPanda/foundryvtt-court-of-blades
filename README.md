@@ -5,7 +5,7 @@
 ## Usage
 `"Item" - all playbooks, house types, upgrades, items, abilities,  etc.`
 
-# Playbooks:
+## Playbooks:
 - (B)  Bravo
 - (H)  Hawk
 - (E)  Eye
@@ -15,14 +15,14 @@
 - (Ki) Kiss
 - (Cu) Curse
 
-# Houses:
+## Houses:
 - (A)  House Al-Mari
 - (C)  House Corvetto
 - (Bs)  House Bastien
 - (Bt)  House Battalia
 - (L) House Lovell
 
-# Screenshots
+## Screenshots
 
 [bookcover]: ./images/Court-of-Blades.png "bookcover"
 
