@@ -1,4 +1,4 @@
-import { BladesHelpers } from "./blades-helpers.js";
+import { BladesHelpers } from "./module/blades-helpers.js";
 
 /**
  * Extend the base ActiveEffect class to implement system-specific logic.
