@@ -1,6 +1,6 @@
 ## A **Court of Blades** module for FoundryVTT
 
--This work is an edited version of the system created by **MegaStrukture**
+-This work is an edited version of the system created by **MegaStruktur**
 
 -https://github.com/megastruktur/foundryvtt-blades-in-the-dark
 
