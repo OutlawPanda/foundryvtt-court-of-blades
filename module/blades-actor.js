@@ -452,7 +452,7 @@ export class BladesActor extends Actor {
 
       let startingAttributes = await BladesHelpers.getStartingAttributes(selected_playbook_source.name);
       let currentAttributes = this.data.data.attributes;
-      //vampire ActiveEffects make this think there's been a change to the base skills, so ignore the exp_max field
+      //Curse ActiveEffects make this think there's been a change to the base skills, so ignore the exp_max field
       for (const attribute in currentAttributes) {
         currentAttributes[attribute].exp = 0;
         delete currentAttributes[attribute].exp_max;

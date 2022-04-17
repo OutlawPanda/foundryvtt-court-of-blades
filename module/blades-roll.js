@@ -33,7 +33,7 @@ export async function bladesRoll(dice_amount, attribute_name = "", position = "r
 // TODO: add rolls for downtime activities:
 // Acquire asset (tier roll)
 // Recover (clock roll)
-// Reduce heat (action roll)
+// Reduce Exposure (action roll)
 // Indulge Vice (clear stress = result)
 
 async function showChatRollMessage(r, zeromode, attribute_name = "", position = "", effect = "") {

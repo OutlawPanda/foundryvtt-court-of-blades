@@ -145,14 +145,14 @@
       "max": 4,
       "value": [0]
     },
-    "vault": {
+    "status": {
       "value": [0],
       "max": 0
     },
     "turfs": [8],
     "features": [],
-    "heat": [0],
-    "wanted": [0]
+    "Exposure": [0],
+    "Shame": [0]
   },
   "\uD83D\uDD5B clock": {
     "name": "",
@@ -302,28 +302,28 @@
         "label": "COB.Expert"
       }
     },
-    "gang_type": ["Adepts"],
+    "gang_type": ["Doctore"],
     "gang_type_list": {
 
-      "Adepts": {
-        "label": "COB.GangTypeAdepts",
-        "description": "COB.GangTypeAdeptsDescription"
+      "Doctore": {
+        "label": "COB.GangTypeDoctore",
+        "description": "COB.GangTypeDoctoreDescription"
       },
-      "Rooks": {
-        "label": "COB.GangTypeRooks",
-        "description": "COB.GangTypeRooksDescription"
+      "Courtier": {
+        "label": "COB.GangTypeCourtier",
+        "description": "COB.GangTypeCourtierDescription"
       },
-      "Rovers": {
-        "label": "COB.GangTypeRovers",
-        "description": "COB.GangTypeRoversDescription"
+      "Wayfinder": {
+        "label": "COB.GangTypeWayfinder",
+        "description": "COB.GangTypeWayfinderDescription"
       },
-      "Skulks": {
-        "label": "COB.GangTypeSkulks",
-        "description": "COB.GangTypeSkulksDescription"
+      "Fox": {
+        "label": "COB.GangTypeFox",
+        "description": "COB.GangTypeFoxDescription"
       },
-      "Thugs": {
-        "label": "COB.GangTypeThugs",
-        "description": "COB.GangTypeThugsDescription"
+      "Blades": {
+        "label": "COB.GangTypeBlades",
+        "description": "COB.GangTypeBladesDescription"
       }
     },
     "expert_type": "",
