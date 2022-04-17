@@ -44,4 +44,4 @@ House Types:
 - (Bt)  House Battala
 - (L) House Lovell
 
-![image (./images/Court-of-Blades.png)]
+[image]:./images/Court-of-Blades.png
