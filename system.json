@@ -51,7 +51,7 @@
   ],
   "url": "https://github.com/OutlawPanda/foundryvtt-court-of-blades.git",
   "manifest": "https://raw.githubusercontent.com/OutlawPanda/foundryvtt-court-of-blades/main/system.json",
-  "download": "https://github.com/OutlawPanda/foundryvtt-court-of-blades/archive/refs/heads/main.zip",
+  "download": "https://github.com/OutlawPanda/foundryvtt-court-of-blades/archive/refs/tags/v0.0.4-alpha.zip",
   "packs": [
     {
       "name": "class",
