@@ -1,5 +1,5 @@
 
-import { BladesSheet } from "./module/blades-sheet.js";
+import { BladesSheet } from "module/blades-sheet.js";
 
 /**
  * Extend the basic ActorSheet with some very simple modifications

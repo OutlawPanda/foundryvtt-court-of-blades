@@ -1,5 +1,5 @@
-import { bladesRoll } from "./module/blades-roll.js";
-import { BladesHelpers } from "./module/blades-helpers.js";
+import { bladesRoll } from "module/blades-roll.js";
+import { BladesHelpers } from "module/blades-helpers.js";
 
 /**
  * Extend the basic Actor
