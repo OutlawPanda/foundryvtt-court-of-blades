@@ -565,12 +565,12 @@ export class BladesActorSheet extends BladesSheet {
       this.actor.update({data: {acquaintances : acquaintances}});
     });
 
-    html.find('.Influences-box').click(ev => {
+    html.find('.influences-box').click(ev => {
       //note: apparently have to do this via flag, as just adding a class doesn't help when the box get rerendered on data change. Fun. Only downside is that it will probably show the Influences opening and closing for anyone else viewing the sheet, too.
-      this.actor.getFlag('court-of-blades', 'Influences_open') ? this.actor.setFlag('court-of-blades', 'Influences_open', false) : this.actor.setFlag('court-of-blades', 'Influences_open', true);
+      this.actor.getFlag('court-of-blades', 'influences_open') ? this.actor.setFlag('court-of-blades', 'influences_open', false) : this.actor.setFlag('court-of-blades', 'influences_open', true);
     });
 
-    html.find('.Influences-box .full-view').click(ev => {
+    html.find('.influences-box .full-view').click(ev => {
       ev.stopPropagation();
     });
 
