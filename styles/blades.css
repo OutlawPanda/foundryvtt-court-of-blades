@@ -239,12 +239,12 @@
 .court-of-blades td {
   padding: 5px;
 }
-.court-of-blades.house.sheet .Influences {
+.court-of-blades.house.sheet .influences {
   display: flex;
   /* Hide the browser's default checkbox */
   flex-wrap: wrap;
 }
-.court-of-blades.house.sheet .Influences label {
+.court-of-blades.house.sheet .influences label {
   height: 15px;
   width: 15px;
   background-color: #DAA520;
@@ -253,39 +253,39 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.court-of-blades.house.sheet .Influences label[for$="-0"] {
+.court-of-blades.house.sheet .influences label[for$="-0"] {
   margin-right: 0px;
 }
-.court-of-blades.house.sheet .Influences label:hover {
+.court-of-blades.house.sheet .influences label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.court-of-blades.house.sheet .Influences input {
+.court-of-blades.house.sheet .influences input {
   display: none;
 }
-.court-of-blades.house.sheet .Influences input:checked ~ label {
+.court-of-blades.house.sheet .influences input:checked ~ label {
   background-color: #EEEFFF;
 }
-.court-of-blades.house.sheet .Influences input:checked + label {
+.court-of-blades.house.sheet .influences input:checked + label {
   background-color: #DAA520;
 }
-.court-of-blades.house.sheet .Influences input ~ label {
+.court-of-blades.house.sheet .influences input ~ label {
   margin-right: 3px;
   margin-bottom: 3px;
   transition: filter 0.2s;
   cursor: pointer;
 }
-.court-of-blades.house.sheet .Influences input ~ label[for$="0"] {
+.court-of-blades.house.sheet .influences input ~ label[for$="0"] {
   border-width: 2px;
 }
-.court-of-blades.house.sheet .Influences input ~ label:hover {
+.court-of-blades.house.sheet .influences input ~ label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.court-of-blades.house.sheet .Influences.Influences-hands {
+.court-of-blades.house.sheet .influences.Influences-hands {
   width: 36px;
 }
-.court-of-blades.house.sheet .Influences.Influences-stashed {
+.court-of-blades.house.sheet .influences.Influences-stashed {
   width: 190px;
 }
 .court-of-blades.house.sheet .item {
@@ -339,23 +339,23 @@
   transition: filter 0.1s;
   cursor: pointer;
 }
-.court-of-blades.house.sheet .house-Influences label[for$="-0"] {
+.court-of-blades.house.sheet .house-influences label[for$="-0"] {
   margin-right: 0px;
 }
-.court-of-blades.house.sheet .house-Influences label:hover {
+.court-of-blades.house.sheet .house-influences label:hover {
   filter: brightness(0.8);
   opacity: 0.9;
 }
-.court-of-blades.house.sheet .house-Influences input {
+.court-of-blades.house.sheet .house-influences input {
   display: none;
 }
-.court-of-blades.house.sheet .house-Influences input:checked ~ label {
+.court-of-blades.house.sheet .house-influences input:checked ~ label {
   background-color: #EEEFFF;
 }
-.court-of-blades.house.sheet .house-Influences input:checked + label {
+.court-of-blades.house.sheet .house-influences input:checked + label {
   background-color: #DAA520;
 }
-.court-of-blades.house.sheet .house-Influences label {
+.court-of-blades.house.sheet .house-influences label {
   margin-right: 3px;
   margin-bottom: 3px;
 }
@@ -636,10 +636,10 @@
 .court-of-blades.house.sheet #house-tier > * {
   margin-right: 5px;
 }
-.court-of-blades.house.sheet #Exposure-Shame .small-teeth {
+.court-of-blades.house.sheet #exposure-Shame .small-teeth {
   height: 20px;
 }
-.court-of-blades.house.sheet #Exposure-Shame .small-teeth label {
+.court-of-blades.house.sheet #exposure-Shame .small-teeth label {
   height: 100%;
   width: 100%;
   cursor: default;
