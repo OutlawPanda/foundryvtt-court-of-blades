@@ -9,7 +9,7 @@
         <div class="status-buttons">
           <div class="Influences-box {{#if actor.flags.court-of-blades.Influences_open}}open{{/if}}">
             <div class="mini-view"><div class="placeholder"></div><span class="Influence-values label-text">{{data.Influences}}/{{data.Influences_stashed}}</span></div>
-            <div class="full-view">{{> "systems/court-of-blades/templates/parts/Influences.html" actor=actor}}</div>
+            <div class="full-view">{{> "systems/court-of-blades/templates/parts/influences.html" actor=actor}}</div>
           </div>
           <div class="load-box {{#if actor.flags.court-of-blades.load_open}}open{{/if}}">
             <div class="mini-view"><div class="placeholder"></div><span class="load-amounts label-text {{#if (lt data.loadout max_load)}}below-max{{else if (eq data.loadout max_load)}}at-max{{else if (gt data.loadout max_load)}}over-max{{/if}}">{{data.loadout}}/{{max_load}}</span></div>
