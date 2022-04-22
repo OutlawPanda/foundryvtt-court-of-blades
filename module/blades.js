@@ -348,7 +348,7 @@ Hooks.once("ready", function() {
 
   // Determine whether a system migration is required
   const currentVersion = game.settings.get("COB", "systemMigrationVersion");
-  const NEEDS_MIGRATION_VERSION = "3.5.1";
+  const NEEDS_MIGRATION_VERSION = "0.0.3-a";
 
   // let needMigration = (currentVersion < NEEDS_MIGRATION_VERSION) || (currentVersion === null);
   let needMigration = !isNewerVersion(currentVersion, NEEDS_MIGRATION_VERSION) || (currentVersion === null) || (typeof currentVersion === "undefined");
