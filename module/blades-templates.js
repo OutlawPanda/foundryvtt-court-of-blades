@@ -9,18 +9,17 @@ export const preloadHandlebarsTemplates = async function() {
   const templatePaths = [
 
     // Actor Sheet Partials
-<<<<<<< HEAD
-    "./systems/court-of-blades/templates/parts/Influences.html",
-    "./systems/court-of-blades/templates/parts/attributes.html",
-    "./systems/court-of-blades/templates/parts/harm.html",
-    "./systems/court-of-blades/templates/parts/load.html",
-    "./systems/court-of-blades/templates/parts/radiotoggles.html",
-    "./systems/court-of-blades/templates/parts/ability.html",
-    "./systems/court-of-blades/templates/parts/turf-list.html",
-    "./systems/court-of-blades/templates/parts/cohort-block.html",
-    "./systems/court-of-blades/templates/parts/factions.html",
-    "./systems/court-of-blades/templates/parts/active-effects.html",
-=======
+    
+    "systems/court-of-blades/templates/parts/Influences.html",
+    "systems/court-of-blades/templates/parts/attributes.html",
+    "systems/court-of-blades/templates/parts/harm.html",
+    "systems/court-of-blades/templates/parts/load.html",
+    "systems/court-of-blades/templates/parts/radiotoggles.html",
+    "systems/court-of-blades/templates/parts/ability.html",
+    "systems/court-of-blades/templates/parts/turf-list.html",
+    "systems/court-of-blades/templates/parts/cohort-block.html",
+    "systems/court-of-blades/templates/parts/factions.html",
+    "systems/court-of-blades/templates/parts/active-effects.html",
 
   ];
 
