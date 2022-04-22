@@ -19,7 +19,7 @@
       "name_default": "COB.Stress",
       "name": "COB.Stress"
     },
-    "Scandal": {
+    "scandal": {
       "max": 4,
       "max_default": 4,
       "value": [0],
@@ -263,18 +263,18 @@
     "templates": ["default", "logic", "activatedEffect"],
     "experience_clues": "",
     "base_skills": {
-      "Skulk": [0],
-      "Maneuver": [0],
-      "Skirmish": [0],
-      "Wreck": [0],
-      "Tinker": [0],
-      "Study": [0],
-      "Survey": [0],
-      "Hunt": [0],
-      "Channel": [0],
-      "Command": [0],
-      "Consort": [0],
-      "Sway": [0]
+      "skulk": [0],
+      "maneuver": [0],
+      "skirmish": [0],
+      "wreck": [0],
+      "tinker": [0],
+      "study": [0],
+      "survey": [0],
+      "hunt": [0],
+      "channel": [0],
+      "command": [0],
+      "consort": [0],
+      "sway": [0]
     }
   },
   "ability": {
