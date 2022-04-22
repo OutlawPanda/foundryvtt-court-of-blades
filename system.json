@@ -18,11 +18,19 @@
   "styles": [
     "styles/blades.css"
   ],	
-	"dependencies": [
-	{
-	  "name": "blades-in-the-dark",
-	  "manifest": "https://raw.githubusercontent.com/justinross/foundryvtt-blades-in-the-dark/tidy-sheet-redesign/system.json",
-	}
+  "dependencies": [
+    {
+	    "name": "blades-in-the-dark",
+	    "type": "system",
+    },
+	  {
+		  "name": "blades-in-the-dark",
+		  "manifest": "https://raw.githubusercontent.com/justinross/foundryvtt-blades-in-the-dark/tidy-sheet-redesign/system.json",
+	  },
+	  {
+		  "name": "lib-wrapper",
+		  "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json",
+	  }
   ],
   "languages": [
     {
