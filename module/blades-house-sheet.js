@@ -1,6 +1,6 @@
 
 <<<<<<< HEAD
-import { BladesSheet } from "./module/blades-sheet.js";
+import { BladesSheet } from "./blades-sheet.js";
 
 /**
  * @extends {BladesSheet}
