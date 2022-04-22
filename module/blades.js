@@ -5,22 +5,22 @@
  */
 
 // Import Modules
-import { registerSystemSettings } from "module/settings.js";
-import { preloadHandlebarsTemplates } from "module/blades-templates.js";
-import { bladesRoll, simpleRollPopup } from "module/blades-roll.js";
-import { BladesHelpers } from "module/blades-helpers.js";
-import { BladesLookup } from "module/blades-lookup.js";
-import { BladesActor } from "module/blades-actor.js";
-import { BladesActiveEffect } from "module/blades-active-effect.js";
-import { BladesItem } from "module/blades-item.js";
-import { BladesItemSheet } from "module/blades-item-sheet.js";
-import { BladesActorSheet } from "module/blades-actor-sheet.js";
-import { BladesHouseSheet } from "module/blades-house-sheet.js";
-import { BladesClockSheet } from "module/blades-clock-sheet.js";
-import { BladesNPCSheet } from "module/blades-npc-sheet.js";
-import { BladesFactionSheet } from "module/blades-faction-sheet.js";
-import * as migrations from "module/migration.js";
-import {checkLocalizations} from "module/localization.js";
+import { registerSystemSettings } from "./module/settings.js";
+import { preloadHandlebarsTemplates } from "./module/blades-templates.js";
+import { bladesRoll, simpleRollPopup } from "./module/blades-roll.js";
+import { BladesHelpers } from "./module/blades-helpers.js";
+import { BladesLookup } from "./module/blades-lookup.js";
+import { BladesActor } from "./module/blades-actor.js";
+import { BladesActiveEffect } from "./module/blades-active-effect.js";
+import { BladesItem } from "./module/blades-item.js";
+import { BladesItemSheet } from "./module/blades-item-sheet.js";
+import { BladesActorSheet } from "./module/blades-actor-sheet.js";
+import { BladesHouseSheet } from "./module/blades-house-sheet.js";
+import { BladesClockSheet } from "./module/blades-clock-sheet.js";
+import { BladesNPCSheet } from "./module/blades-npc-sheet.js";
+import { BladesFactionSheet } from "./module/blades-faction-sheet.js";
+import * as migrations from "./module/migration.js";
+import {checkLocalizations} from "./module/localization.js";
 
 
 window.BladesHelpers = BladesHelpers;
@@ -30,7 +30,7 @@ window.BladesLookup = BladesLookup;
 /*  Foundry VTT Initialization                  */
 /* -------------------------------------------- */
 Hooks.once("init", async function() {
-  console.log(`Initializing Blades In the Dark System`);
+  console.log(`Initializing Court of Blades System`);
 
   game.blades = {
     dice: bladesRoll
@@ -49,7 +49,7 @@ Hooks.once("init", async function() {
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("blades", BladesActorSheet, { types: ["character"], makeDefault: true });
-  Actors.registerSheet("blades", BladesCrewSheet, { types: ["crew"], makeDefault: true });
+  Actors.registerSheet("blades", BladesHouseSheet, { types: ["house"], makeDefault: true });
   Actors.registerSheet("blades", BladesFactionSheet, { types: ["factions"], makeDefault: true });
   Actors.registerSheet("blades", BladesClockSheet, { types: ["\uD83D\uDD5B clock"], makeDefault: true });
   Actors.registerSheet("blades", BladesNPCSheet, { types: ["npc"], makeDefault: true });

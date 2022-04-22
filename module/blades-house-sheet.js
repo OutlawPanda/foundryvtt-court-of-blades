@@ -1,5 +1,6 @@
 
-import { BladesSheet } from "module/blades-sheet.js";
+<<<<<<< HEAD
+import { BladesSheet } from "./module/blades-sheet.js";
 
 /**
  * @extends {BladesSheet}
@@ -122,3 +123,7 @@ export class BladesHouseSheet extends BladesSheet {
   /* -------------------------------------------- */
 
 }
+
+=======
+
+>>>>>>> 83c55dd9ade2f53760ad4b0a7095ed7e5f0de750

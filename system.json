@@ -2,7 +2,11 @@
   "name": "court-of-blades",
   "title": "Court of Blades",
   "description": "Court of Blades game system. Based on Blades in the Dark system by Megastruktur and JustinRoss",
+<<<<<<< HEAD
+  "version": "0.0.2-a3",
+=======
   "version": "0.0.2-a6",
+>>>>>>> 83c55dd9ade2f53760ad4b0a7095ed7e5f0de750
   "minimumCoreVersion": "0.8.5",
   "compatibleCoreVersion": "0.8.9",
   "templateVersion": 1,
