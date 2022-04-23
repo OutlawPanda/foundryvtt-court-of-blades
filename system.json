@@ -45,19 +45,15 @@
       "path": "lang/de.json"
     },
     ],
-	  "dependencies": [
+      "dependencies": [
      {
 	    "name": "blades-in-the-dark",
 	    "type": "system",
      },
-     {
-	     "name": "blades-in-the-dark",
-	     "manifest": "https://raw.githubusercontent.com/justinross/foundryvtt-blades-in-the-dark/tidy-sheet-redesign/system.json",
-     },
   ],
-  "url": "https://github.com/OutlawPanda/foundryvtt-court-of-blades.git",
+  "url": "https://github.com/OutlawPanda/foundryvtt-court-of-blades/",
   "manifest": "https://raw.githubusercontent.com/OutlawPanda/foundryvtt-court-of-blades/main/system.json",
-  "download": "https://github.com/OutlawPanda/foundryvtt-court-of-blades/archive/refs/tags/v0.0.7-alpha.zip",
+  "download": "https://github.com/OutlawPanda/foundryvtt-court-of-blades/archive/refs/tags/v0.0.8-alpha.zip",
   "packs": [
     {
       "name": "class",
