@@ -43,7 +43,17 @@
       "lang": "de",
       "name": "Deutsch",
       "path": "lang/de.json"
-    }
+    },
+    ],
+	  "dependencies": [
+     {
+	    "name": "blades-in-the-dark",
+	    "type": "system",
+     },
+     {
+	     "name": "blades-in-the-dark",
+	     "manifest": "https://raw.githubusercontent.com/justinross/foundryvtt-blades-in-the-dark/tidy-sheet-redesign/system.json",
+     },
   ],
   "url": "https://github.com/OutlawPanda/foundryvtt-court-of-blades.git",
   "manifest": "https://raw.githubusercontent.com/OutlawPanda/foundryvtt-court-of-blades/main/system.json",
@@ -133,19 +143,5 @@
       "path": "./packs/npcs.db",
       "entity": "Actor"
     }
-  ],
-	  "dependencies": [
-    {
-	    "name": "blades-in-the-dark",
-	    "type": "system",
-    },
-	  {
-		  "name": "blades-in-the-dark",
-		  "manifest": "https://raw.githubusercontent.com/justinross/foundryvtt-blades-in-the-dark/tidy-sheet-redesign/system.json",
-	  },
-	  {
-		  "name": "lib-wrapper",
-		  "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json",
-	  },
   ]
 }
